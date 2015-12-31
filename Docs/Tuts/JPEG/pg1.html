@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<!-- XHTML template version 1 --> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" > 
+<head> 
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+ <meta name="Keywords" content="Photography, Art, Composition, Aesthetics" />
+<meta name="description" content="Tutorial on converting an image to JPEG" />
+ <meta http-equiv="X-UA-Compatible" content="IE-edge" /> 
+ 
+ <title>Converting to JPEG &nbsp; Daystar</title> 
+ 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/reset.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/nav_top.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/main_text.css'/> 
+
+ <!--style type="text/css">
+  #div_footer_med li
+ {
+        float: left;
+	padding: 7px 14px 0 5px;
+	margin: 0;
+	font: bold 10pt Arial, sans-serif;
+ } 
+ </style-->
+ 
+</head> 
+ 
+<body> 
+ 
+<div id="div_background"> 
+ 
+<div id="div_masthead"> 
+ 
+<img src="http://daystarvisions.com/Pix/Site/DayStar_logo-brown_bgrnd-sz300x40.jpg" height="40" width="300" alt="logo" class="logo" /> 
+ 
+<div id="div_nav"> 
+<ul> 
+<li><a id="li_nav_main" href="http://daystarvisions.com/index.html">Main</a></li> 
+<li><a id="li_nav_pix" href="http://daystarvisions.com/PixMain.html">Pictures</a></li> 
+<li><a id="li_nav_text" href="http://daystarvisions.com/TextMain.html">Text</a></li> 
+<li><a id="li_nav_art" href="http://daystarvisions.com/ArtMain.html">Art</a></li> 
+</ul> 
+</div> <!--div_nav--> 
+ 
+</div> <!--div_masthead--> 
+ 
+<div id="div_content"> 
+ 
+<div id="div_title_bar"> 
+ 
+<h1>Converting to JPEG for Web Display</h1> 
+ 
+<p class="copyright">Version 1.2, &copy;2003, 2007 by Dale Cotton, all rights reserved.</p>
+ 
+</div> <!--div_title_bar--> 
+
+<div class="div_pic_click"> 
+ 
+<a href="http://daystarvisions.com/Pix/LakeOnt/pg12.html"><img src="149-17sz500x333.jpg" width="500" height="333" alt="click for larger version" /></a> 
+ 
+<p class="p_pic_label">Fig 1. A problematic high-detail image, sharpened: USM 200/0.3/4</p> 
+ 
+</div> <!--div_pic_click--> 
+
+<p>The following is my current Photoshop procedure for making JPEGs. Improvements and corrections very much solicited:</p>
+
+<ul>
+  <li>My understanding is that if you use a Mac and have your monitor gamut set to 1.8, you should temporarily change it to 2.2. Only a dwindling number of Mac users use 1.8, and your profile will automatically convert down to 1.8 for them.</li>
+  <li>Open final edit of image to be copied.</li>
+  <li>Image/Duplicate it and work with duplicate.</li>
+  <li>If multiple layers, reduce to one; if alpha channels, delete them.</li>
+  <li>Image/Image Size resample down to desired jpeg size (I use Bicubic Softer).</li>
+</ul>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="DisplayStats.jpg" width="381" height="168" alt="No larger version" /> 
+ 
+<p>Fig 2. Screen resolution stats for visitors to this site, June 2007</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>Most people use 1024x768 screen res or larger with maybe 5% using  800x600. I normally size landscape orientation pictures for gallery/album display to 800 pixels width &ndash; this fills most of a 1024x768 display and all of a 800x600 display. Images meant for illustrations should usually be smaller &ndash; perhaps 400 or 500 pixels width. Portrait orientation images would need to be 700 pixels or shorter in height to accomodate 1024x768 screens.</p>
+
+<ul>
+  <li>Convert to sRGB colour space for best colour preservation.</li>
+</ul>
+
+<p>That's assuming your image is in AdobeRGB or larger colour space. sRGB is similar to the gamut of monitors. Most people use Windows, which doesn't support profiles in browsers, so the profile gets stripped away. AdobeRGB gamut can be severely clipped if stripped away, but sRGB gamut isn't.</p>
+
+<p>Down-sampling larger images to the smaller size needed for the web leaves them soft:</p>
+
+<ul>
+  <li>Apply USM as in next three steps:</li>
+  <li>Create a duplicate layer.</li>
+  <li>USM Amount = 350, Radius = 0.2, Threshold = 4 is my starting point. Increase Amount if the image looks blurry, decrease if too much haloing (white outlines). If still blurry at Amount = 500, increase Radius to next tenth and/or decrease Threshold.</li>
+</ul>
+
+<p>Although it's a nuisance I perform these adjustments with my monitor set to 1024x768 res, so I'm seeing what the typical user sees.</p>
+
+<ul>
+  <li>If the USM leaves just a small amount of haloing, erase it with the history brush set to the history state just before sharpening.</li>
+  <li>Convert to JPEG at a medium compression level; I don't like to go below Photoshop's level 7. (I no longer bother using Photoshop's Save for Web but many do.)</li>
+</ul>
+
+<p>My file-size targets are 150 KB for 800x600 album/gallery pix, and roughly 75 KB for illustrations. The more compression you apply the more your carefully achieved sharpening will be ravaged, so trade-offs always involve some angst.</p>
+
+<p>If you want to add a simple border:</p>
+<ul>
+  <li>Set the Photoshop background colour to whatever you want for the border.</li>
+  <li>Open Image/Canvas Size..., set the width and height to some larger number of pixels.</li>
+</ul>
+ 
+</div> <!--div_content--> 
+ 
+</div> <!--div_background--> 
+ 
+</body>
+
+</html>

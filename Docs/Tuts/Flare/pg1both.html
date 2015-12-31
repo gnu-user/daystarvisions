@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+
+<HEAD>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+ <meta name="description" content="Digital photography editing tutorial">
+
+ <meta name="keywords" content=""Photography, digital editing, Photoshop">
+
+ <title>Daystar Visions: Removing Lens Flare in Photoshop</title>
+
+ <LINK href="http://daystarvisions.com/DSDocs.css" rel="stylesheet" type="text/css">
+ <LINK href="../DSDocs.css" rel="stylesheet" type="text/css">
+
+</HEAD>
+
+<BODY BGCOLOR="black" TEXT="black" LINK="black" VLINK="black" ALINK="black">
+
+<TABLE ALIGN="left" width="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><!-- Start Full Screen -->
+
+<TR ALIGN="left" VALIGN="top">
+
+	<TD>
+
+	<!-- Start Left Nav: -->
+	<table align="left" width="75" border=0 cellspacing=0 cellpadding=0>
+	<tr>
+	<td VALIGN="top">
+	<img src="../../../Pix/Site/DaystarArtOnlyLNav.jpg" usemap="#navbar2" align="top" width="75" height="440" border=0 alt="image" ismap>
+        </td></tr>
+	</table><!-- End Left Nav -->
+
+        </TD>
+        <TD width="100%" bgcolor="#D8C890">
+
+	<!-- Start Info Contents table: -->
+             <table align="center" width="100%" cellspacing="15" cellpadding="0">
+             <tr><td>
+
+<!-- _____________________________ Content _____________________________ -->
+
+<H1>Removing Lens Flare in Photoshop</H1>
+<P CLASS=SmallNoteCentered>Version 1.0, &copy; 2008 by Dale Cotton, all rights reserved
+
+<p class="Centered"><a href="Flare_example_full_size.jpg"><IMG SRC="Flare_example_sz550x390.jpg" width=550 height=390 BORDER=8></a>
+<p class=SmallNoteCentered>Fig. 1: Lens flare (click to download full size version)
+
+<p>When a bright light source such as the sun shines directly into a camera lens, flare and flare artifacts are often formed, such as the red doughnut near the centre of Fig. 1. For decades slide film shooters had to either forego such a shot or toss it; now in the digital era we have other options.
+
+<p>The easiest way to remove the red donut in Fig. 1 is to do a bit of cloning from a neighbouring area. In many cases, however, there is no similar area to clone from, so we'll go through the exercise of removing the red doughnut to learn the technique:
+
+<h2>Example 1 &ndash red doughnut</h2>
+
+<p>To follow along: right click on Fig. 1, download the full scale image, then open it in Photoshop (most any version will do):
+
+<p class="Centered"><IMG SRC="Red_flare_1_sz430x400.jpg" width=430 height=400 BORDER=4>
+<p class=SmallNoteCentered>Fig. 2: Lasso offending object
+
+<p>1. Lasso flare object then feather slightly.
+
+<p class="Centered"><IMG SRC="Red_flare_2_sz575x330.jpg" width=575 height=330 BORDER=4>
+<p class=SmallNoteCentered>Fig. 2: Lasso offending object
+
+<p>2. Open Curves dialogue, choose closest matching colour channel, then create a curve that comes closest to removing flare colour.
+
+<p>3. Still in the Curves dialogue, go back to RGB channel and create curve that cancels as much of any brightness or darkness difference between the flare artifact and the surrounding area.
+
+<p class="Centered"><IMG SRC="Red_flare_3_sz440x360.jpg" width=440 height=360 BORDER=4>
+<p class=SmallNoteCentered>Fig. 3: After History Brush work (greenish area upper right is gone)
+
+<p>4. Use history brush at low opacity to undo any area that goes too far.
+
+<p class="Centered"><IMG SRC="Red_flare_4_sz390x340.jpg" width=390 height=340 BORDER=4>
+<p class=SmallNoteCentered>Fig. 4: Select any remaining problem areas
+
+<p class="Centered"><IMG SRC="Red_flare_5_sz635x370.jpg" width=635 height=370 BORDER=4>
+<p class=SmallNoteCentered>Fig. 5: Create new adjustment curve
+
+<p>Repeat steps 1 through 4 for any areas not fully fixed by first iteration.
+
+<p class="Centered"><IMG SRC="Red_flare_6_sz480x370.jpg" width=480 height=370 BORDER=4>
+<p class=SmallNoteCentered>Fig. 6: Final result
+
+<h2>Example 2 &ndash sun ray</h2>
+
+<p class="Centered"><IMG SRC="Ray_1_sz550x390.jpg" width=550 height=390 BORDER=4>
+<p class=SmallNoteCentered>Fig. 7: Ray obscuring branches (detail from Fig. 1)
+
+<p>Another example of flare artifacting in Fig. 1 are the rays rediating from the rising sun. I don't consider them offensive, but we'll remove a segment of one to show that this technique works just as well in areas in which detail exists but has been obscured.
+
+<p class="Centered"><IMG SRC="Ray_2_sz400x300.jpg" width=400 height=300 BORDER=4>
+<p class=SmallNoteCentered>Fig. 8: Lasso problem area
+
+<p>1. Lasso the offending flare area, then feather a small amount, such as 5 pixels.
+
+<p class="Centered"><IMG SRC="Ray_3_sz650x380.jpg" width=650 height=380 BORDER=4>
+<p class=SmallNoteCentered>Fig. 9: Neutralize with red channel curve
+
+<p>2. Use the same procedure as in steps 2 - 4 above.
+
+<p class="Centered"><IMG SRC="Ray_4_sz450x380.jpg" width=450 height=380 BORDER=4>
+<p class=SmallNoteCentered>Fig. 10: Final result
+
+<h2>Example 3 &ndash skin and hair</h2>
+
+
+<p class="Centered"><a href="Flare_example_full.jpg"><IMG SRC="Flare_example_2_sz550x400.jpg" width=550 height=400 BORDER=8></a>
+<p class=SmallNoteCentered>Fig. 11: Flare on skin and hair (click for full size version)
+
+<p>A friend took a shot she wants to use but is stymied by the offending lens flare. Fig. 11 is a crop from the full frame containing the problem area (and so, regrettably, you'll never know just what state of dishabile the strapless young lady is actually in ;). We can see that something more than the above techniques will be needed, because texture in the hair on the left has been lost.
+
+<p>Note: you'll want to live at 200% mag. while following these steps:
+
+<p class="Centered"><IMG SRC="Flare_hair_2_sz500x315.jpg" width=500 height=315 BORDER=4>
+<p class=SmallNoteCentered>Fig. 12: Select problem area
+
+<p>1. Select the flared area, leaving some margin all around. There's no clear point where the flare begins and ends on the forehead, so just about any selection you make therre will do. Feather about 20 pixels.
+
+<p class="Centered"><IMG SRC="Flare_hair_3_sz550x300.jpg" width=550 height=300 BORDER=4>
+<p class=SmallNoteCentered>Fig. 12: Clip unused darks
+
+<p>2. Open the Levels dialogue, and clip the unused portion of the histogram to the left (red circled slider in Fig. 13). Adjust the mid point slider (green circled slider) slightly to compensate for the overall darkening this produces.
+
+<p class="Centered"><IMG SRC="Flare_hair_4_sz550x350.jpg" width=550 height=350 BORDER=4>
+<p class=SmallNoteCentered>Fig. 13: Apply curve
+
+<p>3. Use the Curves dialogue (normal RGB channel), to recover as much darkness in the hair as possible &ndash; essentially the middle and middle right &ndash; while leaving the middle-toned forehead unchanged. (Click on the forehead to find where it falls on the histogram (red circle in Fig. 14), then create a lock point there.) Click OK to apply; you may want to save the current selection in case you need it later.
+
+<p class="Centered"><IMG SRC="Flare_hair_5_sz430x340.jpg" width=430 height=340 BORDER=4>
+<p class=SmallNoteCentered>Fig. 14: Desaturate yellow channel
+
+<p>4. Notice that this multi-point curve has reddened the forehead. Deselect the previous selection, circle the reddened area, and feather. Open the Hue/Sat./Lum. dialogue, switch to the Yellow "channel", then desaturate to taste.
+
+<!--p class="Centered"><IMG SRC="Flare_hair_6_sz480x250.jpg" width=480 height=250 BORDER=4>
+<p class=SmallNoteCentered>Fig. 15: Another curve
+
+<p>5. Deselect the forehead, then select the still flared hair on the left, then feather about 20. Apply a curve as shown, to minimize the flare.-->
+
+<p>This leaves us with everything done but the hard part &ndash; regaining the contrast and detail in the flared hair region. The information is not there, so it will have to be invented. We could simply clone from the middle of the hair on to the flared area on the left, but the angle the hairs travel from forehead to crown changes too much. No problem; Photoshop to the rescue, as always.
+
+<p class="Centered"><IMG SRC="Flare_hair_7_sz330x250.jpg" width=330 height=250 BORDER=4>
+<p class=SmallNoteCentered>Fig. 15: Select area to work from in following steps
+
+<p>5. Deselect from step 4, then select a non-flared portion of hair (no feather), centre-right. Press Ctrl+C to copy; Ctrl+D to deselect; Ctrl+N to create a new window; Ctrl+V to paste.
+
+<p class="Centered"><IMG SRC="Flare_hair_9_sz210x218.jpg" width=210 height=218 BORDER=4>
+<p class=SmallNoteCentered>Fig. 16: New image of hair selection after rotation
+
+<p>6. Open Image->Rotate->Arbitrary, then set an angle to rotate the section of hair so it more closely matches the angle of the flared hair in the original. I find 30 degrees counter-clockwise to be about right.
+
+<p>7. Press Ctrl+A to select all, then switch to the original image, then press Ctrl+V to paste; this creates a new layer. Use the Move tool to locate the rotated patch of hair to the side of the flared patch.
+
+<p class="Centered"><IMG SRC="Flare_hair_10_sz540x270.jpg" width=540 height=270 BORDER=4>
+<p class=SmallNoteCentered>Fig. 17: Rotated hair as new layer for cloning
+
+<p>8. Switch to the rubber stamp tool, then clone from the rotated patch (red arrow) to the flared patch (green arrow). You are working on the new layer so you don't need to worry too much about the hairline.
+
+<p>9. When done, select the rotated patch of hair, then press the Delete key to delete it. Now use the Erase tool at low opacity (around 20) to work around the hairline to blend in the new hair with the old. You can hide the new layer at any time to refresh your memory of exactly where the hairline is.
+
+<p class="Centered"><IMG SRC="Flare_hair_11_sz540x480.jpg" width=540 height=480 BORDER=4>
+<p class=SmallNoteCentered>Fig. 18: Face selected for contrast change
+
+<p>10. Now that the hair is normal, we can see that in fact the contrast of the entire face is lower than it should be. Working on the background layer, create a rough selection around the face; feather about 20; then apply a curve like the one in Fig. 18, that locks the middle and top, then dips the bottom for contrast in the darker areas. If needed, follow with a yellow channel desaturate.
+
+<p class="Centered"><IMG SRC="Flare_example_2_final_sz550x400.jpg" width=550 height=400 BORDER=4>
+<p class=SmallNoteCentered>Fig. 19: Final version
+
+<p>Voil&aacute;! That's it. You can flatten the two layers or not, depending on your degree of editing paranoia ... But wait! What about the dark halo around the subject's head? Is this part of the scene or some sort of reverse flare? Either way, you should be able to eliminate it now quite handily &ndash; you know the drill... :)
+
+<p>If you think about it, this is a very powerful technique. A tailor, needing to patch a hole in a pair of pants, will scrounge around in his coveted collection of scraps for as close a match as possible to the fabric of the pants. If we have a section of an image to repair, do we have a source portion form the same image to work from? If no, do we have one in another shot from the same session? If no, can we find one in any image available what so ever? If what we find is the wrong size, we resample; if the wrong angle we rotate; if the wrong colour we use Replace Color or the Curves channels or whatever to change the colour &ndash; and so on.
+
+<br><br><br>
+
+
+
+<!-- ************************** End Content ************************** -->
+
+             </td></tr>
+             </table>
+	</TD><!-- End Main Area col -->
+
+</TR>
+
+</TABLE><!-- End Full Screen -->
+
+<map name="navbar2">
+<area shape="rect" coords="12,103,58,123" href="../../../index.html" alt="doc">
+<area shape="rect" coords="2,132,67,154" href="../../../PixMain.html" alt="doc">
+<area shape="rect" coords="6,161,59,180" href="../../../TextMain.html" alt="doc">
+<area shape='rect' coords='6,181,59,210' href="../../../ArtMain.html" alt="doc">
+</map>
+
+</BODY>
+</HTML>

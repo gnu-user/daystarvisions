@@ -1,0 +1,108 @@
+p.IvoryBoxCentered {
+	font: normal 11pt Comic Sans, Arial, sans-serif;
+   	text-align: center; 
+	border: outset;
+	margin-left:12px; 
+	margin-right:12px;
+	margin-top:5px;
+	margin-bottom:3px;
+	padding:5px;
+   	color: black; 
+	background: #f2eee3;
+}
+p.SimpleBrownBox {
+	font: normal 11pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: solid thin; 
+	margin-left:7px; 
+	margin-right:5px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding:1px;
+   	color: black; 
+	background: #BDB497;
+}
+p.SimpleBrownBoxSmall {
+	font: normal 8pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: solid thin; 
+	margin-left:7px; 
+	margin-right:5px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding:3px;
+   	color: black; 
+	background: #BDB497;
+}
+p.SimpleIvoryBox {
+	font: normal 11pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: outset;
+	margin-left:12px; 
+	margin-right:12px;
+	margin-top:5px;
+	margin-bottom:3px;
+	padding:5px;
+   	color: black; 
+	background: #f2eee3;
+}
+P.SimpleWhiteBox {
+	font: normal 11pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: outset;
+	margin-left:12px; 
+	margin-right:12px;
+	margin-top:5px;
+	margin-bottom:7px;
+	padding:5px;
+   	color: black; 
+	background: #FFFFFF;
+}
+p.SimpleBoxSmallCentred {
+	font: normal 8pt Comic Sans, Arial, sans-serif;
+   	text-align: center; 
+	border: solid thin; 
+	margin-left:7px; 
+	margin-right:5px;
+	margin-top:1px;
+	margin-bottom:1px;
+	padding:1px;
+   	color: black; 
+}
+P.LightBlueBox {
+	font: normal 11pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: outset; 
+	margin-left:12px; 
+	margin-right:12px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding:5px;
+   	color: black; 
+	background: #cde0fa; /*#c1dae9;*/
+}
+P.LightBlueBoxWide {
+	font: normal 11pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: outset; 
+	margin-left:1px; 
+	margin-right:1px;
+	margin-top:5px;
+	margin-bottom:2px;
+	padding:4px;
+   	color: black; 
+	background: #c1dae9;
+}
+P.SimpleIvoryBox {
+	font: normal 11pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: outset;
+	margin-left:12px; 
+	margin-right:12px;
+	margin-top:5px;
+	margin-bottom:3px;
+	padding:5px;
+   	color: black; 
+	background: #f2eee3;
+}
+

@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<!-- XHTML template version 1 --> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" > 
+<head> 
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+ <meta name="Keywords" content="Photography, Art, Composition, Aesthetics" />
+ <meta name="Description" content="Dale Cotton's site devoted to the visual arts and especially to the art and craft of existing light photography." />
+ <meta http-equiv="X-UA-Compatible" content="IE-edge" /> 
+ 
+ <title>Photoshop Curves 102, page 2 &nbsp; Daystar</title> 
+ 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/reset.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/nav_top.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/main_text.css'/> 
+
+ <style type="text/css">
+  #div_footer li
+  {
+        float: left;
+	padding: 5px 20px 0 0;
+	margin-left: 60px;
+	font-family: Impact, Charcoal, sans-serif;
+  } 
+ </style>
+ 
+</head> 
+ 
+<body> 
+ 
+<div id="div_background"> 
+ 
+<div id="div_masthead"> 
+ 
+<img src="http://daystarvisions.com/Pix/Site/DayStar_logo-brown_bgrnd-sz300x40.jpg" height="40" width="300" alt="logo" class="logo" /> 
+ 
+<div id="div_nav"> 
+<ul> 
+<li><a id="li_nav_main" href="http://daystarvisions.com/index.html">Main</a></li> 
+<li><a id="li_nav_pix" href="http://daystarvisions.com/PixMain.html">Pictures</a></li> 
+<li><a id="li_nav_text" href="http://daystarvisions.com/TextMain.html">Text</a></li> 
+<li><a id="li_nav_art" href="http://daystarvisions.com/ArtMain.html">Art</a></li> 
+</ul> 
+</div> <!--div_nav--> 
+ 
+</div> <!--div_masthead--> 
+ 
+<div id="div_content"> 
+ 
+<div id="div_title_bar"> 
+ 
+<h1>Photoshop Curves 102</h1> 
+ 
+<p class="copyright">Page 2, 1.3, &copy; 2006, 2007 by Dale Cotton, all rights reserved.</p>
+ 
+</div> <!--div_title_bar--> 
+
+<h2>Under the hood</h2>
+
+<p class="MessageBox">Disclaimer: I am a programmer but I have never worked on the Photoshop dev team, so what I'm presenting here is my best guess as to how Curves work.</p>
+
+<p>I find it more useful to understand the underlying concepts of a situation than to blindly apply rote rules. The underlying concepts of the Curves tool are not that difficult, so see if you can bear with me a bit longer.</p>
+
+<p>The Curves tool is a simple graph; the vertical axis being the existing brightnesses of the current image; the horizontal axis being the desired new brightnesses. Every pixel in a colour image has a specific colour, but it also has a specific degree of darkness or lightness: for example, navy blue is darker than fire engine red but lighter than midnight black. The initial diagonal line simply says that each brightness value from black at the bottom to white at the top will be multiplied by 1.0000 to arrive at the corresponding new brightness value for all pixels in the image that had a given original brightness.</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="CurvesTech1.jpg" width="366" height="371" alt="No larger version" /> 
+ 
+<p>Fig. 10: What goes in must come out</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<div class="div_pic_no_click"> 
+ 
+<img src="Output1.jpg" width="500" height="295" alt="No larger version" /> 
+ 
+<p>Fig. 11: Fig. 10's "curve" applied to an image: no change</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>In Fig. 10 I show what happens to any given brightness value &ndash; in this case I chose the exact halfway brightness point - when using the original "curve" (diagonal line). Namely: nothing; 127 multiplied by 1.000 equals 127.</p>
+
+<p>If instead we modify the Curve line in some way, we change the multiplier for most or all brightness values.</p>
+
+<p>In the next figure I start with the same centre point but this time drag it to the left until it is half way to the left edge:</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="CurvesTech2.jpg" width="366" height="371" alt="No larger version" /> 
+ 
+<p>Fig. 12: Doubling a brightness level</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<div class="div_pic_no_click"> 
+ 
+<img src="Output2.jpg" width="500" height="295" alt="No larger version" /> 
+ 
+<p>Fig. 13: Fig. 12's "curve" applied to an image: the brights get brighter</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>This doubles the brightness of all input values of 63 &ndash; IOW, the input value of 63 gets multiplied by 2.0.</p>
+
+<p>Problems start when we ask the Curves tool to multiply brightness values that are close to identical &ndash; such as 127 and 128 &ndash; by nearly identical multipliers, such as 0.998 and 0.999.</p>
+
+<p>If we are working in 8-bit RGB mode, any given brightness value is something between 0 and 255. 127 times 0.998 is 126.746, which has to be rounded off to the nearest whole number, or 127. Similarly, 128 times 0.999 gives 127.872, which rounds back to 128. No change. However, if we are in 16-bit mode, the underlying brightness values go from 0 to 65535, which gives us the equivalent of more decimal places to work with. Thus, 127 times 0.998 will be stored as something close to 126.746; and 128 times 0.999 will be stored to something like 127.872, so the fine distinction we're trying to make is preserved.</p>
+
+<ul>
+<li><b>The more aggressive the curve the more you need to be in 16-bit mode.</b></li>
+</ul>
+
+<p>Even from this simple example we begin to see the reason why it's so important to do as much editing in 16-bit mode as possible. The more radically you alter the colours or contrast in the original image, the more important it becomes to preserve small distinctions. The difference between 126.746 and 127 can be the difference between the sort of grey-out we saw in Fig. 8 and no grey-out. This is because a grey-out happens when the slight value differences between neighbouring regions get lost.</p>
+
+<p>We can also begin to see the reason for the second prescription:</p>
+
+<ul>
+<li><b>No portion of the curve should have a hump or kink in it.</b></li>
+</ul>
+
+<p>A hump, as shown in Fig. 2, above, asks the curve tool to turn more than one input brightness value into an identical output brightness (two or more points at the same elevation on each side of the hump). In this case it doesn't matter what bit level we're working at, the hump guarantees a grey-out will occur.</p>
+
+<p>Similarly, if a region of the curve approaches flatness, as in Fig. 3, even in 16-bit mode the distinctions between successive output values become so small that a grey-out becomes ever more likely.</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="CurvesTech3.jpg" width="366" height="371" alt="No larger version" /> 
+ 
+<p>Fig. 14: Problem curve</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p style="text-align:center"><IMG SRC="" width= height= BORDER=4>
+<p class=SmallNoteCentered>.
+
+<div class="div_pic_no_click"> 
+ 
+<img src="Output3.jpg" width="500" height="295" alt="No larger version" /> 
+ 
+<p>Fig. 15: Fig. 14's "curve" applied to an image: a fatal grey-out</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>In Fig. 14 I've marked 4 points as follows:</p>
+
+<ul>
+<li>A: Input = 81; output = 133</li>
+<li>B: Input = 99; output = 142</li>
+<li>C: Input = 126; output = 146</li>
+<li>D: Input = 152; output = 152</li>
+</ul>
+
+<p>We can see the results of this too-flat curve in Fig. 15. Even though the output brightnesses are numerically distinct in the four marked sampled points, it's the many points between the samples that fail to maintain distinction.</p>
+
+<p>Incidentally, we've concentrated on horizontal flat-lining so far, but vertical flat-lining results in exactly the same grey-out problem &ndash; it's just much harder to get the Curves tool to go vertical (try it).</p>
+
+<p>OK. We've literally frowned on the big bad hump in the middle of a curve, but what really happens when we go there?</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="CurvesTech4.jpg" width="366" height="371" alt="No larger version" /> 
+ 
+<p>Fig. 16: Over the top curve</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<div class="div_pic_no_click"> 
+ 
+<img src="Output4.jpg" width="500" height="295" alt="No larger version" /> 
+ 
+<p>Fig. 17: Fig. 16's "curve" applied to an image: solarization from beyond the grave</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>Clearly, all Hades breaks loose when you not only double, but triple, the outputs for a given range of inputs. The visual equivalent of the feedback howl when the speaker gets too close to the mike.</p>
+
+<div id="div_footer">
+<ul>
+  <li><a href="pg1.html">&lt;&ndash;Prev</a></li>
+  <li><a href="pg1.html">Page 1</a></li>
+  <li><a href="pg2.html">Page 2</a></li>
+  <li><a href="pg1.html">Next&ndash;&gt;</a></li>
+</ul>
+</div> <!--div_footer--> 
+ 
+</div> <!--div_content--> 
+ 
+</div> <!--div_background--> 
+ 
+</body>
+
+</html>

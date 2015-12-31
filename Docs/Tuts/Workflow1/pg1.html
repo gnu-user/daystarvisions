@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<!-- XHTML template version 1 --> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" > 
+<head> 
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+ <meta http-equiv="X-UA-Compatible" content="IE-edge" /> 
+ <meta name="description" content="Following an Art Photograph from Capture to Print" />
+ <meta name="keywords" content=""Photography, Art, Aesthetics, Workflow, Photo Editing, Photoshop, Tutorial" />
+
+ <title>Digital Editing 101, pg 1 &nbsp; Daystar</title> 
+ 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/reset.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/nav_top.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/main_text.css'/> 
+
+ <style type="text/css">
+ #div_footer_small li
+ {
+        float: left;
+	padding: 8px 17px 0 0;
+	margin: 0;
+	font: bold 9pt Arial, sans-serif;
+ }
+ </style>
+
+</head> 
+
+<body> 
+ 
+<div id="div_background"> 
+ 
+<div id="div_masthead"> 
+ 
+<img src="http://daystarvisions.com/Pix/Site/DayStar_logo-brown_bgrnd-sz300x40.jpg" height="40" width="300" alt="logo" class="logo" /> 
+ 
+<div id="div_nav"> 
+<ul> 
+<li><a id="li_nav_main" href="http://daystarvisions.com/index.html">Main</a></li> 
+<li><a id="li_nav_pix" href="http://daystarvisions.com/PixMain.html">Pictures</a></li> 
+<li><a id="li_nav_text" href="http://daystarvisions.com/TextMain.html">Text</a></li> 
+<li><a id="li_nav_art" href="http://daystarvisions.com/ArtMain.html">Art</a></li> 
+</ul> 
+</div> <!--div_nav--> 
+ 
+</div> <!--div_masthead--> 
+ 
+<div id="div_content"> 
+ 
+<div id="div_title_bar"> 
+ 
+<h1>Digital Editing 101</h1> 
+<h1 class="Small">Following an Art Photograph from Capture to Print-Readiness</h1> 
+ 
+<p class="copyright">Version 1.3, &copy; 2006 by Dale Cotton, all rights reserved.</p> 
+ 
+</div> <!--div_title_bar--> 
+
+<p class="MessageBox"><b>Intro</b>: I've received some requests lately for more introductory instruction on digital editing. In this tutorial I use RawShooter Premium and Photoshop but the actions should be easily reproducible using a variety of raw conversion and image edit products. SilkyPix, Adobe Camera Raw, Paintshop Pro, and Adobe Elements come to mind. <b>Update 2009</b>: And now, of course, Lightroom. Again: the RawShooter steps below are easy to reproduce in Lightroom, ACR, Capture One, etc.<br><br>
+
+This first tutorial will cover fundamental concepts applicable to the majority of images.</p>
+
+<h2>Capture</h2>
+
+<p>I took the picture romantically titled 06-2569 with my Pentax DS on a tripod along the Lake Ontario waterfront near where I live at dawn in mid-October 2006. This is a site I've worked many times and probably wouldn't have re-visited, except that I wanted to introduce it to a friend. Exposure was 400 ISO, f/8, 1/50th sec. As you can see from the small amount of red (blown-highlights) warning, the <a href="http://daystarvisions.com/Docs/Tuts/DCExp/pg1.html">exposure</a> was pretty accurate in an expose-to-right kind of a way.</p>
+
+<p class="MessageBox">One interesting thing about this image is that its dynamic range is less than that of the camera. Notice that the histogram does not reach all the way to the left edge. Because the exposure pushes the histogram all the way to the right edge of the histogram, we are avoiding the noise and the lack of tonal gradations that live on the left/dark side of the Force.</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="RSP1As_shot.jpg" width="600" height="446" alt="No larger version" /> 
+ 
+<p>Fig. 1: 06-2569 as shot then opened in RawShooter</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<h2>Raw Conversion</h2>
+
+<p>Opening the pic in RawShooter, first I cropped the frame slightly to change the aspect ratio to 7:10 and to emphasize the composition that I see as the small acolyte tree on the left edge bowing in respect to the large Old Master tree on the right edge. ;) (Cropping and composition are of course personal decisions that no two of us will ever fully agree on.)</p>
+
+<p>I normally leave white balance at auto, which proved a mistake for this shoot, as you can see from the extreme colour temp correction I had to introduce and which still did not entirely neutralize the image.</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="RSP2Adj.jpg" width="600" height="446" alt="No larger version" /> 
+ 
+<p>Fig. 2: RawShooter adjustments</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>Fig 2 is the final set of raw adjustments for this pic. A small reduction in exposure eliminated nearly all the blown highlights. In the curve tool I set the black point and the mid point then added a curve to further open the dark areas without lightening the sky. We can see that another challenge of this shot will be to deal with the darkness of the land and trees while keeping the sky from going too bright.</p>
+
+<p>If there was significant noise I would deal with that now, otherwise time to convert and send to Photoshop as a 16-bit TIFF. (If you want to follow along, download <a href="06-2569TIFFsz2096x1467.jpg">this file</a>. It's a 75% downsample of the 16-bit TIFF converted to a 524 KB JPEG.)</p>
+
+<p class="MessageBox">There are various philosophies regarding how much editing to do in the raw converter and how much to do in the image editor. The raw converter has direct access to the raw data, so my approach is to spend the time to get colours and contrast as close as possible to my final goal in the raw converter. The more extreme the modification, the less distortion will be introduced in the raw converter before TIFF generation than after.</p>
+
+<p class="MessageBox"><b>Why 16-bit?</b> In 8-bit image formats, such as JPEG, each colour number is specified as being in the range from 0 to 255. If you apply something like a curve to such a pixel the curve might say "darken the colour by 43.41%. If the original colour happens to be, say, 133, then the new colour will be 133 x 43.41 = 57.7353. But only whole numbers are allowed so the new colour will be rounded to 58. <br><br>In a series of such operations the rounding errors can accumulate, resulting in what is called posterization or banding. This looks like streaks of colour instead of smooth transitions and is often seen in sky. Banding is simply the most obvious manifestation of the problem; accumulated rounding errors affect everything.<br><br>16-bit formats store each colour as a number from 0 to 65535, so rounding errors are 256 times smaller and that much more likely not to have a visible effect.</p>
+ 
+<div id="div_footer_small">
+<ul>
+  <li><a href="index.html">&lt;&ndash;Prev</a></li>
+  <li><a href="index.html">Pg 1: Capture &amp; Conversion</a></li>
+  <li><a href="pg2.html">Pg 2: Editing 1</a></li>
+  <li><a href="pg3.html">Pg 3: Editing 2</a></li>
+  <li><a href="pg4.html">Pg 4: Afterword</a></li>
+  <li><a href="pg2.html">Next&ndash;&gt;</a></li>
+</ul>
+</div> <!--div_footer_small--> 
+ 
+</div> <!--div_content--> 
+ 
+</div> <!--div_background--> 
+ 
+</body>
+
+</html>

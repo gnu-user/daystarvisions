@@ -1,0 +1,121 @@
+<HTML lang="en">
+
+<HEAD>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+ <meta name="description" content="Tutorial on Scanning and Post-Processing Colour Neg Film">
+
+ <meta name="keywords" content="Photography, Camera, tutorial, Colour negative film, scanning, digital editing">
+
+ <title>Daystar: Scanning & Post-Processing Colour Neg Film, Page 5</title>
+
+ <style type="text/css">
+ @import url("../../../DSDocs.css");
+ </style>
+
+</HEAD>
+
+<BODY BGCOLOR="black" TEXT="black" LINK="black" VLINK="black" ALINK="black">
+
+<TABLE ALIGN="left" width="100%" height="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><!-- Start Full Screen -->
+
+<TR ALIGN="left" VALIGN="top">
+
+	<TD>
+
+	<!-- Start Left Nav: -->
+	<table align="left" width="75" height="100%" border=0 cellspacing=0 cellpadding=0>
+	<tr>
+	<td VALIGN="top">
+	<img src="../../../Pix/Site/DaystarArtOnlyLNav.jpg" usemap="#navbar2" align="top" width="75" height="440" border="0" ismap></td>
+	</table><!-- End Left Nav -->
+
+	<TD width="100%" bgcolor="#D8C890"><!-- #E3D499 #E9DD97 #D8C890 Start Main Area col: -->
+
+	<!-- Start Info Contents table: -->
+	<table align="center" width="100%" cellspacing=15 cellpadding=0>
+
+	<tr><td>
+
+<!-----------------------------Content------------------------------>
+
+<h3>Scanning and Post-Processing Colour Neg Film</h3>
+
+<P CLASS=SmallNoteCentered>Version 1.1, page 5, <i>&copy;2003, 2004 by Dale Cotton, all rights reserved</i>
+
+<h2>Photoshop, 8-Bit Work</h2>
+
+<p>Everything that can easily be done in 16-bit has now been done. The important thing is that all the big colour adjustments have been done in 16-bit mode with it's relative freedom from cumulative error.
+
+<ul>
+<li>13. Convert to 8-bit.
+</ul>
+
+<ul>
+<li>14. Use File->File Info to record location, film type, copyright, etc.
+</ul>
+
+<ul>
+<li>15. Use File->Save As to save the 8-bit version as a new file.
+</ul>
+
+<p>Using Save As rather than Save leaves the original raw scan intact in case of editing disaster.
+
+<ul>
+<li>16. At 200% use the separate RGB channels to check for noise. Use Filter->Noise->Despeckle or <a href="http://www.neatimage.com/" target="_top">NeatImage</a>, if Despeckle doesn't cut it.
+</ul>
+
+<p class=Notebox><b>Noise:</b> The amount of noise in an image has to do with the ISO of the film used together with the thinness of the negative. In general the clearer (oranger) areas of the negative will show more noise in the scan file because the dye clouds are fewer and farther between.
+
+<p class=Notebox><b>Noise removal</b>Using Despeckle in one or two individual channels is less destructive than applying it globally. I find the Median and Dust & Scratches filters too destructive. If the noise problem is confined to the sky or water or other fairly edgeless area, I create a selection for that area then use a mild Gaussian blur. If the noise is serious enough, I'll switch to NeatImage. In NeatImage I work on a copy of the image saved from Photoshop, then after NeatImage is done I switch back to Photoshop, open the copy, then drag it on to the original image as a new layer.
+
+<ul>
+<li>17. Selective colour adjustment.
+</ul>
+
+<p>Now that we're in 8-bit mode we can use Photoshop's selection tools, including Select Color Range, to define any region or regions that share a colour deficiency. Once you've made your selection, use Curves or Hue/Sat. to correct the problem. In this image the only problems that still bothered me were the sunlit band of field behind the birch trees to the right and the orange leaves directly behind and to the left of the birch trees. I used Select Color Range to grab those areas, then used a combination of colour channel Curves and Hue/Sat. to turn the sunlit field more yellow and the orange leaves more orange. This is a fall scene and Reala was trying to rob me of the warm colours I'd impatiently waited months to capture. ;)
+
+<p>(For more on selective colour adjustment see <a href="../Colour/pg1.html">Maximizing Colour during Post-Scan Editing</a>. Notice that the first part of that tutorial describes a laborious procedure for combining two scans to recoop the dynamic range of the original frame. You can skip all that in most cases thanks to the VueScan's long exposure pass.)
+
+<p style="text-align:center"><IMG SRC="Fig11new.jpg" ALT="Fig 11" width=600 height=412 BORDER=2>
+<p style="text-align:center">Fig 11. After selective colour adjustment
+
+<p class=Notebox><b>Note:</b> Selections destined for colour and esp. for brightness adjustment often need to be feathered to let them blend in with their neighbours. But no amount of feathering will rescue too strong a change in brightness to a selected area. Also: I find I often have to select the sky to separately remove casts in it and/or in the non-sky portions of the image.
+
+<p>...And from here on it's smooth sailing! Sharpen, save, and print - you know the drill.
+
+<!------------------------------------------------------------------>
+
+	</tr></td>
+
+	<tr><td align="center">- 5 -</td></tr>
+
+	<tr>
+	<td align="center"><img src="../../../Pix/Site/PageNav5.jpg" usemap="#pager" width=140 height=20 border=0 ismap>
+	</td></tr>
+
+	</table><!-- End Info Contents table -->
+
+	</TD><!-- End Main Area col -->
+
+</TABLE><!-- End Full Screen -->
+
+<map name="navbar2">
+<area shape="rect" coords="12,103,58,123" href="../../../index.html">
+<area shape="rect" coords="2,132,67,154" href="../../../PixMain.html">
+<area shape="rect" coords="6,161,59,180" href="../../../TextMain.html">
+<area shape='rect' coords='6,181,59,210' href='../../../ArtMain.html'>
+</map>
+
+<map name="pager">
+<area shape="rect" coords="1,1,20,20" href="javascript:parent.history.back()">
+<area shape="rect" coords="20,0,39,20" href="pg1.html">
+<area shape="rect" coords="40,0,59,20" href="pg2.html">
+<area shape="rect" coords="60,0,79,20" href="pg3.html">
+<area shape="rect" coords="80,0,99,20" href="pg4.html">
+<area shape="rect" coords="100,0,119,20" href="pg5.html">
+<area shape="rect" coords="120,0,140,20" href="pg1.html">
+</map>
+
+</BODY>
+</HTML>

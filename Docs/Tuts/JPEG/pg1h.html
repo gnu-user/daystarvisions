@@ -1,0 +1,107 @@
+<HTML lang="en">
+
+<HEAD>
+
+ <title>Daystar: Converting to JPEG</title>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+ <meta name="description" content="Tutorial on converting an image to JPEG">
+
+ <meta name="keywords" content="Photography, Art, Graphics, Composition, Aesthetics, JPEG conversion">
+
+ <style type="text/css">
+ @import url("../../../DSDocs.css");
+ </style>
+
+</HEAD>
+
+<BODY BGCOLOR="black" TEXT="black" LINK="black" VLINK="black" ALINK="black">
+
+<TABLE ALIGN="left" width="100%" height="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><!-- Start Full Screen -->
+
+<TR ALIGN="left" VALIGN="top">
+
+	<TD>
+
+	<!-- Start Left Nav: -->
+	<table align="left" width="75" height="100%" border=0 cellspacing=0 cellpadding=0>
+	<tr>
+	<td VALIGN="top">
+	<img src="../../../Pix/Site/DaystarArtOnlyLNav.jpg" usemap="#navbar2" align="top" width="75" height="440" border="0" ismap></td>
+	</table><!-- End Left Nav -->
+
+	<TD width="100%" bgcolor="#D8C890"><!-- #E3D499 #E9DD97 #D8C890 Start Main Area col: -->
+
+	<!-- Start Info Contents table: -->
+	<table align="center" width="100%" cellspacing=15 cellpadding=0>
+
+	<tr><td>
+
+<!-----------------------------Content------------------------------>
+
+<h1>Converting to JPEG for Web Display</h1>
+
+<P CLASS=SmallNoteCentered>Version 1.2, <i>&copy;2003, 2007 by Dale Cotton, all rights reserved</i>
+
+<p style="text-align:center"><a href="http://daystarvisions.com/Pix/LakeOnt/pg12.html"><IMG SRC="149-17sz500x333.jpg" width=500 height=333 BORDER=8 alt="Click for larger version"></a>
+<p class=SmallNoteCentered>Fig 1. A problematic high-detail image, sharpened: USM 200/0.3/4
+<p>The following is my current Photoshop procedure for making JPEGs. Improvements and corrections very much solicited:
+
+<ul>
+<li>My understanding is that if you use a Mac and have your monitor gamut set to 1.8, you should temporarily change it to 2.2. Only a dwindling number of Mac users use 1.8, and your profile will automatically convert down to 1.8 for them.
+     <li>Open final edit of image to be copied.
+     <li>Image/Duplicate it and work with duplicate.
+     <li>If multiple layers, reduce to one; if alpha channels, delete them.
+     <li>Image/Image Size resample down to desired jpeg size (I use Bicubic Softer).
+</ul>
+
+<p style="text-align:center"><IMG SRC="DisplayStats.jpg" width=381 height=168 BORDER=4>
+<p class=SmallNoteCentered>Fig 2. Screen resolution stats for visitors to this site, June 2007.
+
+<p>Most people use 1024x768 screen res or larger with maybe 5% using  800x600. I normally size landscape orientation pictures for gallery/album display to 800 pixels width &ndash; this fills most of a 1024x768 display and all of a 800x600 display. Images meant for illustrations should usually be smaller &ndash; perhaps 400 or 500 pixels width. Portrait orientation images would need to be 700 pixels or shorter in height to accomodate 1024x768 screens.
+<ul>
+     <li>Convert to sRGB colour space for best colour preservation.
+</ul>
+<p>That's assuming your image is in AdobeRGB or larger colour space. sRGB is similar to the gamut of monitors. Most people use Windows, which doesn't support profiles in browsers, so the profile gets stripped away. AdobeRGB gamut can be severely clipped if stripped away, but sRGB gamut isn't.
+
+<p>Down-sampling larger images to the smaller size needed for the web leaves them soft:
+<ul>
+     <li>Apply USM as in next three steps:
+     <li>Create a duplicate layer.
+     <li>USM Amount = 350, Radius = 0.2, Threshold = 4 is my starting point. Increase Amount if the image looks blurry, decrease if too much haloing (white outlines). If still blurry at Amount = 500, increase Radius to next tenth and/or decrease Threshold.
+</ul>
+
+<p>Although it's a nuisance I perform these adjustments with my monitor set to 1024x768 res, so I'm seeing what the typical user sees.
+
+<ul>
+     <li>If the USM leaves just a small amount of haloing, erase it with the history brush set to the history state just before sharpening.
+<li>Convert to JPEG at a medium compression level; I don't like to go below Photoshop's level 7. (I no longer bother using Photoshop's Save for Web but many do.)
+</ul>
+<p>My file-size targets are 150 KB for 800x600 album/gallery pix, and roughly 75 KB for illustrations. The more compression you apply the more your carefully achieved sharpening will be ravaged, so trade-offs always involve some angst.
+
+<p>If you want to add a simple border:
+<ul>
+     <li>Set the Photoshop background colour to whatever you want for the border.
+     <li>Open Image/Canvas Size..., set the width and height to some larger number of pixels.
+</ul>
+
+<!------------------------------------------------------------------>
+
+	</tr></td>
+
+	</table><!-- End Info Contents table -->
+
+	</TD><!-- End Main Area col -->
+
+</TABLE><!-- End Full Screen -->
+
+<map name="navbar2">
+<area shape="rect" coords="12,103,58,123" href="../../../index.html">
+<area shape="rect" coords="2,132,67,154" href="../../../PixMain.html">
+<area shape="rect" coords="6,161,59,180" href="../../../TextMain.html">
+<area shape='rect' coords='6,181,59,210' href='../../../ArtMain.html'>
+</map>
+
+</BODY>
+</HTML>

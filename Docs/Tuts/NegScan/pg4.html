@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<!-- XHTML template version 1 --> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" > 
+<head> 
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+ <meta name="description" content="Tutorial on Scanning and Post-Processing Colour Neg Film" />
+ <meta name="keywords" content="Photography, Camera, tutorial, Colour negative film, scanning, digital editing" />
+ <meta http-equiv="X-UA-Compatible" content="IE-edge" /> 
+ 
+ <title>Scanning & Post-Processing Colour Neg Film, pg 4 &ndash; Daystar</title> 
+ 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/reset.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/nav_top.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/main_text.css'/> 
+
+ <style type="text/css">
+  #div_footer li
+ {
+	padding: 7px 23px 0 0px;
+	margin-left: 25px;
+ } 
+ </style>
+ 
+</head> 
+ 
+<body> 
+ 
+<div id="div_background"> 
+ 
+<div id="div_masthead"> 
+ 
+<img src="http://daystarvisions.com/Pix/Site/DayStar_logo-brown_bgrnd-sz300x40.jpg" height="40" width="300" alt="logo" class="logo" /> 
+ 
+<div id="div_nav"> 
+<ul> 
+<li><a id="li_nav_main" href="http://daystarvisions.com/index.html">Main</a></li> 
+<li><a id="li_nav_pix" href="http://daystarvisions.com/PixMain.html">Pictures</a></li> 
+<li><a id="li_nav_text" href="http://daystarvisions.com/TextMain.html">Text</a></li> 
+<li><a id="li_nav_art" href="http://daystarvisions.com/ArtMain.html">Art</a></li> 
+</ul> 
+</div> <!--div_nav--> 
+ 
+</div> <!--div_masthead--> 
+ 
+<div id="div_content"> 
+ 
+<div id="div_title_bar"> 
+ 
+<h1>Scanning & Post-Processing Colour Neg Film</h1> 
+ 
+<p class="copyright">page 4, version 1.2, &copy;2003, 2004 by Dale Cotton, all rights reserved.</p>
+ 
+</div> <!--div_title_bar--> 
+
+<h2>Photoshop, 8-Bit Work</h2>
+
+<p class="MessageBox"><b>Update, 2010</b>: When I wrote this many of the tools in Photoshop ver. 6 did not work in 16-bit mode. Now that later versions of Photoshop do support 16-bit it is no longer necessary or desirable to drop down to 8-bit mode. Simply ignore that step.</p> 
+
+<p>Everything that can easily be done in 16-bit has now been done. The important thing is that all the big colour adjustments have been done in 16-bit mode with it's relative freedom from cumulative error.</p>
+
+<ul>
+<li>13. Convert to 8-bit.</li>
+</ul>
+
+<ul>
+<li>14. Use File->File Info to record location, film type, copyright, etc.</li>
+</ul>
+
+<ul>
+<li>15. Use File->Save As to save the 8-bit version as a new file.</li>
+</ul>
+
+<p>Using Save As rather than Save leaves the original raw scan intact in case of editing disaster.</p>
+
+<ul>
+<li>16. At 200% use the separate RGB channels to check for noise. Use Filter->Noise->Despeckle or <a href="http://www.neatimage.com/" target="_top">NeatImage</a>, if Despeckle doesn't cut it.</li>
+</ul>
+
+<p class="MessageBox"><b>Noise</b>: The amount of noise in an image has to do with the ISO of the film used together with the thinness of the negative. In general the clearer (oranger) areas of the negative will show more noise in the scan file because the dye clouds are fewer and farther between.</p>
+
+<p class="MessageBox"><b>Noise removal</b>: Using Despeckle in one or two individual channels is less destructive than applying it globally. I find the Median and Dust & Scratches filters too destructive. If the noise problem is confined to the sky or water or other fairly edgeless area, I create a selection for that area then use a mild Gaussian blur. If the noise is serious enough, I'll switch to NeatImage. In NeatImage I work on a copy of the image saved from Photoshop, then after NeatImage is done I switch back to Photoshop, open the copy, then drag it on to the original image as a new layer.</p>
+
+<ul>
+<li>17. Selective colour adjustment.</li>
+</ul>
+
+<p>Now that we're in 8-bit mode we can use Photoshop's selection tools, including Select Color Range, to define any region or regions that share a colour deficiency. Once you've made your selection, use Curves or Hue/Sat. to correct the problem. In this image the only problems that still bothered me were the sunlit band of field behind the birch trees to the right and the orange leaves directly behind and to the left of the birch trees. I used Select Color Range to grab those areas, then used a combination of colour channel Curves and Hue/Sat. to turn the sunlit field more yellow and the orange leaves more orange. This is a fall scene and Reala was trying to rob me of the warm colours I'd impatiently waited months to capture. ;)</p>
+
+<p>(For more on selective colour adjustment see <a href="../Colour/pg1.html">Maximizing Colour during Post-Scan Editing</a>. Notice that the first part of that tutorial describes a laborious procedure for combining two scans to recoop the dynamic range of the original frame. You can skip all that in most cases thanks to the VueScan's long exposure pass.)</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="Fig11new.jpg" width="600" height="412" alt="No larger version" /> 
+ 
+<p>Fig 11. After selective colour adjustment</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p class="MessageBox"><b>Note:</b> Selections destined for colour and esp. for brightness adjustment often need to be feathered to let them blend in with their neighbours. But no amount of feathering will rescue too strong a change in brightness to a selected area. Also: I find I often have to select the sky to separately remove casts in it and/or in the non-sky portions of the image.</p>
+
+<p>...And from here on it's smooth sailing! Sharpen, save, and print - you know the drill.</p>
+
+<div id="div_footer">
+<ul>
+  <li><a href="pg3.html">&lt;&ndash;Prev</a></li>
+  <li><a href="pg1.html">Page 1</a></li>
+  <li><a href="pg2.html">Page 2</a></li>
+  <li><a href="pg3.html">Page 3</a></li>
+  <li><a href="pg4.html">Page 4</a></li>
+   <li><a href="pg1.html">Next&ndash;&gt;</a></li>
+</ul>
+</div> <!--div_footer--> 
+ 
+</div> <!--div_content--> 
+ 
+</div> <!--div_background--> 
+ 
+</body>
+
+</html>

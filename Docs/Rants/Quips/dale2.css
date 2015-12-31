@@ -1,0 +1,623 @@
+body { 
+	background-color:#000000; /*D8C890,F2ECD2,FAEFD3,F9F5EC,F1E7BE*/ 
+	/*line-height: 2.88889;*/
+	margin:0;
+	padding: 0;
+}
+#background {
+	background-color:#E7DFBC; 
+	margin: -10px 5px 5px 5px; 
+	padding: 0px;
+}
+#nav {
+	background-color:#000000; 
+	margin:0px 0px 0px 10px;
+	padding:0;
+}
+#nav ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+#nav li {
+	display:inline;
+	padding:0 10px 0 0;
+	margin:0;
+	font-family:Impact, Charcoal, sans-serif;
+	color:#ffffff;
+}
+#nav a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #B7A5DF;
+}
+#nav a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+#nav a:hover, a:active { 
+	text-decoration: underline; 
+}
+#nav_main {
+	color:#6B869C;
+}
+#nav_pix{
+	color:#84826B;
+}
+#nav_text{
+	color:#BDB684;
+}
+#nav_art
+{
+	color:#CEC7AD;
+}
+#content {
+	max-width:750px; 
+	background-color:#E7DFBC; /*D8C890,F2ECD2,FAEFD3,F9F5EC,F1E7BE*/ 
+	margin: 10px 10px 10px 10px; 
+	padding: 10px;
+}
+P {
+	/*font: normal 10pt Trebuchet MS, Arial, sans-serif;*/
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+	/*background-color: white;*/
+   	text-align: justify; 
+	margin-left:5px; 
+	margin-right:2px;
+   	color: black; 
+}
+H2 { 
+	font: 16pt Impact, Arial; 
+	margin-left:0px;
+	margin-right:2px;
+	margin-top:20px;
+        margin-bottom:-5px;
+   	padding-left: 3px;
+        /*border-top: medium double black;*/
+   	/*border-left: medium double black;*/
+	text-align: left;
+	color: #49473A; 
+        background-color:#D6C99E
+}
+P.SmallishNoteNavy { 
+	font: normal 9pt Comic Sans, Arial, sans-serif;
+	text-align: justify; 
+	margin-left:5px; 
+	margin-right:4px;
+	color: navy; 
+}
+P.SmallNoteCentered { 
+	font: normal 9pt Comic Sans, Arial, sans-serif;
+	text-align: center; 
+	margin-left:5px; 
+	margin-right:4px;
+	margin-top:-2px;
+        color: black; 
+}
+P.LargeNoteCentered { 
+	font: normal 12pt Comic Sans, Arial, sans-serif;
+	text-align: center; 
+	margin-left:5px; 
+	margin-right:4px;
+	margin-top:-2px;
+	margin-bottom:6px;
+        color: black; 
+}
+P.Noteboxcentered {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: center;
+	border: solid thin; 
+	margin-left:7px; 
+	margin-right:5px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding:1px;
+   	color: blue; 
+}
+P.NoteboxCenteredSmall {
+	font: normal 9pt Comic Sans, Arial, sans-serif;
+   	text-align: center;
+	border: solid thin; 
+	margin-left:7px; 
+	margin-right:5px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding:1px;
+   	color: #FAF5AD; 
+}
+P.NoteboxcenteredBlack {
+	font: normal 12pt Comic Sans, Arial, sans-serif;
+   	text-align: center;
+	border: solid thin; 
+	margin-left:7px; 
+	margin-right:5px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding:1px;
+   	color: black; 
+}
+
+P.SimpleYellowBox {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: solid thin; 
+	margin-left:7px; 
+	margin-right:5px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding:1px;
+   	color: black; 
+	background: #FAF5AD;
+}
+P.SimpleYellowBoxSmall {
+	font: normal 8pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: solid thin; 
+	margin-left:7px; 
+	margin-right:5px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding:1px;
+   	color: black; 
+	background: #FAF5AD;
+}
+
+P.SimpleBlueBox {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: thin solid black; 
+	margin-left:5px; 
+	margin-right:5px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding:5px;
+   	color: black; 
+	background: #83B1CB;
+}
+P.LightBlueBox {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: outset; 
+	margin-left:12px; 
+	margin-right:12px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding:5px;
+   	color: black; 
+	background: #cde0fa; /*#c1dae9;*/
+}
+P.LightBlueBoxWide {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: outset; 
+	margin-left:1px; 
+	margin-right:1px;
+	margin-top:5px;
+	margin-bottom:2px;
+	padding:4px;
+   	color: black; 
+	background: #c1dae9;
+}
+P.SimpleIvoryBox {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: outset;
+	margin-left:12px; 
+	margin-right:12px;
+	margin-top:5px;
+	margin-bottom:3px;
+	padding:5px;
+   	color: black; 
+	background: #f2eee3;
+}
+P.IvoryBoxCentered {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: center; 
+	border: outset;
+	margin-left:12px; 
+	margin-right:12px;
+	margin-top:5px;
+	margin-bottom:3px;
+	padding:5px;
+   	color: black; 
+	background: #f2eee3;
+}
+P.SimpleBrownBox {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: solid thin; 
+	margin-left:7px; 
+	margin-right:5px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding:1px;
+   	color: black; 
+	background: #BDB497;
+}
+P.SimpleBrownBoxSmall {
+	font: normal 8pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: solid thin; 
+	margin-left:7px; 
+	margin-right:5px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding:3px;
+   	color: black; 
+	background: #BDB497;
+}
+P.SimpleIvoryBox {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: outset;
+	margin-left:12px; 
+	margin-right:12px;
+	margin-top:5px;
+	margin-bottom:3px;
+	padding:5px;
+   	color: black; 
+	background: #f2eee3;
+}
+P.SimpleWhiteBox {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: outset;
+	margin-left:12px; 
+	margin-right:12px;
+	margin-top:5px;
+	margin-bottom:7px;
+	padding:5px;
+   	color: black; 
+	background: #FFFFFF;
+}
+P.SimpleBoxSmallCentred {
+	font: normal 8pt Comic Sans, Arial, sans-serif;
+   	text-align: center; 
+	border: solid thin; 
+	margin-left:7px; 
+	margin-right:5px;
+	margin-top:1px;
+	margin-bottom:1px;
+	padding:1px;
+   	color: black; 
+}
+P.LineIndent {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify;
+	border-left: solid thin; 
+	margin-left:7px; 
+	margin-right:5px;
+	padding:1px;
+   	color: #49473A; 
+}
+UL {
+ 	line-height: 1.5;
+}
+
+LI { 
+	/**/
+        list-style: circle outside;
+	/*font: normal 10pt Comic Sans, Arial, sans-serif;*/
+	font: normal 12pt "Comic Sans", Arial, sans-serif;
+   	text-align: justify; 
+	margin-top:0;
+	margin-left:5px; 
+	margin-right:2px;
+	margin-bottom:1px;
+   	color: #000000; 
+}
+LI.Spaced { 
+	/*list-style: circle outside;*/
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	margin-top:8px;
+	margin-left:5px; 
+	margin-right:2px;
+	margin-bottom:8px;
+   	color: #000000; 
+}
+LI.Small { 
+	font: normal 9pt Comic Sans, Arial, sans-serif;
+   	text-align: left; 
+	margin-top:0;
+	margin-left:5px; 
+	margin-right:2px;
+	margin-bottom:1px;
+   	color: #000000; 
+}
+LI.SmallNavy { 
+	font: normal 9pt Comic Sans, Arial, sans-serif;
+   	text-align: left; 
+	margin-top:0;
+	margin-left:5px; 
+	margin-right:2px;
+	margin-bottom:1px;
+   	color: navy; 
+}
+LI.SmallYellow { 
+	font: normal 9pt Comic Sans, Arial, sans-serif;
+   	text-align: left; 
+	margin-top:0;
+	margin-left:0; 
+	margin-right:0;
+	margin-bottom:0;
+   	color: #FDF6D5; 
+}LI.Left  { 
+	text-align: left;
+}
+LI.bold { 
+	font: bold 10pt Comic Sans, Arial, sans-serif;
+	text-align: left;
+}
+SELECT { 
+	font: normal 9pt Comic Sans, Arial, sans-serif;
+	color: black; 
+}
+H1 { 
+	font: bold 24pt Impact, Arial; 
+	margin-left:2px;
+	margin-top:0px;
+        margin-bottom:0px;
+	text-align: center;
+	color: black; 
+}
+H1.Small {
+	font: bold 18pt Impact, Arial; 
+	margin-left:0;
+}
+/*H2 { 
+	font: 16pt Impact, Arial; 
+	margin-left:0px;
+	margin-right:2px;
+	margin-top:20px;
+        margin-bottom:-5px;
+   	padding-left: 3px;
+        border-top: medium double black;
+   	border-left: medium double black;
+	text-align: left;
+	color: #49473A; 
+}*/
+H2.Spacer { 
+	font: 16pt Impact, Arial; 
+	margin-left:0px;
+	margin-right:2px;
+	margin-top:40px;
+        margin-bottom:-5px;
+   	padding-left: 3px;
+        border-top: medium double black;
+   	border-left: medium double black;
+	text-align: left;
+	color: #49473A; 
+}
+H2.Border { 
+	background: transparent; 
+	border-top: medium double black; 
+   	border-left: medium double black;
+}
+H3 { 
+	font: bold 14pt Impact, Arial; 
+	margin-left:4px;
+	margin-top:5px;
+	text-align: center;
+	color: #49473A; 
+}
+H3.Left { 
+	font: bold 14pt Impact, Arial; 
+	margin-left:2px;
+	margin-top:3px;
+	text-align: Left;
+	color: #49473A; 
+}
+H4 { 
+	font: bold 11pt Impact, Arial; 
+	margin-left:4px;
+	margin-top:2px;
+	text-align: center;
+	color: #49473A; 
+}
+TD.Right {
+	font: normal 9pt Comic Sans, Arial, sans-serif;
+   	color: black; 
+	text-align: Right;
+   	padding-right: 5px;
+}
+TABLE.Left {
+	margin-left:0; 
+}
+TH {
+        padding: 0 0 0 0;
+	font: bold 10pt Comic Sans, Arial, sans-serif;
+   	color: black; 
+}
+TD {
+        padding: 0 0 0 0;
+	font: normal 9pt Comic Sans, Arial, sans-serif;
+   	color: black; 
+}
+TABLE.Pad {
+	margin-left:0; 
+}
+TH {
+        padding: 0 0 0 0;
+	font: bold 10pt Comic Sans, Arial, sans-serif;
+   	color: black; 
+}
+TD {
+        padding: 1px 1px 1px 1px;
+	font: normal 9pt Comic Sans, Arial, sans-serif;
+   	color: black; 
+}
+TD.Cream {
+        padding: 1px 1px 1px 1px;
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	color: #F6F1CF; 
+}
+TD.CreamCentred {
+   	text-align: center; 
+        padding: 1px 1px 1px 1px;
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	color: #F6F1CF; 
+}
+TD.LightBlue {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: outset; 
+	margin-left:1px; 
+	margin-right:1px;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding:4px;
+   	color: black; 
+	background: #c1dae9;
+}
+TD.LightBlueSmall {
+	font: normal 7pt Comic Sans, Arial, sans-serif;
+   	text-align: center; 
+	border: outset; 
+	margin-left:1px; 
+	margin-right:1px;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding:4px;
+   	color: black; 
+	background: #c1dae9;
+}
+SPAN.CentredLine { text-align: center }
+P.Right {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: right; 
+	margin-left:5px; 
+	margin-right:2px;
+   	color: black; 
+}
+P.Ivory
+ {
+	font: normal 9pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	margin-left:5px; 
+	margin-right:2px;
+   	color: #FFFFF0; 
+}
+P.ListHead {
+	font: bold 9pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	margin-left:5px; 
+	margin-right:2px;
+   	color: black; 
+}
+P.SmallYellow {
+	font: normal 9pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	margin-left:5px; 
+	margin-right:2px;
+   	color: #FDF6D5; 
+}
+P.Purple {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	margin-left:5px; 
+	margin-right:2px;
+   	color: purple; 
+}
+P.Navy {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	margin-left:5px; 
+	margin-right:2px;
+   	color: navy; 
+}
+P.BrownBold{
+	font: bold 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	margin-left:5px; 
+	margin-right:2px;
+   	color: #3D352F; 
+}P.Centered {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: center; 
+	margin-left:5px; 
+	margin-right:2px;
+   	color: black; 
+}
+P.SmallNote { 
+	font: normal 8pt Comic Sans, Arial, sans-serif;
+	text-align: justify; 
+	margin-left:5px; 
+	margin-right:4px;
+	color: black; 
+}
+P.SmallishNote { 
+	font: normal 9pt Comic Sans, Arial, sans-serif;
+	text-align: justify; 
+	margin-left:5px; 
+	margin-right:4px;
+	color: black; 
+}
+P.Quotebox {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify;
+	border: solid thin; 
+	margin-left:7px; 
+	margin-right:5px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding:3px;
+   	color: navy; 
+}
+P.Notebox {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify;
+	border: solid thin; 
+	margin-left:7px; 
+	margin-right:5px;
+	margin-top:7px;
+	margin-bottom:5px;
+	padding:3px;
+   	color: #004000; 
+}
+P.Noteboxnarrow {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify;
+	border: solid thin; 
+	margin-left:10px; 
+	margin-right:8px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding:1px;
+   	color: #004000; 
+}
+P.Warningbox {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify;
+	border: solid thin; 
+	margin-left:7px; 
+	margin-right:5px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding:1px;
+   	color: red; 
+}
+P.ThesisBoxPurple {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: thick inset; 
+	margin-left:7px; 
+	margin-right:5px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding:1px;
+   	color: white; 
+	background: purple;
+}
+P.YellowBox {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify; 
+	border: thick inset; 
+	margin-left:7px; 
+	margin-right:5px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding:1px;
+   	color: navy; 
+	background: yellow;
+}

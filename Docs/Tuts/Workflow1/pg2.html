@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<!-- XHTML template version 1 --> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" > 
+<head> 
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+ <meta http-equiv="X-UA-Compatible" content="IE-edge" /> 
+ <meta name="description" content="Following an Art Photograph from Capture to Print" />
+ <meta name="keywords" content=""Photography, Art, Aesthetics, Workflow, Photo Editing, Photoshop, Tutorial" />
+
+ <title>Digital Editing 101, pg 2 &nbsp; Daystar</title> 
+ 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/reset.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/nav_top.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/main_text.css'/> 
+ 
+ <style type="text/css">
+ #div_footer_small li
+ {
+        float: left;
+	padding: 8px 17px 0 0;
+	margin: 0;
+	font: bold 9pt Arial, sans-serif;
+ }
+ </style>
+
+</head> 
+ 
+<body> 
+ 
+<div id="div_background"> 
+ 
+<div id="div_masthead"> 
+ 
+<img src="http://daystarvisions.com/Pix/Site/DayStar_logo-brown_bgrnd-sz300x40.jpg" height="40" width="300" alt="logo" class="logo" /> 
+ 
+<div id="div_nav"> 
+<ul> 
+<li><a id="li_nav_main" href="http://daystarvisions.com/index.html">Main</a></li> 
+<li><a id="li_nav_pix" href="http://daystarvisions.com/PixMain.html">Pictures</a></li> 
+<li><a id="li_nav_text" href="http://daystarvisions.com/TextMain.html">Text</a></li> 
+<li><a id="li_nav_art" href="http://daystarvisions.com/ArtMain.html">Art</a></li> 
+</ul> 
+</div> <!--div_nav--> 
+ 
+</div> <!--div_masthead--> 
+ 
+<div id="div_content"> 
+ 
+<div id="div_title_bar"> 
+ 
+<h1>Digital Editing 101</h1> 
+<h1 class="Small">Following an Art Photograph from Capture to Print-Readiness</h1> 
+ 
+<p class="copyright">Page 2, version 1.3, &copy; 2006 by Dale Cotton, all rights reserved.</p> 
+ 
+</div> <!--div_title_bar--> 
+
+<h2>Editing</h2>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="PS1FullPic1.jpg" width="600" height="437" alt="No larger version" /> 
+ 
+<p>Fig. 3: Opened in Photoshop</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>Now we're in Photoshop where we can see the image at a larger size and get a better read on what's going on. A further curve will open the dark foreground without compromising the sky:</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="PS2Curve1.jpg" width="366" height="371" alt="No larger version" /> 
+ 
+<p>Fig. 4: Initial contrast curve</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>A second curve applied just to the blue channel, neutralizes the effect of the blue cast on the foreground vegetation:</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="PS3Curve2.jpg" width="366" height="371" alt="No larger version" /> 
+ 
+<p>Fig. 5: Blue cast curve</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p class="MessageBox">Creating <b>curves</b> is one of the most valuable skills you can acquire. Your computer needs to be fast enough that you can leave preview on and watch any changes you make in real time. Here is where you get to be a master chef instead of a rote recipe follower. The master chef seasons to taste and the master image editor creates curves that bring an image alive. There are three basic rules: 1) introduce no abrupt changes (kinks) in your curve; 2) never raise a point at the left side of the curve higher than any point to its right; and 3) the more radical the curve the more important it is to work in 16-bit mode. For more information, see <a href="http://daystarvisions.com/Docs/Tuts/Curves102/pg1.html">Photoshop Curves 102</a>.</p>
+
+<p>I now inspect the foreground at actual pixels because I'm concerned whether there is enough contrast in the shoreline undergrowth. Looks OK, but if not I would have used <a href="http://daystarvisions.com/Docs/Tuts/3xLCE/pg1.html">LCE</a> or a further curve tweaked at the shadow end to increase the contrast.</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="PS4CloseUp1.jpg" width="600" height="437" alt="No larger version" /> 
+ 
+<p>Fig. 6: Foreground inspection at actual pixels</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>That about does it for anything I can do as a global edit. Past time to do a Save As... into the PSD file format.</p>
+
+<p>I'm already pretty happy with the sky and water, but suspect there's a lot more I can do with the foreground. <!--Using PS/CS I still can't do a Select->Color Range... in 16-bit but am not quite ready to dumb down to 8-bits, so I use the hoary old trick of duplicating the image, changing mode to 8-bit, making the selection, saving it with a name (sky), switching back to the 16-bit version, and using Select->Load Selection... then inverting.--> So I use Select->Color Range... to select the sky, then invert, leaving me with just the foreground selected.</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="PS5SelectCol.jpg" width="351" height="330" alt="No larger version" /> 
+ 
+<p>Fig. 7: Select Color Range dialogue</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p class="MessageBox"><b>Tip</b>: save yourself some grief &ndash; avoid trying to change contrast of sky vs non-sky in a picture with tree branches like this one has using a non-feathered selection such as this.</p>
+
+<p class="MessageBox">Note that in Photoshop CS and later I could use the Replace Color... dialogue to combine the Select All with the Hue/Sat. Either gets you to exactly the same place.</p>
+ 
+<div id="div_footer_small">
+<ul>
+  <li><a href="index.html">&lt;&ndash;Prev</a></li>
+  <li><a href="index.html">Pg 1: Capture &amp; Conversion</a></li>
+  <li><a href="pg2.html">Pg 2: Editing 1</a></li>
+  <li><a href="pg3.html">Pg 3: Editing 2</a></li>
+  <li><a href="pg4.html">Pg 4: Afterword</a></li>
+  <li><a href="pg3.html">Next&ndash;&gt;</a></li>
+</ul>
+</div> <!--div_footer_small--> 
+ 
+</div> <!--div_content--> 
+ 
+</div> <!--div_background--> 
+ 
+</body>
+
+</html>

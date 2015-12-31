@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<!-- XHTML template version 1 --> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" > 
+<head> 
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+ <meta name="Keywords" content="Photography, Art, Composition, Aesthetics" />
+ <meta name="Description" content="Dale Cotton's site devoted to the visual arts and especially to the art and craft of existing light photography." />
+ <meta http-equiv="X-UA-Compatible" content="IE-edge" /> 
+ 
+ <title>Post-Processing tips for sub-optimal RAW images, pg 1 &nbsp; Daystar</title> 
+ 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/reset.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/nav_top.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/main_text.css'/> 
+
+ <style type="text/css">
+  #div_footer li
+  {
+	padding: 7px 25px 0 0;
+	margin-left: 65px;
+  } 
+ </style>
+ 
+</head> 
+ 
+<body> 
+ 
+<div id="div_background_wide"> 
+ 
+<div id="div_masthead"> 
+ 
+<img src="http://daystarvisions.com/Pix/Site/DayStar_logo-brown_bgrnd-sz300x40.jpg" height="40" width="300" alt="logo" class="logo" /> 
+ 
+<div id="div_nav"> 
+<ul> 
+<li><a id="li_nav_main" href="http://daystarvisions.com/index.html">Main</a></li> 
+<li><a id="li_nav_pix" href="http://daystarvisions.com/PixMain.html">Pictures</a></li> 
+<li><a id="li_nav_text" href="http://daystarvisions.com/TextMain.html">Text</a></li> 
+<li><a id="li_nav_art" href="http://daystarvisions.com/ArtMain.html">Art</a></li> 
+</ul> 
+</div> <!--div_nav--> 
+ 
+</div> <!--div_masthead--> 
+ 
+<div id="div_content_wide"> 
+ 
+<div id="div_title_bar"> 
+ 
+<h1>Post-Processing tips for sub-optimal RAW images</h1> 
+ 
+<p class="copyright">Page 1, version 1.3, &copy; 2008, 2009 by Dale Cotton, all rights reserved.</p>
+ 
+</div> <!--div_title_bar--> 
+
+<p>Shooting RAW instead of JPEG is a critical ingredient to image quality, but it's not the magic bullet that guarantees perfection in every shot. When shooting at higher ISOs, shadow noise becomes an issue. Even when using the best lenses corner softness and other optical defects will need correction. Even with perfect focus there will be some softness to overcome.</p>
+
+<p>To learn some of the most useful techniques to address these issues, let's work with the following high ISO test shot I took with a typical mid-range dSLR, the Pentax K20D:</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="K20D-Appleview-1600ISO-45mm-1429_sz800x532.jpg" width="800" height="532" alt="No larger version" /> 
+ 
+<p>Fig. 1: 1600 ISO test shot (15.6 mb <a href="K20D1429.PEF">PEF</a>)</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>To follow along you may want to click on the link to the original PEF/RAW file above to download and work with the same image I'm using to write this. I happen to do RAW conversion in Lightroom, but most of the better converters offer the same capabilities we'll be using here &ndash; and of course Adobe Camera Raw is just a different packaging of the same image processing tools.</p>
+
+<p>No need to cover the basics of using a raw converter. I adjusted the white balance and tint to neutralize the image, then set the exposure and black point to put the information in the file to maximum use. I also turned off all sharpening and noise reduction. You can see the resulting Lightroom settings here:</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="LR_settings_sz494x903.jpg" width="494" height="903" alt="No larger version" /> 
+ 
+<p>Fig. 2: Lightroom Develop panel settings</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>(The Hue, Saturation, and Luminance settings you see part of are a set of corrections I've come up with over time and which get automatically applied to every image. Also: the Noise Reduction Color setting should be 0, not 100.)</p>
+
+<h2>Noise reduction</h2>
+
+<p>Finally, I exported as a 16-bit TIFF format file, and opened that in Noise Ninja (NN). Lightroom's noise reduction is adequate for many images, but it can't fully remove even all the chroma noise in this 1600 ISO pic. (I happen to use Noise Ninja, but there are other products that other people swear by; you should be able to follow along in whatever product you use.) In NN we're going to do something a little tricky, but we start with the basics. First I tell NN to profile the noise in the image, then in the Noise Filter panel I change the settings to remove all chroma noise but no luminance noise, as you can see in part A of Fig. 3:</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="NN_settings_sz448x447.jpg" width="448" height="447" alt="No larger version" /> 
+ 
+<p>Fig. 3: Noise Ninja settings</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>(Note that I also have Filter very coarse noise on and Turbo mode and Sharpening off.) I apply, then save that as a 16-bit TIFF.</p>
+
+<p>Next, I change the NN settings to add aggressive luminance NR and some sharpening. This smudges fine detail like crazy, but all I'm looking for is that areas of the image that are smooth-surfaced &ndash; in this case the car bodies &ndash; are smooth and noise-free. I apply, then save this as yet another 16-bit TIFF with a different name.</p> 
+
+<p>Finally, in Photoshop I open both the TIFFs I created in Noise Ninja. I press V to switch to the move tool and Shift-drag the first, chroma-NR-only image onto the second, aggressive-NR image, which automatically turns it into a new layer, perfectly aligned over the first layer. Now I press E to switch to the Erase tool, set it to 100% with a sharp-edged brush, and erase just the areas I want to be smooth and free of noise:</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="PS1_sz674x512.jpg" width="674" height="512" alt="No larger version" /> 
+ 
+<p>Fig. 4: An area with problem noise</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<div class="div_pic_no_click"> 
+ 
+<img src="PS2_sz674x513.jpg" width="674" height="513" alt="No larger version" /> 
+ 
+<p>Fig. 5: Erasing in Photoshop (with background layer turned off to illustrate what's happening)</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>In this case the monochromatic noise in the rest of the image is mostly masked by and blends in with the textured areas, such as trees, bushes, and pavement. But if there are areas (perhaps snow shadows and pavement) that have a bit too much noise-graininess, I can set the Erase tool to something less than full opacity and (partially) erase these areas.</p>
+
+<p>Once that's done I can flatten to merge the two layers together:
+
+<div class="div_pic_no_click"> 
+ 
+<img src="PS3_sz674x513.jpg" width="674" height="513" alt="No larger version" /> 
+ 
+<p>Fig. 6: Noise reduction final results</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>(Noise Ninja has a nifty panel for using a brush to undo noise reduction. The reason I didn't use that for this image is because a much greater portion of the image does not need the aggressive NR. If the opposite had been the case, I could have used the undo brush tool.)</p>
+
+<h2>Dealing with CA and soft corners</h2>
+
+<p>If you followed along with the noise reduction process above, work with your cleaned version of the test image in Photoshop. Otherwise you may want to download this 7 mb Level 11 <a href="K20D-Appleview-1600ISO-45mm-1429_pre-USM_full_size.jpg">JPEG</a> of the same thing. Duplicate the background layer, then examine the whole frame at 100% mag.</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="Corner1_sz800x540.jpg" width="800" height="540" alt="No larger version" /> 
+ 
+<p>Fig. 7: Left corner problems</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>Notice the problems in both the upper left and upper right corners. They are soft and have a mix of magenta, indigo, and lime green CA in my version of the image (because I cleverly forgot to change the CA settings in Lightroom). We need to clean up these problems before going any further.</p> 
+
+<p>Make a rough selection around a problem corner, including all softness and CA down to about the rooftop on the left. Feather it at about 20 or 25. Open the Image->Adjust->Replace Color tool, set Fuzziness to about 50, Saturation to 0, zoom in to 300%, then click on an area of the indigo CA. Change to the + eyedropper then click on other areas with indigo CA until all indigo CA is toast. OK that then repeat for the lime green CA. (You can use the Hue/Sat./Lum. tool instead of Replace Color &ndash; Replace Color is just a little more specific.)</p>
+
+<p>Now apply some broad-brush USM &ndash; Radius = 1.0, Amount = 95 works for me for the left corner &ndash; so the selected area is as sharp as, but no sharper than, the rest of the picture. If necessary use the history brush at some opacity to undo areas that are too sharp.</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="Corner2_sz800x540.jpg" width="800" height="540" alt="No larger version" /> 
+ 
+<p>Fig. 8: Left corner after clean-up</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>Now repeat both CA removal and USM on the other upper corner.</p>
+ 
+<div id="div_footer">
+<ul>
+  <li><a href="pg1.html">&lt;&ndash;Prev</a></li>
+  <li><a href="pg1.html">Page 1: NR &amp; CA</a></li>
+  <li><a href="pg2.html">Page 2: Sharpening</a></li>
+  <li><a href="pg2.html">Next&ndash;&gt;</a></li>
+</ul>
+</div> <!--div_footer--> 
+ 
+</div> <!--div_content--> 
+ 
+</div> <!--div_background--> 
+ 
+</body>
+
+</html>

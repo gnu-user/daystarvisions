@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- XHTML template version 1 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <meta name="Keywords" content="Photography, Colour, Color, Colour correction, Colour casts" />
+ <meta name="Description" content="Tutorial on colour correction for colour casts" />
+ <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+ 
+ <title>Colour 102: Coping with colour casts &ndash; Daystar</title>
+ 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/reset.css'/>
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/nav_top.css'/>
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/main_text.css'/>
+ 
+<script type="text/javascript">
+ <!--
+  imageWB01= new Image()
+  imageWB01.src="Pix/Boardwalk-3500K-E-P1-ISO_200-20090705-1732-7050173.jpg"
+  imageWB02= new Image()
+  imageWB02.src="Pix/Boardwalk-4000K-E-P1-ISO_200-20090705-1732-7050173.jpg"
+  imageWB03= new Image()
+  imageWB03.src="Pix/Boardwalk-4500K-E-P1-ISO_200-20090705-1732-7050173.jpg"
+  imageWB04= new Image()
+  imageWB04.src="Pix/Boardwalk-4950K-as_shot-E-P1-ISO_200-20090705-1732-7050173.jpg"
+  imageWB05= new Image()
+  imageWB05.src="Pix/Boardwalk-5200K-E-P1-ISO_200-20090705-1732-7050173.jpg"
+  imageWB06= new Image()
+  imageWB06.src="Pix/Boardwalk-5500K-E-P1-ISO_200-20090705-1732-7050173.jpg"
+  imageWB07= new Image()
+  imageWB07.src="Pix/Boardwalk-6000K-E-P1-ISO_200-20090705-1732-7050173.jpg"
+  imageWB08= new Image()
+  imageWB08.src="Pix/Boardwalk-7000K-E-P1-ISO_200-20090705-1732-7050173.jpg"
+  imageWB09= new Image()
+  imageWB09.src="Pix/Boardwalk-8000K-E-P1-ISO_200-20090705-1732-7050173.jpg"
+
+  imageCC01= new Image()
+  imageCC01.src="Pix/PDI_Test_Image-bottom_crop-neutral-sz600x510.jpg"
+  imageCC02= new Image()
+  imageCC02.src="Pix/PDI_Test_Image-bottom_crop-WBminus20-sz600x510.jpg"
+  imageCC03= new Image()
+  imageCC03.src="Pix/PDI_Test_Image-bottom_crop-WBplus20-sz600x510.jpg"
+  imageCC04= new Image()
+  imageCC04.src="Pix/PDI_Test_Image-bottom_crop-red_080-sz600x510.jpg"
+  imageCC05= new Image()
+  imageCC05.src="Pix/PDI_Test_Image-bottom_crop-red_090-sz600x510.jpg"
+  imageCC06= new Image()
+  imageCC06.src="Pix/PDI_Test_Image-bottom_crop-red_095-sz600x510.jpg"
+  imageCC07= new Image()
+  imageCC07.src="Pix/PDI_Test_Image-bottom_crop-red_105-sz600x510.jpg"
+  imageCC08= new Image()
+  imageCC08.src="Pix/PDI_Test_Image-bottom_crop-red_110-sz600x510.jpg"
+  imageCC09= new Image()
+  imageCC09.src="Pix/PDI_Test_Image-bottom_crop-red_120-sz600x510.jpg"
+
+  imageCC10= new Image()
+  imageCC10.src="Pix/PDI_Test_Image-bottom_crop-grn_080-sz600x510.jpg"
+  imageCC11= new Image()
+  imageCC11.src="Pix/PDI_Test_Image-bottom_crop-grn_090-sz600x510.jpg"
+  imageCC12= new Image()
+  imageCC12.src="Pix/PDI_Test_Image-bottom_crop-grn_095-sz600x510.jpg"
+  imageCC13= new Image()
+  imageCC13.src="Pix/PDI_Test_Image-bottom_crop-grn_105-sz600x510.jpg"
+  imageCC14= new Image()
+  imageCC14.src="Pix/PDI_Test_Image-bottom_crop-grn_110-sz600x510.jpg"
+  imageCC15= new Image()
+  imageCC15.src="Pix/PDI_Test_Image-bottom_crop-grn_120-sz600x510.jpg"
+ 
+  imageCC16= new Image()
+  imageCC16.src="Pix/PDI_Test_Image-bottom_crop-blu_080-sz600x510.jpg"
+  imageCC17= new Image()
+  imageCC17.src="Pix/PDI_Test_Image-bottom_crop-blu_090-sz600x510.jpg"
+  imageCC18= new Image()
+  imageCC18.src="Pix/PDI_Test_Image-bottom_crop-blu_095-sz600x510.jpg"
+  imageCC19= new Image()
+  imageCC19.src="Pix/PDI_Test_Image-bottom_crop-blu_105-sz600x510.jpg"
+  imageCC20= new Image()
+  imageCC20.src="Pix/PDI_Test_Image-bottom_crop-blu_110-sz600x510.jpg"
+  imageCC21= new Image()
+  imageCC21.src="Pix/PDI_Test_Image-bottom_crop-blu_120-sz600x510.jpg"
+ 
+  imageCT01= new Image()
+  imageCT01.src="Pix/Toronto_Union_Stn-neutral-sz600x450.jpg"
+  imageCT02= new Image()
+  imageCT02.src="Pix/Toronto_Union_Stn-red_080-sz600x450.jpg"
+  imageCT03= new Image()
+  imageCT03.src="Pix/Toronto_Union_Stn-red_090-sz600x450.jpg"
+  imageCT04= new Image()
+  imageCT04.src="Pix/Toronto_Union_Stn-red_110-sz600x450.jpg"
+  imageCT05= new Image()
+  imageCT05.src="Pix/Toronto_Union_Stn-red_120-sz600x450.jpg"
+ 
+  imageCT06= new Image()
+  imageCT06.src="Pix/Toronto_Union_Stn-grn_080-sz600x450.jpg"
+  imageCT07= new Image()
+  imageCT07.src="Pix/Toronto_Union_Stn-grn_090-sz600x450.jpg"
+  imageCT08= new Image()
+  imageCT08.src="Pix/Toronto_Union_Stn-grn_110-sz600x450.jpg"
+  imageCT09= new Image()
+  imageCT09.src="Pix/Toronto_Union_Stn-grn_120-sz600x450.jpg"
+
+  imageCT10= new Image()
+  imageCT10.src="Pix/Toronto_Union_Stn-blu_080-sz600x450.jpg"
+  imageCT11= new Image()
+  imageCT11.src="Pix/Toronto_Union_Stn-blu_090-sz600x450.jpg"
+  imageCT12= new Image()
+  imageCT12.src="Pix/Toronto_Union_Stn-blu_110-sz600x450.jpg"
+  imageCT13= new Image()
+  imageCT13.src="Pix/Toronto_Union_Stn-blu_120-sz600x450.jpg"
+
+ function swapPic(imagename, newsrc){
+ document.images[imagename].src=newsrc.src
+ }
+ 
+ function changeClr( newClr ) {
+     if (document.Clr_form.radio_rgn[0].checked==true)
+         document.getElementById('td_mat').style.borderColor=newClr;
+ 
+     else if (document.Clr_form.radio_rgn[1].checked==true)
+         document.getElementById('td_frame').style.borderColor=newClr;
+ 
+     else if (document.Clr_form.radio_rgn[2].checked==true)
+         document.getElementById('td_wall').style.borderColor=newClr;
+ }
+
+//-->
+</script>
+
+</head>
+ 
+<body>
+ 
+<div id="div_background">
+ 
+<div id="div_masthead">
+ 
+<img src="http://daystarvisions.com/Pix/Site/DayStar_logo-brown_bgrnd-sz300x40.jpg" height="40" width="300" alt="logo" class="logo" />
+ 
+<div id="div_nav">
+<ul>
+<li><a id="li_nav_main" href="http://daystarvisions.com/index.html">Main</a></li>
+<li><a id="li_nav_pix" href="http://daystarvisions.com/PixMain.html">Pictures</a></li>
+<li><a id="li_nav_text" href="http://daystarvisions.com/TextMain.html">Words</a></li>
+<li><a id="li_nav_art" href="http://daystarvisions.com/ArtMain.html">Art</a></li>
+</ul>
+</div> <!--div_nav-->
+ 
+</div> <!--div_masthead-->
+ 
+<div id="div_content">
+ 
+<div id="div_title_bar">
+ 
+<h1>Coping with colour casts</h1>
+<h1 class="Small"></h1>
+ 
+<p class="copyright">Page 1 of 1. Version 1.0, &copy;2012 by Dale Cotton, all rights reserved.</p>
+ 
+</div> <!--div_title_bar-->
+
+<h2>Learning to identify casts</h2>
+
+<p>More than a decade into the digital photography era achieving colour neutrality is as simple as clicking on a "neutral" portion of a digital photo ... or so our software would have us believe. Strangely, few pictures have a "neutral" region, unless you count a blown highlight as being neutral white, but that unfortunately isn't acceptable. Colour neutrality out of the camera depends on our either setting a custom white balance before taking the picture or on the sophistication of the white balance algorithm built into the camera's imaging engine.</p>
+
+<p>Looking at the world through rose-coloured glasses is generally taken to be an improvement; presumably then, looking at the world through green, blue, or grey tinted glasses would be negative. Subtle colour casts that most people can't consciously detect make a huge difference in how appealing an image is to the viewer. Even a perfectly accurate white balance for a picture taken in the bluish light of mid-afternoon is a decided downer.</p>
+
+<p>But anyone who works extensively with photographs is frequently dealing with colour cast removal, whether it's correcting an image taken with an older digital camera, or with a film camera, or by a digital novice who used the wrong white balance, Unless you opt to work in b&w, photography pretty much forces you to become an expert in colour work. But before you can actually fix colour casts you first need to learn to see then.</p>
+
+<p class="MessageBox"><b>Your monitor</b>: most LCD computer monitors have a native colour temperature of 6500K or very close to it. This is the industry standard and is what you want to be using to view the following pictures. If you have a CRT or have deliberately changed the calibration of your LCD away from 6500, you won't be seeing the same colours I'm describing below.</p>
+
+<p><IMG SRC="Pix/Boardwalk-4950K-as_shot-E-P1-ISO_200-20090705-1732-7050173.jpg" width=600 height=450 BORDER=0 name="Fig1"></p>
+<p class=Centered>Fig. 1: White balance comparison</p>
+
+<p class=Centered><input style="font-size: 8pt;" type="button" value="3500K" name="buttonWB1" onClick="swapPic('Fig1', imageWB01)" />
+<input style="font-size: 8pt;" type="button" value="4000K" name="buttonWB2" onClick="swapPic('Fig1', imageWB02)" />
+<input style="font-size: 8pt;" type="button" value="4500K" name="buttonWB3" onClick="swapPic('Fig1', imageWB03)" />
+<input style="font-size: 8pt;" type="button" value="As shot" name="buttonWB4" onClick="swapPic('Fig1', imageWB04)" />
+<input style="font-size: 8pt;" type="button" value="5200K" name="buttonWB5" onClick="swapPic('Fig1', imageWB05)" />
+<input style="font-size: 8pt;" type="button" value="5500K" name="buttonWB6" onClick="swapPic('Fig1', imageWB06)" />
+<input style="font-size: 8pt;" type="button" value="6000K" name="buttonWB7" onClick="swapPic('Fig1', imageWB07)" />
+<input style="font-size: 8pt;" type="button" value="7000K" name="buttonWB8" onClick="swapPic('Fig1', imageWB08)" />
+<input style="font-size: 8pt;" type="button" value="8000K" name="buttonWB9" onClick="swapPic('Fig1', imageWB09)" />
+</p>
+
+<p>Fig. 1 shows a scene taken at 5:30 PM in early July when the light had a colour temperature of 4950K. In comparison sunlight measured at the horizon is 5000K and vertically overhead is 5500K. Clicking on the various buttons takes you to cooler/bluer lighting as the numbers get smaller, and to warmer/yellow-orangier lighting as the numbers get larger. The 5500K version could be said to be neutral in that our eyes most readily identify whites seen in 5500K light as being pure white. But 4950K is what the camera recorded as being the actual colour temperature of that scene at that particular time of day.</p>
+
+<p class=MessageBox><b>WB fussiness</b>: to my eye neither the 4950K nor the 5500K look quite right. It's a blue-sky day and the shadows of the scene tell us the sun was a little less than half way between overhead and on the horizon, which agrees with the 5:30 PM timing for a temperate zone latitude at that time of year. So I added a button for a colour temperature that's a little less than half way between 5000K and 5500K &ndash; namely, 5200K &ndash; and bingo! that looks spot-on to me. I've never approached a WB problem this way before, but if it works...</p>
+
+<p><IMG SRC="Pix/PDI_Test_Image-bottom_crop-neutral-sz600x510.jpg" width=600 height=510 BORDER=0 name="Fig2"></p>
+<p class=Centered>Fig. 2: Colour cast comparison</p>
+
+<p class=Centered><input style="font-size: 8pt;" type="button" value="Neutral" name="buttonCC1" onClick="swapPic('Fig2', imageCC01)" />
+<input style="font-size: 8pt;" type="button" value="WB-" name="buttonCC2" onClick="swapPic('Fig2', imageCC02)" />
+<input style="font-size: 8pt;" type="button" value="WB+" name="buttonCC3" onClick="swapPic('Fig2', imageCC03)" />
+</p>
+
+<p class=Centered><input style="font-size: 8pt;" type="button" value="Red---" name="buttonCC4" onClick="swapPic('Fig2', imageCC04)" />
+<input style="font-size: 8pt;" type="button" value="Red--" name="buttonCC5" onClick="swapPic('Fig2', imageCC05)" />
+<input style="font-size: 8pt;" type="button" value="Red-" name="buttonCC6" onClick="swapPic('Fig2', imageCC06)" />
+<input style="font-size: 8pt;" type="button" value="Red+" name="buttonCC7" onClick="swapPic('Fig2', imageCC07)" />
+<input style="font-size: 8pt;" type="button" value="Red++" name="buttonCC8" onClick="swapPic('Fig2', imageCC08)" />
+<input style="font-size: 8pt;" type="button" value="Red+++" name="buttonCC9" onClick="swapPic('Fig2', imageCC09)" />
+</p>
+
+<p class=Centered><input style="font-size: 8pt;" type="button" value="Green---" name="buttonCC10" onClick="swapPic('Fig2', imageCC10)" />
+<input style="font-size: 8pt;" type="button" value="Green--" name="buttonCC11" onClick="swapPic('Fig2', imageCC11)" />
+<input style="font-size: 8pt;" type="button" value="Green-" name="buttonCC12" onClick="swapPic('Fig2', imageCC12)" />
+<input style="font-size: 8pt;" type="button" value="Green+" name="buttonCC13" onClick="swapPic('Fig2', imageCC13)" />
+<input style="font-size: 8pt;" type="button" value="Green++" name="buttonCC14" onClick="swapPic('Fig2', imageCC14)" />
+<input style="font-size: 8pt;" type="button" value="Green+++" name="buttonCC15" onClick="swapPic('Fig2', imageCC15)" />
+</p>
+
+<p class=Centered><input style="font-size: 8pt;" type="button" value="Blue---" name="buttonCC16" onClick="swapPic('Fig2', imageCC16)" />
+<input style="font-size: 8pt;" type="button" value="Blue--" name="buttonCC17" onClick="swapPic('Fig2', imageCC17)" />
+<input style="font-size: 8pt;" type="button" value="Blue-" name="buttonCC18" onClick="swapPic('Fig2', imageCC18)" />
+<input style="font-size: 8pt;" type="button" value="Blue+" name="buttonCC19" onClick="swapPic('Fig2', imageCC19)" />
+<input style="font-size: 8pt;" type="button" value="Blue++" name="buttonCC20" onClick="swapPic('Fig2', imageCC20)" />
+<input style="font-size: 8pt;" type="button" value="Blue+++" name="buttonCC21" onClick="swapPic('Fig2', imageCC21)" />
+</p>
+
+<p>The studio shot shown above in Fig. 2 from PCI is likely familiar to anyone who's done much photography this past decade. I've cropped off the top portion to save on screen space, Below it are a 21 buttons that you can click on to move it away from its neutral state.</p>
+
+<p>The red minus button subtracts 5% of its red value, the red minus minus button subtracts 10%, and the red minus minus minus subtracts 20%. In each case the missing redness causes the image to have a cyan (blue-green) colour cast, since both the blue and green portions of the image's colours are now relatively stronger.</p>
+
+<p>The red plus button adds 5% to the red value, the red plus plus adds 10%, and the red plus plus plus adds 20%. In each case the image has a red colour cast, since extra red has been added. </p>
+
+<p>Similarly, the green minus set of buttons introduce a magenta (reddish purple) colour cast; the green plus buttons add a green cast; the blue minus buttons add a yellow cast, and the blue plus buttons add a blue cast. Notice however that none of the blue minus buttons match the WB+ version, because sunlight is yellow-orange, not pure yellow; and none of the blue plus buttons match the WB- version because sky blue is not the same as the new-fangled violet-blue in the RGB colour model. </p>
+
+<p>In order to learn to see pictures in terms of colour casts I suggest clicking on the +++ and --- buttons under Fig. 2 above, perhaps alternating with the Neutral button, until you begin to get a feel for the visual effect from adding or taking away a colour. Next, do the same with the ++ and -- buttons, until you can see the changes they invoke. The single + and single - changes are subtle &ndash; don't expect to be able to distinguish between them on the first day.</p>
+ 
+<p><IMG SRC="Pix/Toronto_Union_Stn-neutral-sz600x450.jpg" width=600 height=510 BORDER=0 name="Fig3"></p>
+<p class=Centered>Fig. 3: Colour cast drill</p>
+
+<p class=Centered><input style="font-size: 8pt;" type="button" value="Neutral" name="buttonCT1" onClick="swapPic('Fig3', imageCT01)" />
+</p>
+
+<p class=Centered>
+<input style="font-size: 8pt;" type="button" value="Case 1" name="buttonG110" onClick="swapPic('Fig3', imageCT08)" />
+<input style="font-size: 8pt;" type="button" value="Case 2" name="buttonB110" onClick="swapPic('Fig3', imageCT12)" />
+<input style="font-size: 8pt;" type="button" value="Case 3" name="buttonR110" onClick="swapPic('Fig3', imageCT04)" />
+<input style="font-size: 8pt;" type="button" value="Case 4" name="buttonB120" onClick="swapPic('Fig3', imageCT13)" />
+<input style="font-size: 8pt;" type="button" value="Case 5" name="buttonB090" onClick="swapPic('Fig3', imageCT11)" />
+<input style="font-size: 8pt;" type="button" value="Case 6" name="buttonG090" onClick="swapPic('Fig3', imageCT07)" />
+</p>
+
+<p class=Centered>
+<input style="font-size: 8pt;" type="button" value="Case 7" name="buttonR120" onClick="swapPic('Fig3', imageCT05)" />
+<input style="font-size: 8pt;" type="button" value="Case 8" name="buttonG120" onClick="swapPic('Fig3', imageCT09)" />
+<input style="font-size: 8pt;" type="button" value="Case 9" name="buttonB080" onClick="swapPic('Fig3', imageCT10)" />
+<input style="font-size: 8pt;" type="button" value="Case 10" name="buttonR080" onClick="swapPic('Fig3', imageCT02)" />
+<input style="font-size: 8pt;" type="button" value="Case 11" name="buttonR090" onClick="swapPic('Fig3', imageCT03)" />
+<input style="font-size: 8pt;" type="button" value="Case 12" name="buttonG080" onClick="swapPic('Fig3', imageCT06)" />
+</p>
+
+<p>Fig. 3 takes a different picture and provides buttons that introduce the same colour casts as in Fig. 2, except that  buttons for the subtle single + and single - casts are not provided, and the order of the buttons has been srambled. So there is one button for each of the red, green, and blue +++, ---, ++, and -- variations; your job is to make a list of which cast belongs to which button. Even without resorting to the single + and single - variations, I think you'll find this exercise to be quite a challenge. </p>
+
+<h2>Learning to correct colour casts</h2>
+
+<h3>Concept</h3>
+
+<p>To create the colour cast samples in Fig. 2 and Fig. 3 above I started with the neutral image open in Photoshop, then opened the Levels tool, then switched to the appropriate colour channel within the Levels tool. </p>
+
+<div class="div_pic_no_click">
+<img src="Pix/Levels_red_adj-sz600x450.jpg" width="600" height="450" alt="No larger version" />
+<p>Fig. 4: applying a red cast using the Photoshop Levels dialogue</p>
+</div> <!--div_pic_no_click-->
+
+<p>As you can see from the screen shot in Fig. 4, I then changed the middle slider input number from the default of 1.00 to a different value. For the +++ casts I used 1.20, for the ++ casts I used 1.10, and for the + casts I used 1.05. Similarly, for the minus sequence I used 0.80, 0.90, and 0.95. </p>
+
+<div class="div_pic_no_click">
+<img src="Pix/Curves_red_adj-sz600x450.jpg" width="600" height="450" alt="No larger version" />
+<p>Fig. 5: applying a red cast using the Photoshop Curves dialogue</p>
+</div> <!--div_pic_no_click-->
+
+<p>I could have done the same thing using the appropriate colour channel in the Curves dialogue, except being lazy I preferred typing in one number per cast rather than two. Nevertheless, to <b>correct</b> a cast I always reach for the Curves tool. Fg. 5 shows the simplest case of introducing a cast using a single point curve, starting from the centre, which essentially replicates a Levels change. It would be very nice of the world to arrange things such that the only casts I have to deal with were single point curves, but such is rarely the case. </p>
+
+<div class="div_pic_no_click">
+<img src="Pix/Curves_red_S-sz600x450.jpg" width="600" height="450" alt="No larger version" />
+<p>Fig. 6: applying a complex cast using the Photoshop Curves dialogue</p>
+</div> <!--div_pic_no_click-->
+
+<p>All of which is to say that the first two tools in the colour cast correction toolkit are Levels and Curves. The <b>Learning to identify</b> section of the tutorial will hopefully sensitize you to the difference between a colour-neutral image and the presence of a colour cast in an image. Even if you can't decide whether you're seeing too much magenta or too much red, for example, so long as you can see that something's out of wack, then you can open the Levels dialogue, push the centre slider left and right in each colour channel, and if you hit on a voil&agrave; position, simply click OK to accept that change. If not, go on to Curves and experiment with two-point S curves in the colour channels.</p>
+
+<p>The idea for this tutorial came to mind as I laboured to scan boxes of family slides from the 1970s. Even though they had been properly stored, the chemical composition of the dye layers in the slides were in various stages of self-destruction. The red dyes had gone berserk. They were over-saturated in the darker values and even more bizarrely were <b>de</b>-saturated in the lighter values. The blue and green channels had both decayed but by different amounts and by different amounts from light to dark and from slide to slide. The scanning software has a complex and sophisticated interface, but not complex enough to offer me multi-point curve corrections in separate channels for both luminance and saturation. Thus, each scan had to be opened in Photoshop then individually tweaked to compensate for these degradations. </p>
+
+<p>Since the photographer didn't kindly include a Gretag Macbeth Color Checker card in each frame, or even a neutral grey or white card, I had no absolute referrent to work from, and often couldn't even determine what the ballpark colour temperature should be. I <b>used to</b> pride myself on having a good eye for colour, but this was a challenge I rarely felt the equal of. Getting a believable skin tone out of such conditions was too often beyond my newly-humbled talents.</p>
+
+<p>You'd think that when dealing with digitally captured images we could put all that behind us, but such is far from the case. Given the vagaries of mixed lighting and the tweaks digital camera manufacturers deliberately introduce into their JPEGs to satisfy customer demand for "punch" and "pleasing" colour, even just getting a realistic skin tone out of a JPEG is too often a herculean challenge. Nevertheless, let's have a go:</p>
+
+<h3>Example 1</h3>
+
+<div class="div_pic_click">
+<a href="Pix/P3050028-as_shot-sz1280x960.jpg"><img src="Pix/P3050028-as_shot-sz600x450.jpg" width="600" height="450" alt="click for larger version" /></a>
+<p class="p_pic_label">Fig. 7: Uncorrected snap shot (click for larger version)</p>
+</div> <!--div_pic_click-->
+
+<p>Fig. 7 is an out-of-camera snapshot taken with an Olympus point&shoot in 2000. The automatic white balance even back then has worked a marvel in nicely handling what looks to be mixed lighting. We can see the tungsten-ness of the light in the recess in which the woman with parrot is standing. Nevertheless, the result is but one solution to the problem; what looks to me to be a compromise with the result that none of the whites are neutral. The door on the left, for example, is clearly painted white but is in fact some sort of vaguely pinkish colour. We also know that Tungsten light is orangish. Orange being a mixture of red and yellow, we can be on the look out for corrections to reduce red and/or add blue as one possibility to explore.</p>
+
+<p>With that in mind, let's open Levels, switch to the red channel, and drag the middle slider to the left a bit to see what effect reducing red has:</p>
+
+<div class="div_pic_no_click">
+<img src="Pix/P3050028-Levels_red_adj-sz600x450.jpg" width="600" height="450" alt="No larger version" />
+<p>Fig.  8: Reducing red</p>
+</div> <!--div_pic_no_click-->
+
+<p>Fig. 8 shows a dramatically more neutral white in the door, so reducing red looks good.</p>
+
+<div class="div_pic_no_click">
+<img src="Pix/P3050028-Levels_blue_adj-sz600x450.jpg" width="600" height="450" alt="No larger version" />
+<p>Fig.  9: Adding blue</p>
+</div> <!--div_pic_no_click-->
+
+<p>There's also the idea of adding blue, and arguably just a dab of +blue makes a further improvement &ndash; or perhaps I've just convinced myself that that's the case...</p>
+
+<div class="div_pic_no_click">
+<img src="Pix/P3050028-Levels_RGB_adj-sz600x450.jpg" width="600" height="450" alt="No larger version" />
+<p>Fig.  10: Adding brightness</p>
+</div> <!--div_pic_no_click-->
+
+<p>In any case, the red has been reduced more than the blue has been increased, resulting in a net darkening of the image. So going back into Levels and this time bumping up the RGB composite channel has the effect of a net brightening, which I've done to taste. Fig. 11 shows the result:</p>
+
+<div class="div_pic_no_click">
+<img src="Pix/P3050028-Levels_corrected-sz600x450.jpg" width="600" height="450" alt="No larger version" />
+<p>Fig. 11: Result</p>
+</div> <!--div_pic_no_click-->
+
+<p>So even a seeming very simple cast that could be corrected entirely in Levels nevertheless took us into new territory: correcting for casts in two different channels in the same picture.</p>
+
+<h3>Example 2</h3>
+
+<p>It's worth noting that Photoshop has another tool that can handle certain double casts with ease. Fig. 12 show the view from an office tower in downtown Toronto. (The strange inverted cake tin building is called Roy Thompson Hall.) The window this picture was taked through has a greenish turquoise tint that affects the entire picture. If you look a the building on the far right, the protruding curved section of windows shows the glass tint very clearly, since the exact same glass has been used in both buildings. </p>
+
+<p>At this point I suggest you download the larger version of Fig. 12 then use the Levels or Curves tool to try to remove the glass tint before reading further.</p>
+
+<div class="div_pic_click">
+<a href="Pix/P1050662-as_shot_half_size.jpg"><img src="Pix/P1050662-as_shot-sz600x338.jpg" width="600" height="338" alt="click for larger version" /></a>
+<p class="p_pic_label">Fig. 12: View from a window, downtown Toronto, out of camera JPEG (click for larger version)</p>
+</div> <!--div_pic_click-->
+
+<p>If you did that, your thought process may have been that the opposite of green is magenta, but removing magenta didn't improve matters. Since turquoise is a shade of blue-green and cyan is too, you may have found that pulling back on the red was a significant improvement, plus a bit of reduction to blue helped a bit as well. Instead, go back to the uncorrected version then open the Hue/Saturation dialogue in Photoshop. The Hue slider changes all colours in a picture by shifting them left for cooler or right for warmer. </p>
+
+<div class="div_pic_no_click">
+<img src="Pix/P1050662-hue_sat_screen_shot-sz600x338.jpg" width="600" height="338" alt="No larger version" />
+<p>Fig. 13: using Photoshop's Hue/Saturation tool</p>
+</div> <!--div_pic_no_click-->
+
+<p>Since blue and green are cool colours, moving the hue slider right increasingly warms the picture, and amazingly there is a point on the right, as we see in Fig. 13, that very nicely neutralzes the glass tint. So the upshot is when you're having trouble neutralizing a cast with Levels and Curves, give Hue/Sat. a try. Every so often it's the perfect tool for the job:</p>
+
+<div class="div_pic_no_click">
+<img src="Pix/P1050662-hue_sat_result-sz600x338.jpg" width="600" height="338" alt="No larger version" />
+<p>Fig. 14: Result</p>
+</div> <!--div_pic_no_click-->
+
+<h3>Example 3</h3>
+
+<p>For more of a challenge, here's the camera's JPEG of a random grab-shot of a Toronto street:</p>
+
+<div class="div_pic_click">
+<a href="Pix/Toronto_street-out_of_camera-half_size.jpg"><img src="Pix/Toronto_street-out_of_camera-sz600x450.jpg" width="600" height="450" alt="click for larger version" /></a>
+<p class="p_pic_label">Fig. 15: street scene, out of camera</p>
+</div> <!--div_pic_click-->
+
+<p>Click on Fig. 15 and Fig. 16 for larger versions, then right click to download if you want to follow along. </p>
+
+<p>Fortunately,  I happen to have the raw for this shot, and a few tweaks from the default settings to match contrast, together with the application of a custom daylight profile for this individual camera gives the following result:</p>
+
+<div class="div_pic_click">
+<a href="Pix/Toronto_street-raw_dev-half_size.jpg"><img src="Pix/Toronto_street-raw_dev-sz600x450.jpg" width="600" height="450" alt="click for larger version" /></a>
+<p class="p_pic_label">Fig. 16: raw version</p>
+</div> <!--div_pic_click-->
+
+<p>So what's with the camera JPEG? This is a fairly recent Olympus model and Olympus has a sterling rep for "pleasing" colour. The meta data even says I shot with a custom white balance &ndash; we might conclude I got that wrong, except that the raw version involves no change to WB or tint and it looks fine.</p>
+
+<p>We've concentrated on colour casts so far, but the first thing you want to check when dealing with a JPEG is actually over-saturation. I keep the JPEG settings on my cameras at conservative values, but even then it's hard to get an out-of-camera JPEG without over-saturation of at least the warm colours (red-yellow-orange). This in spite the havoc this plays with skin colours as we see in Fig. 15. To compensate for this I opened the Hue/Saturation tool but this time used the second slider because I wanted to reduce saturation. I could have attempted to work with just the oranges, but the result I got by using the master slider was just what I wanted, as we see in Fig. 17 and Fig. 18.</p>
+
+<div class="div_pic_no_click">
+<img src="Pix/Toronto_street-de_sat_screen_shot-sz600x450.jpg" width="600" height="450" alt="No larger version" />
+<p>Fig. 17: using Photoshops Hue/Saturation tool</p>
+</div> <!--div_pic_no_click-->
+
+<div class="div_pic_no_click">
+<img src="Pix/Toronto_street-de_sat_result-sz600x450.jpg" width="600" height="450" alt="No larger version" />
+<p>Fig. 18: desaturation result</p>
+</div> <!--div_pic_no_click-->
+
+<p>That's a great start, but if we want to match the raw colours more closely we have more work to do. It's hard to know what the colours of the surrounds should be, but skin colours are something we're all intimately familiar with and therefore more critical of. The difference in skin colours between Fig. 18 and Fig. 16, however, take us into new territory: there's actually a double cast at play here. The blue channel is higher in Fig, 15, adding blue to the skin tones, while the green channel is down, adding magenta. That's the sort of thing that can drive a person crazy and is why you don't want to be doing this for a living... </p>
+
+<p>So if we match Fig. 18 for skin colour by adding green and subtracting blue in Levels or (single point) Curves we get:</p>
+
+<div class="div_pic_no_click">
+<img src="Pix/Toronto_street-Levels_result-sz600x450.jpg" width="600" height="450" alt="No larger version" />
+<p>Fig. 19: double cast compensation using Levels</p>
+</div> <!--div_pic_no_click-->
+
+<p>Now the skin tones are very much in the correct ballpark &ndash; but look what's happened to the BMO (Bank of Montreal) blue panel on the right. Levels and even multi-point curves are not the right tools if you want to handle a problem as complex as this. Instead, we need to break out Photoshop's Replace Color dialogue, use the eye dropper to build up a selection of the various skin tones in the picture, then bump the Hue slider over to the right:</p>
+
+<div class="div_pic_no_click">
+<img src="Pix/Toronto_street_Replace_Color_screen_shot-sz600x450.jpg" width="600" height="450" alt="No larger version" />
+<p>Fig. 20: using Replace Color to tweak only skin colours</p>
+</div> <!--div_pic_no_click-->
+
+<div class="div_pic_no_click">
+<img src="Pix/Toronto_street-Repl_Clr_result-sz600x450.jpg" width="600" height="450" alt="No larger version" />
+<p>Fig. 21: results of Replace Color</p>
+</div> <!--div_pic_no_click-->
+
+<p>Now that the skin colours are fairly well matched we could use Replace Color again to tweak the beiges of sidewalk, clothing, etc. Then yet again to match the BMO and street sign dark blue.</p>
+
+<p class=Centered>* * *</p>
+
+<p>Oh yes: you're probably wondering how close you came to getting the drill in Fig. 3 correct. The solution is <a href="">here</a>.</p>
+</div> <!--div_content-->
+ 
+</div> <!--div_background-->
+ 
+</body>
+
+</html>

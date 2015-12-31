@@ -1,0 +1,194 @@
+<HTML lang="en">
+
+<HEAD>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+ <meta name="description" content="Following an Art Photograph from Capture to Print">
+
+ <meta name="keywords" content=""Photography, Art, Aesthetics, Workflow, Photo Editing, Photoshop, Tutorial">
+
+ <title>Digital Editing 101</title>
+
+ <style type="text/css">
+ @import url("../../../DSDocs.css");
+ </style>
+
+</HEAD>
+
+<BODY BGCOLOR="black" TEXT="black" LINK="black" VLINK="black" ALINK="black">
+
+<TABLE ALIGN="left" width="100%" height="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><!-- Start Full Screen -->
+
+<TR ALIGN="left" VALIGN="top">
+
+	<TD>
+
+	<!-- Start Left Nav: -->
+	<table align="left" width="75" height="100%" border=0 cellspacing=0 cellpadding=0>
+	<tr>
+	<td VALIGN="top">
+	<img src="../../../Pix/Site/DaystarArtOnlyLNav.jpg" usemap="#navbar2" align="top" width="75" height="440" border="0" ismap></td>
+	</table><!-- End Left Nav -->
+
+	<TD width="100%" bgcolor="#DEDDDC"><!-- #E3D499 #E9DD97 #D8C890 Start Main Area col: -->
+
+	<!-- Start Info Contents table: -->
+	<table align="center" width="100%" cellspacing=15 cellpadding=0>
+
+	<tr><td>
+
+<!-----------------------------Content------------------------------>
+
+<H1>Digital Editing 101</H1>
+<h3>Following an Art Photograph from Capture to Print-Readiness</h3>
+
+<P CLASS=SmallNoteCentered>Version 1.3, &copy; 2006 by Dale Cotton, all rights reserved
+
+<p class=SimpleIvoryBox><b>Intro</b>: I've received some requests lately for more introductory instruction on digital editing. In this tutorial I use RawShooter Premium and Photoshop but the actions should be easily reproducible using a variety of raw conversion and image edit products. SilkyPix, Adobe Camera Raw, Paintshop Pro, and Adobe Elements come to mind. <b>Update 2009</b>: And now, of course, Lightroom. Again: the RawShooter steps below are easy to reproduce in Lightroom, ACR, Capture One, etc.<br><br>
+
+This first tutorial will cover fundamental concepts applicable to the majority of images.
+
+<h2>Capture</h2>
+<p>I took the picture romantically titled 06-2569 with my Pentax DS on a tripod along the Lake Ontario waterfront near where I live at dawn in mid-October 2006. This is a site I've worked many times and probably wouldn't have re-visited, except that I wanted to introduce it to a friend. Exposure was 400 ISO, f/8, 1/50th sec. As you can see from the small amount of red (blown-highlights) warning, the <a href="http://daystarvisions.com/Docs/Tuts/DCExp/pg1.html">exposure</a> was pretty accurate in an expose-to-right kind of a way.
+
+<p class=SimpleIvoryBox>One interesting thing about this image is that its dynamic range is less than that of the camera. Notice that the histogram does not reach all the way to the left edge. Because the exposure pushes the histogram all the way to the right edge of the histogram, we are avoiding the noise and the lack of tonal gradations that live on the left/dark side of the Force.
+
+<p style="text-align:center"><IMG SRC="RSP1As_shot.jpg" width=600 height=446 BORDER=4>
+<p class=SmallNoteCentered>Fig. 1: 06-2569 as shot then opened in RawShooter
+
+<h2>Raw Conversion</h2>
+<p>Opening the pic in RawShooter, first I cropped the frame slightly to change the aspect ratio to 7:10 and to emphasize the composition that I see as the small acolyte tree on the left edge bowing in respect to the large Old Master tree on the right edge. ;) (Cropping and composition are of course personal decisions that no two of us will ever fully agree on.)
+
+<p>I normally leave white balance at auto, which proved a mistake for this shoot, as you can see from the extreme colour temp correction I had to introduce and which still did not entirely neutralize the image.
+
+<p style="text-align:center"><IMG SRC="RSP2Adj.jpg" width=600 height=446 BORDER=4>
+<p class=SmallNoteCentered>Fig. 2: RawShooter adjustments
+
+<p>Fig 2 is the final set of raw adjustments for this pic. A small reduction in exposure eliminated nearly all the blown highlights. In the curve tool I set the black point and the mid point then added a curve to further open the dark areas without lightening the sky. We can see that another challenge of this shot will be to deal with the darkness of the land and trees while keeping the sky from going too bright.
+
+<p>If there was significant noise I would deal with that now, otherwise time to convert and send to Photoshop as a 16-bit TIFF. (If you want to follow along, download <a href="06-2569TIFFsz2096x1467.jpg">this file</a>. It's a 75% downsample of the 16-bit TIFF converted to a 524 KB JPEG.)
+
+<p class=SimpleIvoryBox>There are various philosophies regarding how much editing to do in the raw converter and how much to do in the image editor. The raw converter has direct access to the raw data, so my approach is to spend the time to get colours and contrast as close as possible to my final goal in the raw converter. The more extreme the modification, the less distortion will be introduced in the raw converter before TIFF generation than after.
+
+<p class=SimpleIvoryBox><b>Why 16-bit?</b> In 8-bit image formats, such as JPEG, each colour number is specified as being in the range from 0 to 255. If you apply something like a curve to such a pixel the curve might say "darken the colour by 43.41%. If the original colour happens to be, say, 133, then the new colour will be 133 x 43.41 = 57.7353. But only whole numbers are allowed so the new colour will be rounded to 58. <br><br>In a series of such operations the rounding errors can accumulate, resulting in what is called posterization or banding. This looks like streaks of colour instead of smooth transitions and is often seen in sky. Banding is simply the most obvious manifestation of the problem; accumulated rounding errors affect everything.<br><br>16-bit formats store each colour as a number from 0 to 65535, so rounding errors are 256 times smaller and that much more likely not to have a visible effect.
+
+<h2>Editing</h2>
+
+<p style="text-align:center"><IMG SRC="PS1FullPic1.jpg" width=600 height=437 BORDER=4>
+<p class=SmallNoteCentered>Fig. 3: Opened in Photoshop
+
+<p>Now we're in Photoshop where we can see the image at a larger size and get a better read on what's going on. A further curve will open the dark foreground without compromising the sky:
+
+<p style="text-align:center"><IMG SRC="PS2Curve1.jpg" width=366 height=371 BORDER=4>
+<p class=SmallNoteCentered>Fig. 4: Initial contrast curve
+
+<p>A second curve applied just to the blue channel, neutralizes the effect of the blue cast on the foreground vegetation:
+
+<p style="text-align:center"><IMG SRC="PS3Curve2.jpg" width=366 height=371 BORDER=4>
+<p class=SmallNoteCentered>Fig. 5: Blue cast curve
+
+<p class=SimpleIvoryBox>Creating <b>curves</b> is one of the most valuable skills you can acquire. Your computer needs to be fast enough that you can leave preview on and watch any changes you make in real time. Here is where you get to be a master chef instead of a rote recipe follower. The master chef seasons to taste and the master image editor creates curves that bring an image alive. There are three basic rules: 1) introduce no abrupt changes (kinks) in your curve; 2) never raise a point at the left side of the curve higher than any point to its right; and 3) the more radical the curve the more important it is to work in 16-bit mode.
+
+<p>I now inspect the foreground at actual pixels because I'm concerned whether there is enough contrast in the shoreline undergrowth. Looks OK, but if not I would have used <a href="http://daystarvisions.com/Docs/Tuts/3xLCE/pg1.html">LCE</a> or a further curve tweaked at the shadow end to increase the contrast.
+
+<p style="text-align:center"><IMG SRC="PS4CloseUp1.jpg" width=600 height=437 BORDER=4>
+<p class=SmallNoteCentered>Fig. 6: Foreground inspection at actual pixels
+
+<p>That about does it for anything I can do as a global edit. Past time to do a Save As... into the PSD file format.
+
+<p>I'm already pretty happy with the sky and water, but suspect there's a lot more I can do with the foreground. <!--Using PS/CS I still can't do a Select->Color Range... in 16-bit but am not quite ready to dumb down to 8-bits, so I use the hoary old trick of duplicating the image, changing mode to 8-bit, making the selection, saving it with a name (sky), switching back to the 16-bit version, and using Select->Load Selection... then inverting.--> So I use Select->Color Range... to select the sky, then invert, leaving me with just the foreground selected.
+
+<p style="text-align:center"><IMG SRC="PS5SelectCol.jpg" width=351 height=330 BORDER=4>
+<p class=SmallNoteCentered>Fig. 7: Select Color Range dialogue
+
+<p class=SimpleIvoryBox><b>Tip</b>: save yourself some grief - avoid trying to change contrast of sky vs non-sky in a picture with tree branches like this one has using a non-feathered selection such as this.
+
+<p class=SimpleIvoryBox>Note that in Photoshop CS and later I could use the Replace Color... dialogue to combine the Select All with the Hue/Sat. Either gets you to exactly the same place.
+
+<p>Now that I can concentrate on the foreground, I use the yellow channel (slightly expanded) of the Hue/Saturation tool to desaturate and shift to a warmer hue:
+
+<p style="text-align:center"><IMG SRC="PS6HueSat1.jpg" width=411 height=303 BORDER=4>
+<p class=SmallNoteCentered>Fig. 8: Hue/Sat yellow channel adjustment
+
+<p class=SimpleIvoryBox>The Master channel of the <b>Hue/Sat. tool</b> is a fairly blunt instrument. For refinement either create a selection of your image before going into Hue/Sat. or use the colour channels and their sliders to limit its reach.
+
+<p>Now I do want more contrast, so I use the following curve:
+
+<p style="text-align:center"><IMG SRC="PS7Curve3.jpg" width=366 height=371 BORDER=4>
+<p class=SmallNoteCentered>Fig. 9: Second contrast curve
+
+<p>- which locks down all but the shadows then deepens the near-blacks. Here's where we are now:
+
+<p style="text-align:center"><IMG SRC="PS8FullPic2.jpg" width=600 height=420 BORDER=4>
+<p class=SmallNoteCentered>Fig. 10: After foreground edits
+
+<p>I like the foreground pretty well, but the change in hue clashes a bit with the sky, so I invert the selection and head back to the Hue/Sat. dialogue to tweak the sky and water hue to an even bluer shade:
+
+<p style="text-align:center"><IMG SRC="PS9HueSat2.jpg" width=411 height=303 BORDER=4>
+<p class=SmallNoteCentered>Fig. 11: Hue/Sat colour shift
+
+<p>... And surprisingly - that's it. I remove the sky selection and try to find a curve to further enhance the drama of the stormy scene, but no joy. I try selecting just the goldenrod along the shore line and bringing the yellow colour of that out more, but no joy. So now to peruse the image carefully at 200% mag. and deal with any defects like the chromatic aberration in the upper right:
+
+<p style="text-align:center"><IMG SRC="PS10Chromatic1.jpg" width=600 height=400 BORDER=4>
+<p class=SmallNoteCentered>Fig. 12: Chromatic aberration seen at 200% mag.
+
+<p>What else to use for CA zapping but our trusty Hue/Sat. dialogue? My CA remedy is to lasso an area containing CA, go to Hue/Sat., change to the appropriate channel (usually magenta or yellow (for lime CA), narrow the colour range as needed, then move the saturation slider to desaturate as needed. (I've saved a number of successful hue/sat. adujstments for re-use as needed.)
+
+<p style="text-align:center"><IMG SRC="PS11Chromatic2.jpg" width=411 height=303 BORDER=4>
+<p class=SmallNoteCentered>Fig. 13: Hue/Sat. magenta channel to remove magenta CA
+
+<p>I also cloned out a few disorderly bits of undergrowth and would have also cloned out any waste paper, pop cans, etc. if there had been such.
+
+<p>All that's left is to prepare the image for printing and/or computer display. My own routine involves upsampling to 150% then doing some hocus-pocus to crispen the acutance to something more like the painter's brush strokes that I'm attached to. For most people it's more a matter of sharpening to taste with USM or some third-party tool.
+
+<p>Coming back to this image a day later with fresh eyes, the only thing that bothers me is that the acolyte tree on the left is too dull. I circled the tree with the lasso tool in Photoshop, then used Select->Color Range... to select just its leaves. I then applied the following Hue/Sat. and Curve to bring it more in line with the rest of the foliage:
+
+<p style="text-align:center"><IMG SRC="PS12CloseUp2.jpg" width=450 height=497 BORDER=4>
+<p class=SmallNoteCentered>Fig. 14: Acolyte leaf selection
+
+<p style="text-align:center"><IMG SRC="PS13HueSat3.jpg" width=411 height=303 BORDER=4>
+<p class=SmallNoteCentered>Fig. 15: Acolyte colour shift
+
+<p style="text-align:center"><IMG SRC="PS14Curve4.jpg" width=366 height=371 BORDER=4>
+<p class=SmallNoteCentered>Fig. 16: Acolyte contrast curve
+
+<p>Which brings us full circle to the hopefully now final version:
+
+<p style="text-align:center"><a href="06-2569FINALsz2096x1467.jpg"><IMG SRC="06-2569v2sz600x420.jpg" width=600 height=420 BORDER=12 alt="Click to enlarge"></a>
+<p class=SmallNoteCentered>Fig. 17: Final cut (click to enlarge - warning: 1 MB file).
+
+<h2>Afterword</h2>
+
+<p>In this tutorial I've concentrated on the Photoshop Curves and Hue/Sat. tools which both work in 16-bit mode. There are many sophisticated and complex ways to edit an image involving layers, masks, blend modes, etc., etc. Sometimes you will in fact need to delve into these exotic realms to get the job done. What we've covered in this lesson are the bread-and-butter tools that should serve for the majority of your editing needs.
+
+<p>There are two especially frustrating issues in image editing for the beginner. One is learning how to use all the tools available; this can be conquered with time and patience. The other is a feeling of inadequacy regarding one's aesthetic judgement. Why did Dale make just the changes he illustrated above and no others? It may not seem to be the case now, but this too is just a matter that time and patience will overcome.
+
+<p>It's important to realize that in making the changes I made above, I was not moving toward some single ideal version of the raw image. If I had started work on this image yesterday or tomorrow instead of today I might well have ended up somewhere very different. If some other artist had started from the same raw file she would very likely have ended up somewhere very different. Part of the reason it's called art instead of science is for this very reason, that there is no single correct answer to any aesthetic decision.
+
+<p>That said there is a practical distinction between the first efforts of an amateur chef to create her own goulash recipe and the seemingly effortless creation of a veteran chef. The distinction is that the former may very well taste so bad that it has to be tossed. So the first principle of image editing is never to burn your bridges. Always preserve your raw file and quite possibly the original TIFF you generated from it, so you can go back to square one if needed. If you spend an hour cloning out a phone wire running across the full length of your picture, save that much work before proceeding to introduce a radical colour shift or sharpening procedure that may ruin the entire "meal".
+
+<p>As an art student I once saw a short movie made of Picasso creating a painting on glass of a Riviera beach scene. Pablo with brush and paints on one side of the vertical glass pane; camera on the other. He started out quickly and deftly, then had to wipe out an area, repainted, then wiped again. In the end he was not satisfied with the image and declared it an instructive failure. This may well be the most important lesson a creative artist can learn. If Picasso allowed himself to fail, so can you. To an artist, the eraser is every bit as important a tool as pencil and paper.
+
+<h2>Next steps</h2>
+
+<p>Learn about palette power and tone sculpting when you're ready in <a href="http://daystarvisions.com/Docs/Tuts/Sing/index.html">Digital Editing 102: Making it Sing</a>
+
+<!------------------------------------------------------------------>
+
+	</tr></td>
+
+	</table><!-- End Info Contents table -->
+
+	</TD><!-- End Main Area col -->
+
+</TABLE><!-- End Full Screen -->
+
+<map name="navbar2">
+<area shape="rect" coords="12,103,58,123" href="../../../index.html">
+<area shape="rect" coords="2,132,67,154" href="../../../PixMain.html">
+<area shape="rect" coords="6,161,59,180" href="../../../TextMain.html">
+<area shape='rect' coords='6,181,59,210' href='../../../ArtMain.html'>
+</map>
+
+</BODY><!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://hostingprod.com/js_source/geov2.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1135976830" alt="setstats" border="0" width="1" height="1"></noscript>
+<IMG SRC="http://geo.yahoo.com/serv?s=76001405&t=1135976830" ALT=1 WIDTH=1 HEIGHT=1>

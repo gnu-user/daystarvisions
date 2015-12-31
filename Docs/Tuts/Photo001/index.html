@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<!-- XHTML template version 1 --> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" > 
+<head> 
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+ <meta name="description" content="Basics of digital image capture" />
+ <meta name="keywords" content="Photography, digital, tutorial" />
+ <meta http-equiv="X-UA-Compatible" content="IE-edge" /> 
+ 
+ <title>Digital Photography 001 &nbsp; Daystar</title> 
+ 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/reset.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/nav_top.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/main_text.css'/> 
+ 
+</head> 
+ 
+<body> 
+ 
+<div id="div_background_wide"> 
+ 
+<div id="div_masthead"> 
+ 
+<img src="http://daystarvisions.com/Pix/Site/DayStar_logo-brown_bgrnd-sz300x40.jpg" height="40" width="300" alt="logo" class="logo" /> 
+ 
+<div id="div_nav"> 
+<ul> 
+<li><a id="li_nav_main" href="http://daystarvisions.com/index.html">Main</a></li> 
+<li><a id="li_nav_pix" href="http://daystarvisions.com/PixMain.html">Pictures</a></li> 
+<li><a id="li_nav_text" href="http://daystarvisions.com/TextMain.html">Text</a></li> 
+<li><a id="li_nav_art" href="http://daystarvisions.com/ArtMain.html">Art</a></li> 
+</ul> 
+</div> <!--div_nav--> 
+ 
+</div> <!--div_masthead--> 
+ 
+<div id="div_content_wide"> 
+ 
+<div id="div_title_bar"> 
+ 
+<h1>Digital Photography 001</h1> 
+<h1 class="Small">Under the hood of a digital camera</h1> 
+ 
+<p class="copyright">Page 1 of 1. Version 2.0, &copy;2010, 2013 by Dale Cotton, all rights reserved.</p>
+ 
+</div> <!--div_title_bar--> 
+
+<p>As film and film cameras become less prevalent even in the developing world, digital photography is well on its way to becoming the new standard. If you are one of the thousands of people switching from film to digital each year, if you have even a passing knowledge of how to use a personal computer, and if like me you're the sort of person who hates being in the dark but instead has to <i>know</i> what's going on, then this introduction was written for you. This is what your manual never told you, and everything applies equally to digital cameras from cell phone to dSLR.</p>
+
+<h2>Recording brightness</h2>
+ 
+<div class="div_pic_no_click"> 
+ 
+<img src="camera_sensor-sz710x320.jpg" width="710" height="320" alt="Fig. 1" /> 
+ 
+<p>Fig. 1: Typical image sensor (cut-away: <a href="http://dc.watch.impress.co.jp/">dc.watch</a>)</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>Images are captured by focusing light via the same lens/optical systems developed for film photography but focusing it onto something called a <b><i>light sensor</i></b> (the green rectangle in Fig. 1) instead of light-sensitive film. A camera's light sensor is a rectangle of mostly silicon, made up of millions of microscopic electronic circuits called <b><i>photodiodes</i></b> arranged in tidy rows and columns. A photodiode generates electricity when exposed to light via the magic of the photoelectric effect. The more light it is exposed to, the more electricity it produces. Measuring the electrical charge of each of the millions of photodiodes in a camera sensor is how a digital photograph is created. It's that simple.</p>
+
+<p class=MessageBox>Does technical jargon make you nervous? <b>Photodiode</b> sounds difficult but it's just three common Greek words strung together. Photos = light, di = two, hodos = path. A diode is an electrical component with two electrical connections; a photodiode is a special kind of diode that does the electrical thing but also responds to light. <!--(When Greek researchers need to name a new gadget do they combine common English words together? If a Greek researcher had discovered the photodiode, would he have called it a <i>lighttwopath</i>?)--></p>
+ 
+<div class="div_pic_no_click"> 
+ 
+<img src="ADC-sz300x251.jpg" width="300" height="251" alt="Fig. 2" /> 
+ 
+<p>Fig. 2: Analogue-to-digital converter chip</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>The photodiode sensor turns light into electricity &ndash; the more light, the more electricity &ndash; but how to convert a certain amount of electricity into a digital value? A complex component called the <b><i>analogue-to-digital converter</i></b>, or <b><i>ADC</i></b>, compares the actual charge of a given photodiode to its maximum possible charge, then expresses that ratio as a digital number, known as a <b><i>pixel</i></b> value (<b>pic</b>ure <b>el</b>ement). A pixel value gives us the brightness recorded by (usually) a single photodiode on the scale of pure black to pure white. The ADC can arbitrarily translate a given maximum electrical charge into most any number of steps; the question is how many?</p>
+
+<p class=MessageBox><b>Digital 123s</b>. A <b><i>bit</i></b> is the fundamental unit of information in digital technology, including computers, digital cameras, and digital audio. A bit is on or off, dah or dit, strong signal or weak signal, 1 or 0, which is why digital is known as a binary system (counting by twos). One bit can store two values, two bits can store four values (00, 01, 10, 11), three bits can store eight values, etc.
+<br><br>The next most common digital storage unit is the <b><i>byte</i></b>, which is eight bits or 2x2x2x2x2x2x2x2 = 256 values. Translated from binary arithmetic to decimal arithmetic, that gives us the integers 0 to 255. For example, the byte for 13 is 0000 1101. Because computer memory was standardized on the byte since the beginning, it takes one byte to store any number from 0 to 255 (0000 0000 = 0 and 1111 1111 = 255). But it takes two bytes to store the number 256, because the first byte is full at 255. If you have baskets that can only hold eight apples, if you want to store nine apples you need two baskets.</p>
+ 
+<div class="div_pic_no_click"> 
+ 
+<img src="grey_scale_16ths-sz640x120.jpg" width="640" height="120" alt="Fig. 3" /> 
+ 
+<p>Fig. 3: Continuous/analogue brightnesses (top) vs. 16-step digitized (bottom)</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>Turns out the human visual system can at best distinguish about 1000 distinct shades of brightness between pure black and pure white (far more than the mere sixteen distinctions shown along the bottom of Fig. 3). 1000 is an awkward number in binary, since one byte can store 256 distinctions and two bytes can store 65536 distinctions; 1000 fits nicely into ten bits (1024 distinctions), but is too big for one byte (8 bits) of digital storage and much too small for two bytes (16 bits) of digital storage. More on this in below.</p>
+ 
+<div class="div_pic_no_click"> 
+ 
+<img src="Flash_card-sz200x230.jpg" width="200" height="230" alt="Fig. 4" /> 
+ 
+<p>Fig. 4: Flash memory card</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>Having translated brightness into appropriate numbers, a new problem arises: A typical camera sensor contains millions of photodiodes, so how to store the resulting millions of pixel values in a single picture? The obvious thing to do is to use the same digital memory technology already in production for computers. One of many such memory technologies is the <b><i>flash card</i></b>. Flash is relatively expensive, but unlike the RAM chips used in desktop computers, flash technology retains information without needing a continuous supply of electricity.</p>
+
+<h2>Recording colour</h2>
+ 
+<div class="div_pic_no_click"> 
+ 
+<img src="Bayer_pattern_on_sensor-sz500x310.jpg" width="500" height="310" alt="Fig. 5" /> 
+ 
+<p>Fig. 5: Bayer filter array (modified from Wikipedia)</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>So far, there is no such thing as a light sensor that can directly sense colour. To a camera sensor, no matter whether CCD or CMOS, a rainbow is shades of grey. To capture colour information we have to resort to trickery. We've all seen coloured cellophane; a piece of hard candy might be wrapped in red or green transparent cellophane. If you hold a piece of red cellophane over one eye and close the other eye, you're seeing the world through a red filter &ndash; only red light can get through (looking at the world through those proverbial rose-coloured glasses). If you put a red filter over one photodiode, a green filter over a neighbouring photodiode, and a blue filter over a third photodiode, you can combine the signal strengths from the three photodiodes to specify any colour the eye can see, whether red, orange, yellow, mauve, purple, or whatever. So each of the millions of microscopic photodiodes within the postage-stamp-sized area of a light sensor has an equally microscopic red, green, or blue filter over it. The particular pattern of red, green, and blue filters is called the <b><i>Bayer pattern</i></b>, and is pretty much standardized in the photographic industry. (For technical reasons, the Bayer pattern actually uses two greens for each red and blue.)</p>
+ 
+<div class="div_pic_no_click"> 
+ 
+<img src="Bayer_pattern_on_sensor-sz305x220.jpg" width="305" height="220" alt="Fig. 6" /> 
+ 
+<p>Fig. 6: Bayer filter concept (Wikipedia)</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>There are a couple downsides to this trickery, however. For one thing, no one pixel records a full hue value. For another, colour filters cut out a certain portion of the in-coming light: red cuts out 70%, blue cuts out 90%, and green cuts out 40%, for an average of 60% loss of brightness. (Transmittance values, to be exact, are: 29.8839% for red, 58.6811% for green and 11.4350% for blue.)</p>
+ 
+<div class="div_pic_no_click"> 
+ 
+<img src="BA_Colour_triplets-sz750x200.jpg" width="750" height="200" alt="Fig. 7" /> 
+ 
+<p>Fig. 7: RGB triplets for several pure colours (modified from Bill Atkinson)</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>The upshot of all this is that each pixel in an image file typically contains a one byte number for red, a one byte number for green, and a one byte number for blue. We express this in human terms as an RGB triplet, such as [255, 255, 255] for pure white and [0, 0, 0] for pure black. A few more examples: the triplet [255, 0, 0] represents pure red; the triplet [128, 128, 128] is a medium grey. But each of the three digits can be any number from 0 to 255, so any random triplet, such as [137, 14, 248] represents one of the 16,777,216 possible 3-byte hues, whether or not we have a name for it, and even whether or not it actually exists (since the human visual system can only distinguish about 10 million of the 16.7 million RGB values).</p>
+
+<p class=MessageBox>There is a mismatch between the fact that humans can distinguish 1000 shades of brightness (luminance) and 10,000,000 different hues. Logic suggests that ideally we would want our RGB triplets to cover [0-999, 0-999, 0-999]. This would allow us to specify 1 billion hues, which is 100 times as many as we can actually distinguish. This paradox is resolved once you take into account that the brightnesses of red, green, and blue overlap.</p>
+
+<h2>Image files</h2>
+ 
+<div class="div_pic_no_click"> 
+ 
+<img src="DIGIC4-sz400x270.jpg" width="400" height="270" alt="Fig. 8" /> 
+ 
+<p>Fig. 7: DIGIC 4 is the signal processor chip used in a recent generation of Canon cameras (Canon)</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>The analogue-to-digital converter digitizes the output of each photodiode in the sensor. Yet another chip, called a <b><i>signal processor</i></b>, grabs all the digital numbers from the converter, works some more technical wizardry on those numbers, then spits them out as an image file for storage on the flash memory card.</p>
+ 
+<div class="div_pic_no_click"> 
+ 
+<img src="picture_as_hex-sz675z240.jpg" width="675" height="240" alt="Fig. 9" /> 
+ 
+<p>Fig. 9: Digital images are all numbers under the hood</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>Let's say we have a 12 megapixel digital camera with the pixels arranged in 3000 rows of 4000 pixels each. To record this as a series of RGB triplets, we would write a file with the first pixel's triplet, followed by the second pixel's triplet, all the way to the 12 millionth pixel's triplet, which is 36 million bytes of data. The only show-stopper with this method is that to open or read the file and turn it into a picture you also have to know at a minimum that each row is 4000 pixels long, since other ratios beside 3 to 4 are in common use. You could also store the numbers as 12 million R bytes, followed by 12 million G bytes, followed by 12 million B bytes.</p>
+
+<p>The convention here is to record some initial information, called <b><i>meta data</i></b>, at the beginning of an image file, then follow that with the long string of RGB numbers. Since some meta data <i>has</i> to be recorded to specify which arrangement has been used for RGB storage, camera companies quickly found it useful to throw in lots of other info, including the time and date the image was recorded, the camera model name, focal length, aperture, and shutter speed. Over time a particular convention for the layout of this meta data arose called <b><i>EXIF</b></i> (exchangeable image file), and a particular class of programs called EXIF readers now exist to ferret out and display this information. Since the header information can be variable length, a key part of the header is a number, called the offset, that indicates where the header ends and the actual RGB data begins.</p>
+
+<h3>BMP</h3>
+<p>What we've described so far very much resembles the <b><i>BMP</b></i> or (<b>b</b>it<b>m</b>a<b>p</b> image file type. BMP is the simplest format to read and write but is not in common use because it takes up so much storage space. The image file from a 12 mp camera would take up more than 36 megabytes of storage if saved as a standard BMP file. Early on, programmers attempted to address this problem by employing a bit of cleverness. If you look at the RGB triplets in a typical image file you'll see long strings of repeats scattered about. A blue sky varies subtly and gradually in shade from one shade of sky blue to another, but repeats of the exact same shade &ndash; perhaps [168, 185, 233] &ndash; will be rife. So instead of writing the repeats out one after the other, a modified version of the BMP file format allowed them to be written as [repeat count, RGB] pairs (called run length encoding or RLE). So a portion of a BMP file in which eleven pixels in a row are all the same sky blue colour would contain the digital equivalent of 11 x [168, 185, 233]. (A complete description of the BMP format can be found on <a href="http://atlc.sourceforge.net/bmp.html">SourceForge</a>.) BMP files typically end with the <b>.bmp</b> extension.</p>
+
+<h3>TIFF and JPEG</h3>
+<p>While the BMP format is relatively easy to understand, it has long since been superceded by more technically sophisticated file formats more suited to digital photographic image information. <i><a href="http://www.fileformat.info/format/tiff/corion.htm">TIFF</a></i> (tagged information file format) started out with good intentions as a universal public domain image format with what were then all the latest bells and whistles. But various graphics app developers modified the format to address their own needs, quickly degenerating the standard into a visual Tower of Babel. TIFF files generally end with the <b>.tif</b> extension.</p>
+
+<p>As cameras evolved with ever-larger numbers of megapixels and as motion picture capture entered the scene, the problem of file size quickly turned into a crisis. To address this problem the radically new <i><a href="http://en.wikipedia.org/wiki/Jpeg">JPEG</a></i> (Joint Photographic Experts Group) format entered the scene in 1992, employing a logic that actually throws away data to allow cameras and software to reduce file sizes to any extreme desired with as little image degradation as possible. (Compression that throws away data is called <i>lossy</i>, as opposed to lossless compression which retains all data.) JPEG files generally end with the <b>.jpg</b> extension.</p>
+
+<p>JPEG is the format that has become the default for camera output and for image exchange on personal computers, e-mail, and the Internet. TIFF, on the other hand, is frequently used by graphics professionals who are willing to trade its greater file sizes per image for the fact that data remains undegraded by lossy compression. TIFF files cannot be viewed in web browsers and e-mail apps.</p>
+
+<p class=MessageBox><b>Other formats</b>. There have been many other image file formats in use. In the 1980s the <b><i>GIF</b></i> (Graphic Image File) format was introduced by CompuServe and was nearly universal until it became mired in a patent dispute. It had several upsides for web use but also the serious limitation of allowing only 256 colours per image, rendering it pretty much useless for photographs. An open source and improved competitor to GIF ensued, called <b><i>PNG</b></i> (Portable Network Graphics). PNG files cannot be compressed to as small sizes as JPEG files so are not in wide use. Yet another format in wide use is <b><i>PSD</b></i> (Photoshop Document). This is Adobe's proprietary image file format used by Photoshop. File sizes tend to be very large compared to JPEG, so PSD is not supported by web browsers. Interestingly, Adobe itself now recommends Photoshop users use TIFF instead of PSD, now that TIFF is fully mature.</p>
+
+<h3>Raw</h3>
+<p>More expensive cameras often have the option of saving images in yet another file format, called <b><i>raw</b></i>. Raw is actually not a single format but an entire class of formats with certain elements in common. Raw files contain a typical meta data section to start, like any other image format, but this is followed not by RGB triplets, but by the brightness numbers recorded by each photodiode in the sensor, one after the other. Since there is only one number (which can be either one or two bytes in length), not three, for each pixel, this is a fairly compact lossless file format, and lossless compression can be applied in the camera to further reduce file sizes. The downside of raw is that each camera model's raw format is unique and proprietary, so raw files cannot simply be viewed out of the camera by general-purpose graphics apps like web browsers and e-mail packages. Instead, raw files must be converted into a more universal format such as JPEG, for viewing. Raw files end with a variety of extensions, such as .orf, .nef, and .crf, each extension being unique to a particular camera company.</p>
+
+<p>The specialized apps that convert raw files are called <b><i>raw converters</i></b>. A further upside to using raw files is that often raw converters running on a desktop computer can produce superior results to what the camera itself can do within the severe constraints of limited processing power and near-instantaneous time constraints.</p>
+
+<p class=MessageBox><b>File names</b>: a niggly point that gets novices into trouble is the difference between file naming conventions on different computers. Windows computers allow very long file names but disallow a few reserved punctuation marks, namely <b>< > : " / \ | ? *</b>. Macintosh computers have similar restrictions. Unix computers have even more restrictions, especially in not permitting spaces in file names. Since the Internet is run on Unix computers this becomes a serious problem when uploading files from a personal computer to the Internet. The upshot is that it's safest to name your image files with no spaces and no other punctuation except the underline and the hyphen.</p>
+
+<h2>Putting it all together</h2>
+ 
+<div class="div_pic_no_click"> 
+ 
+<img src="Digital_photogs-E-P1-0282-sz600x450.jpg" width="600" height="450" alt="Fig. 10" /> 
+ 
+<p>Fig. 10: Digital photographers enjoying their cameras</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>A digital camera is actually a small portable computer with a lens and sensor attached to it. Hopefully, now that you have a better understanding of the fundamentals of what's going on under the hood, you'll be able to avoid getting lost in a sea of technical confusion and simply enjoy your camera like the two fellows in Fig. 9.</p>
+
+<h2>Further reading</h2>
+
+<p><a href="http://www.astropix.com/HTML/I_ASTROP/HOW.HTM">How Digital Cameras Work</a> by Jerry Lodriguss (excellent for digging deeper)</p>
+
+<p><a href="http://daystarvisions.com/Docs/Tuts/CamBasics/pg1.html">Camera Fundamentals</a> (how cameras in general work)</p>
+
+<p><a href="http://www.dpreview.com/learn/">dpreview.com concept pieces</a></p>
+
+<p><a href="http://www.cambridgeincolour.com/tutorials.htm">Cambridge in Colour Tutorials</a>.</p>
+
+ 
+</div> <!--div_content--> 
+ 
+</div> <!--div_background--> 
+ 
+</body>

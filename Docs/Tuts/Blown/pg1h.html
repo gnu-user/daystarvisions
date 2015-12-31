@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+
+<HEAD>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+ <meta name="description" content="Digital photography editing tutorial">
+
+ <meta name="keywords" content=""Photography, digital editing, Photoshop">
+
+ <title>Daystar Visions: Eradicating Blown Highlights in Photoshop</title>
+
+ <LINK href="http://daystarvisions.com/DSDocs.css" rel="stylesheet" type="text/css">
+ <LINK href="../DSDocs.css" rel="stylesheet" type="text/css">
+
+</HEAD>
+
+<BODY BGCOLOR="black" TEXT="black" LINK="black" VLINK="black" ALINK="black">
+
+<TABLE ALIGN="left" width="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><!-- Start Full Screen -->
+
+<TR ALIGN="left" VALIGN="top">
+
+	<TD>
+
+	<!-- Start Left Nav: -->
+	<table align="left" width="75" border=0 cellspacing=0 cellpadding=0>
+	<tr>
+	<td VALIGN="top">
+	<img src="../../../Pix/Site/DaystarArtOnlyLNav.jpg" usemap="#navbar2" align="top" width="75" height="440" border=0 alt="image" ismap>
+        </td></tr>
+	</table><!-- End Left Nav -->
+
+        </TD>
+        <TD width="100%" bgcolor="#D8C890">
+
+	<!-- Start Info Contents table: -->
+             <table align="center" width="100%" cellspacing="15" cellpadding="0">
+             <tr><td>
+
+<!-- **************************** Content **************************** -->
+
+<H1>Eradicating Blown Highlights in Photoshop</H1>
+<P CLASS=SmallNoteCentered>Version 1.0, &copy; 2008 by Dale Cotton, all rights reserved
+
+<!--p class=Noteboxcentered>The following techniques should work in nearly any version of Photoshop, including Elements-->
+
+<p class="Centered"><a href="Blown_clouds_example_full.jpg"><IMG SRC="Blown_clouds_example_sz550x430.jpg" width=550 height=430 BORDER=8></a>
+<p class=SmallNoteCentered>Fig. 1: Blown highlights (click to download full size version)
+
+<p>Sometimes the dynamic range of a scene exceeds that of our camera, no matter how carefully we expose. In Fig. 1 the ugly white patch of clouds on the right results from the sun being directly behind it, and could well be considered as specular glare. Specular or no, if this were part of an image that was otherwise a keeper, it would have to go. I'm sure too many otherwise great shots languish on photographer's hard drives simply because the photographer doesn't know the techniques needed to save them.
+
+<h2>Example 1 &ndash blown clouds &ndash technique 1</h2>
+
+<p>To follow along: right-click on Fig. 1, download the full scale image, then open it in Photoshop (most any version will do):
+
+<p class="Centered"><IMG SRC="Clouds_2_sz600x370.jpg" width=600 height=370 BORDER=4>
+<p class=SmallNoteCentered>Fig. 2: Curve to clip blown highlights
+
+<p>1. Open the curves dialogue, click on the darkest part of the clouds, then click where that point falls on the curve to create a lock-down point.
+
+<p>2. Create a few more lock-downs below that one to keep the bottom of the curve from skewing.
+
+<p>3. Drag the top right end of the &quot;curve&quot; line <i>down</i>. This clips the highlights. I've clipped fairly extremely; you can go anywhere north of that you like.
+
+<p>In  cases in which the blown area is fairly small this may be all you'll need to do. No such luck here. [An alternate approach to these first three steps is to use the combination of eye dropper and paint bucket tools, as demonstrated in Example 2.]
+
+<p>4. Close the Curves dialogue then create a history brush point on whatever history state came just before the curve.
+
+<p class="Centered"><IMG SRC="Clouds_3_sz550x400.jpg" width=550 height=400 BORDER=4>
+<p class=SmallNoteCentered>Fig. 3: Early stages of history brush work
+
+<p class="Centered"><IMG SRC="Clouds_4_sz500x400.jpg" width=500 height=400 BORDER=4>
+<p class=SmallNoteCentered>Fig. 4: More history brush work
+
+<p>5. Using the history brush set to some low opacity like 10% and fairly large width like 45, undo the clipping in the areas furthest away from the original dark areas of the cloud. Start where the sun must be (see Fig. 3) and work a circular area at that point back to full blown brightness while expanding your history brush region with each pass. If you make a move you don't like, simply use the Ctrl+Z normal undo to get rid of it. I often work at high magnifications like 200% and 300%.
+
+<p class="Centered"><IMG SRC="Clouds_5_sz550x400.jpg" width=550 height=400 BORDER=4>
+<p class=SmallNoteCentered>Fig. 5: Using the rubber stamp AKA clone tool
+
+<p>6. At any point switch to the clone tool, set the opacity to low and brush width fairly large, choose a source point in the dark regions of the clouds, then click along the edge between the dark area and the light area. Move along that border to lessen the transition. You've spent a life time observing clouds (whether on purpose or not); so trust your eye to tell you if anything you do is not believable &ndash; simply undo that stroke and try again.
+
+<p class="Centered"><IMG SRC="Clouds_6_sz550x430.jpg" width=550 height=430 BORDER=4>
+<p class=SmallNoteCentered>Fig. 6: Final result
+
+<p>7. Switch back and forth between history brush and clone stamp as desired until you have a believable shading throughout the previously blown region.
+
+<h2>Example 1 &ndash blown clouds &ndash technique 2</h2>
+
+<p>Another approach to the same problem is to use only the rubber stamp tool:
+
+<p class="Centered"><IMG SRC="Clouds_7_sz540x430.jpg" width=540 height=430 BORDER=4>
+<p class=SmallNoteCentered>Fig. 7: Select Color Range
+
+<p>1. Open the original image, open the Select->Color Range... dialogue, set the fuzziness to approx. 25, click on any blown highlight area, then click OK to close the dialogue. You now have a selection of the the blown areas.
+
+<p class="Centered"><IMG SRC="Clouds_8_sz550x430.jpg" width=550 height=430 BORDER=4>
+<p class=SmallNoteCentered>Fig. 8: Cloning in transitions
+
+<p>2. Switch to the rubber stamp tool, set the brush size fairly broad &ndash; maybe 65 &ndash; with soft edges and opacity around 20. Sample from the dark areas outside the selection and clone into the selection to create transitions from dark to white. Use even lower opacity and/or a smaller brush to blend.
+
+<p>This method can be much quicker than the first but requires that there be something appropriate as a source for rubber stamping, which is not always the case.
+
+
+<h2>Example 2 &ndash skin and clothing</h2>
+
+<p class="Centered"><a href="Blown_person_example_full.jpg"><IMG SRC="Blown_person_example_sz550x550.jpg" width=550 height=550 BORDER=8></a>
+<p class=SmallNoteCentered>Fig. 9: Blown highlights in skin and clothing (click for full scale version)
+
+<p>Fig. 9 &ndash; a small crop from a larger image &ndash; is another example of blown highlights. We not only have to deal with the white areas but the posterization that's especially obvious in the left arm and right leg.
+
+<p class="Centered"><IMG SRC="Face_1_sz340x310.jpg" width=340 height=310 BORDER=4>
+<p class=SmallNoteCentered>Fig. 10: Select face area
+
+<p>1. Lasso the girl's face; no great care for accuracy needed.
+
+<p>2. Press the letter I to bring up the eyedropper, then grab her skin colour from some area of medium tone.
+
+<p class="Centered"><IMG SRC="Face_2_sz330x300.jpg" width=330 height=300 BORDER=4>
+<p class=SmallNoteCentered>Fig. 11: After paint bucket
+
+<p>3. Press G to switch to the paint bucket tool (press Shift+G if the Gradient tool comes up instead). Set the Tolerance to 100. Click on a blown spot in her cheek or nose.
+
+<p>4. Press Ctrl+Shift+F (I believe that's Option+Shift+F on the Mac) to bring up the Fade dialogue, then fade to about 50%. Look for the percent at which there is minimal demarcation between the new colour area and the original while still eliminating the blown highlights.
+
+<p class="Centered"><IMG SRC="Face_3_sz310x300.jpg" width=310 height=300 BORDER=4>
+<p class=SmallNoteCentered>Fig. 12: After cloning
+
+<p>5. Use the rubber stamp tool at low opacity to remove any demarcation between old and new colour and to blend between highlight and shadows.
+
+<p>If you want even less glare on the skin, simply repeat from step 2. I suggest you also do the right leg and left elbow for further practice. Use the rubber stamp liberally to smooth out the posterized transition between shadow and mid-tone.
+
+<p>The girl's shirt can be handled with exactly the same techniques. Select the entire shirt. Choose a neutral light grey colour from within the shirt area, then use the paint bucket at 100% to fill in the blown highlights, then fade almost to about 10%.
+
+<p class="Centered"><IMG SRC="Shirt_1_sz600x550.jpg" width=600 height=550 BORDER=4>
+<p class=SmallNoteCentered>Fig. 13: Selecting part of shirt to create a transition
+
+<p>To improve the shadow/highlight transition, select a swath covering that area, then fill using the paint bucket with a middle grey eyedropped from the shirt, then fade to some intermediate value. Use the rubber stamp to blend in.
+
+<p class="Centered"><a href="Blown_person_final_full.jpg"><IMG SRC="Blown_person_final_sz600x600l.jpg" width=600 height=600 BORDER=8></a>
+<p class=SmallNoteCentered>Fig. 14: Final edit
+
+<p>Click on Fig. 14 to see my own results from following the above steps.
+
+<br><br><br>
+
+
+<!-- ************************** End Content ************************** -->
+
+             </td></tr>
+             </table>
+	</TD><!-- End Main Area col -->
+
+</TR>
+
+</TABLE><!-- End Full Screen -->
+
+<map name="navbar2">
+<area shape="rect" coords="12,103,58,123" href="../../../index.html" alt="doc">
+<area shape="rect" coords="2,132,67,154" href="../../../PixMain.html" alt="doc">
+<area shape="rect" coords="6,161,59,180" href="../../../TextMain.html" alt="doc">
+<area shape='rect' coords='6,181,59,210' href="../../../ArtMain.html" alt="doc">
+</map>
+
+</BODY>
+</HTML>

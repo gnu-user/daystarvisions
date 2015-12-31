@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<HEAD>
+ <title>Is Photography Art?</title>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <meta name="description" content="Is Photography am Art?">
+ <meta name="keywords" content="Photography, Art, Aesthetics">
+
+ <LINK href="http://daystarvisions.com/DSDocs.css" rel="stylesheet" type="text/css">
+
+ <LINK href="../DSDocs.css" rel="stylesheet" type="text/css">
+ </HEAD>
+
+<BODY BGCOLOR="#000000" TEXT="#000000" LINK="#000000" VLINK="#000000" ALINK="#000000">
+
+<TABLE ALIGN="left" width="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<!-- Start Full Screen -->
+
+<TR ALIGN="left" VALIGN="top">
+
+	<TD>
+
+	<!-- Start Left Nav: -->
+
+	<table align="left" width="75" border=0 cellspacing=0 cellpadding=0>
+	<tr>
+	<td VALIGN="top">
+	<img src="../../../Pix/Site/DaystarArtOnlyLNav.jpg" usemap="#navbar2" align="top" width="75" height="440" border=0 ismap alt="image"></td>
+	</table><!-- End Left Nav -->
+
+	<TD width="100%" bgcolor="#D0C59F"><!-- Start Main Area col: -->
+
+	<!-- Start Info Contents table: -->
+	<table align="center" width="100%" cellspacing=15 cellpadding=0>
+
+	<tr><td>
+
+<!--=============================== Content ===============================-->
+
+<H1>Is Photography Art?</H1>
+<!--h1 class=Small>Or a Voice Crying out in the Wilderness: 
+Let My Pictures Go</h1-->
+
+<P CLASS=SmallNoteCentered>Version 1.0, &copy; 2009 by Dale Cotton, all rights reserved
+
+<p style="text-align:center"><a href="http://upload.wikimedia.org/wikipedia/commons/7/72/Half_Dome_at_sunset.jpg"><IMG SRC="http://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Half_Dome_at_sunset.jpg/800px-Half_Dome_at_sunset.jpg" width=600 height=400 BORDER=8></a>
+<p class=SmallNoteCentered>Half Dome at Sunset by Mila Zinkova (source: <a href="http://en.wikipedia.org/wiki/File:Half_Dome_at_sunset.jpg">Wikipedia</a>)
+
+
+<p>The question occasionally gets asked in photography circles whether photography can be called an art form. Given the relentless experimentation of the past two centuries in the visual arts, the confusion implicit in such a question is more than understandable. If Joe Canonista travels to Yosemite, gets up before dawn, makes the pilgimage to Half Dome by following the well-marked Ansel Adams Trail, puts his ultra-recent-model, ultra-high-megapixel dSLR on his brand-new $1000 carbon fibre tripod, attaches his cherry-picked, spotlessly white-barreled 300mm, f/2.8 prime lens, then uses mirror-lock-up plus a cable release just as the orange-red rays of the rising sun signal the dawn of a new day &ndash; is the resulting 16x24 inch Fuji Crystal Archive print a work of art ... or is it not?
+
+<h2>Representation vs. expression</h2>
+
+<!--p style="text-align:center"><IMG SRC="Shoe_Sketch-sz500x333.jpg" width=550 height=366 BORDER=4-->
+<p style="text-align:center"><IMG SRC="Shoe_Sketch-sz500x333.jpg" width=500 height=333 BORDER=4>
+<p class=SmallNoteCentered>Shoe
+
+<p>Not even every sketch is art. If I take pencil to paper to accurately draw the outline of a shoe, I may be attempting a vocabulary lesson for an extraterrestrial or explaining where a repair is needed to the local shopping mall cobbler or copying a new shoe design as an industrial spy ... or I may be creating what I sincerely think of as a work of fine art. 
+
+<p style="text-align:center"><a href="http://store.sirchie.com/CrimeAccident-Photo-Evidence-Indicator--P2069C541.aspx"><IMG SRC="crime_scene-sz550x400.jpg" width=500 height=364 BORDER=8></a>
+<p class=SmallNoteCentered>Crime scene photo
+
+<p>Similarly, in photography we have a fundamental distinction between documentary photographs and art photographs. Many photos are taken with no artistic intent whatsoever; their purpose is solely to document whatever the camera has been pointed at. If I squeeze off a dozen flash-lit photographs of a yellow-tape-cordoned crime scene, I may be a police photographer, a photojournalist, an insurance claimant ... or a self-proclaimed art photographer with a fashionably morbid bent. 
+
+<p style="text-align:center"><a href="http://en.wikipedia.org/wiki/File:Duchamp_Fountaine.jpg"><IMG SRC="Duchamp_Fountaine-sz550x590.jpg" width=450 height=483 BORDER=8></a>
+<p class=SmallNoteCentered>Fountain by Marcel Duchamp, documentary photo of (conceptual) art (source: <a href="http://en.wikipedia.org/wiki/File:Duchamp_Fountaine.jpg">Wikipedia</a>)
+
+
+<p>But ultimately, as Joseph Campbell famously quipped: "art is anything you can get away with". Really. That's the only definition that's going to cover everything from the Lascaux cave paintings to Nude Descending a Staircase to the latest post-pseudo-nihilistic-quasi-conceptual visual insult now showing at an art gallery near you. 
+
+<p>Yet few people are truly comfortable with the uncertainty implicit in such an open-ended anti-definition, so let's side-step hysteria by turning to history:
+
+<h2>Turning point</h2>
+<p style="text-align:center"><a href="http://en.wikipedia.org/wiki/File:Woven_bamboo.jpg"><IMG SRC="http://upload.wikimedia.org/wikipedia/en/thumb/3/3d/Woven_bamboo.jpg/800px-Woven_bamboo.jpg"
+ width=550 height=412 BORDER=8></a>
+<p class=SmallNoteCentered>Bamboo basket, Bangladore market, 2007 (source: <a href="http://en.wikipedia.org/wiki/File:Woven_bamboo.jpg">Wikipedia</a>)
+
+<p>Go back to any time in human history preceding 1800 AD, and you'll find the modern distinction between the word "art" and the word "craft" becoming increasingly moot. Visual art was what any crafts-person who worked in a visual medium &ndash; whether painting, drawing, etching, sculpture, pottery, leatherwork, stone facade-carving, stained-glass-inlaying, needlepoint, or basket-weaving. &ndash; produced. The result landed anywhere on the spectrum from pure utilitarian to pure ornamentation, simply as dictated by the requirement of the job at hand. 
+
+<p style="text-align:center"><a href="Basket_of_Apples_Cezanne-sz800x677.jpg"><IMG SRC="Basket_of_Apples_Cezanne-sz550x465.jpg" width=550 height=465 BORDER=8></a>
+<p class=SmallNoteCentered>Basket of Apples by Paul Cezanne (source <a href="http://www.onlinepaintings.net/ebay/images/N/1/1302B.jpg">www.onlinepaintings.net</a>
+
+<p>Now go forward <i>from</i> 1800 and we see an essential dichotomy emerging between the urban phenomenon of art-for-art's-sake AKA fine art and "mere" utilitarian craftsmanship. Increasingly, it becomes a religious question: didst thou drink the high-grade Kool-Aid or didst thou not? The wedge issue, the foot in the door, from the Impressionist rebellion against the Parisian Salon onward, is whether a object is expressive of an artist's perception or is it not. Until the abstract art movement, a work of fine art presented an element from the external world &ndash; what the artist was reacting to &ndash; plus an element from the internal world &ndash; how the artist reacted to that external element, fusing the result into a single image.
+
+<h2>Deconstructing Diego</h2>
+
+<p style="text-align:center"><a href="http://en.wikipedia.org/wiki/File:Amedeo_modigliani_-_retrato_de_diego_rivera_02.jpg"><IMG SRC="http://upload.wikimedia.org/wikipedia/commons/4/42/Amedeo_modigliani_-_retrato_de_diego_rivera_02.jpg"
+ width=400 height=496 BORDER=8></a>
+<p class=SmallNoteCentered>Portrait of Diego Rivera by Amedeo Modigliani (source: <a href="http://en.wikipedia.org/wiki/File:Amedeo_modigliani_-_retrato_de_diego_rivera_02.jpg">Wikipedia</a>)
+
+
+<p>What we also see changing from 1800 to now is an ever-increasing de-emphasis on beauty, on that which pleases the eye. Strangely, we don't see a corresponding shift away from that which pleases the palate; we don't find master chefs creating dishes which systematically push our tolerance for sour and bitter to new extremes. We do find composers experimenting with a-tonal a-rhythmia, yet their output is notably missing from concert halls, both then and now. James Joyce did Finnegans Wake; everyone was strangely unable to attend the resulting lecture; then writers everywhere got back to employing the mere word as spoken to convey their multitude of multi-faceted thoughts. 
+
+<p>So why is the post-deconstructionist visual arts Kool-Aid still being served as sacrament both in ivied university and urban gallery? Primarily, I suspect, because we continue to pay university PhD's to profess to the visual arts as being the realm of whatever head-trip seems particularly fine and worthy to those who live in the head-trip land du jour. The rest of us &ndash; might we one day not see fit to reclaim the visual arts from its present enslavement to the Dark Lord of the Superior Intellect?
+
+<p>Let us then dream: what if the visual arts were no longer primarily the vehicle of intellectual expression but of emotional and/or spiritual and/or sensual expression? Could we unlock the spirits of Rembrandt, Vermeer, and Van Gogh from their dank dungeon cells multiple floors below the Ivied Ivory Tower to once again see spring blossom, smell the sweetness of door-yard lilac, and hear the voice of the turtle wafting across the land? 
+
+<p>And if we did so, might photography &ndash; with all its digital-electro-mechanical plastic-fantastic techno-paraphrenalia &ndash; then hold its head high? Or must it slink miserably away? 
+
+<h2>Visual language and nuance</h2>
+
+<!--p style="text-align:center"><a href="http://daystarvisions.com/Pix/Show-Mo/800s/07-L5875sz800x557.jpg"><IMG SRC="http://daystarvisions.com/Pix/Show-Mo/800s/07-L5875sz800x557.jpg"
+ width=550 height=383 BORDER=8></a>
+<p class=SmallNoteCentered>Flea Market Dress Display (07-L5875)-->
+
+<p style="text-align:center"><a href="In_the_Drawer_Abstract-240051-E-P1-ISO_200-20091124-1246-sz1008x756.jpg"><IMG SRC="In_the_Drawer_Abstract-240051-E-P1-ISO_200-20091124-1246-sz550x413.jpg"
+ width=550 height=383 BORDER=8></a>
+<p class=SmallNoteCentered>Red Rose in my Drawer (09-EP10051)
+
+
+<!--p style="text-align:center"><IMG SRC="EP1-0030-sz550x413.jpg"
+ width=550 height=413 BORDER=4></a>
+<p class=SmallNoteCentered>Night lights (09-EP30030)-->
+
+<p>Yes, my friends: photography can do abstract. Photography can do expressive. But what photography does natively is to exploit the same ho-hum visual language used by our boring old visual cortices. Only 540 million years in the making, long since exhausted by 50,000 years of human beings expressing human things. The same old, same old 1000-word-denomination coinage of yore.
+
+<!--p style="text-align:center"><a href="http://daystarvisions.com/Pix/In_My_Life/bin/images/large/12_Matthew_Mika_Grandma_in_livingroom_K20D_ISO_1600_20080913_2954_b.jpg"><IMG SRC="http://daystarvisions.com/Pix/In_My_Life/bin/images/small/12_Matthew_Mika_Grandma_in_livingroom_K20D_ISO_1600_20080913_2954_b.jpg"
+ width=572 height=458 BORDER=8></a>
+<p class=SmallNoteCentered>Grandma in Livingroom (08-2954)-->
+
+<p style="text-align:center"><a href="http://www.lensculture.com/webloglc/images/frank.jpg"><IMG SRC="http://www.lensculture.com/webloglc/images/frank.jpg"
+ width=572 height=458 BORDER=8></a>
+<p class=SmallNoteCentered>Elevator &ndash; Miami Beach, 1955 by Robert Frank (source: <a href="http://www.npr.org/templates/story/story.php?storyId=112389032">www.npr.org</a>)
+
+<p>What our merely common, merely-legacy visual language excels at is above all one thing &ndash; <i>nuance</i>. No word of high-brow conceptualism this; merely subtlety of sense compounded upon subtlety of feeling compounded on subtlety of soul. What is the young elevator operator feeling as she looks upward for the ten thousandth time? Thou knoweth; thy frontal cortex knoweth not. 
+
+<!--p style="text-align:center"><IMG SRC="../../Tuts/LandCam/adams_clearing_winter_storm.jpg" width=572 height=480 BORDER=4>
+<p class=SmallNoteCentered>Clearing Winter Storm by Ansel Adams-->
+
+<p style="text-align:center"><a href="http://upload.wikimedia.org/wikipedia/commons/2/21/Adams_The_Tetons_and_the_Snake_River.jpg"><IMG SRC="Adams_The_Tetons_and_the_Snake_River-sz550x440.jpg" width=550 height=440 BORDER=8></a>
+<p class=SmallNoteCentered>Clearing Winter Storm by Ansel Adams (source: <a href="http://en.wikipedia.org/wiki/File:Adams_The_Tetons_and_the_Snake_River.jpg">Wikipedia</a>)
+
+<p>And how does it feel to face yon mighty Half Dome at dawn on a glorious spring morn? Only thy local Canonista knoweth for sure. So go forth, young Photo-Enthusiast, and greet thee the new day, Greet it fully confident that no man, yea: even no Fine Arts PhD, can legitimately tear the mantle of Fine Artist emblazoned in 16-million RGB colours from thy broad and mighty shoulders. Rejoice!
+
+<h2>OK! Sorry!</h2>
+
+<p>What I <i>meant</i> to say was: the distinction between art and craft is just a passing fluke of recent history. Whatever you do with sincere craftsmanship is art. And if you can make us feel what you feel about what you're showing us, that's high art indeed. 
+
+<br><br>
+<p class=SmallNoteCentered><img src="../../../Pix/Site/BlackLine.gif" width="450" height="10" alt="image"><br><br>
+Return to <a href="http://daystarvisions.com/ArtMain.html">Digital Art</a>
+
+
+<!--============================= End Content ============================-->
+
+	</td></tr>
+
+	</table><!-- End Info Contents table -->
+
+	</TD><!-- End Main Area col -->
+
+</TR>
+  
+</TABLE><!-- End Full Screen -->
+
+<map name="navbar2">
+<area shape="rect" coords="12,103,58,123" href="../../../index.html" alt="image">
+<area shape="rect" coords="2,132,67,154" href="../../../PixMain.html" alt="image">
+<area shape="rect" coords="6,161,59,180" href="../../../TextMain.html" alt="image">
+<area shape='rect' coords='6,181,59,210' href='../../../ArtMain.html' alt="image">
+</map>
+
+</BODY>
+</HTML><!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://us.js2.yimg.com/us.js.yimg.com/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1259087010" alt="setstats" border="0" width="1" height="1"></noscript>

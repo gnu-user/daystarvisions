@@ -1,0 +1,152 @@
+body { 
+	background-color:#000000; /*D8C890,F2ECD2,FAEFD3,F9F5EC,F1E7BE*/ 
+	/*line-height: 2.88889;*/
+	margin:0;
+	padding: 0;
+}
+#background {
+	background-color:#E7DFBC; 
+	margin: -10px 5px 5px 5px; 
+	max-width:750px; 
+	padding: 0px;
+}
+#nav
+{
+	background-color:#000000; 
+	margin:0px 0px 0px 10px;
+	padding:0;
+}
+#nav ul
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+#nav li
+{
+	display:inline;
+	padding:0 10px 0 0;
+	margin:0;
+	font-family:Impact, Charcoal, sans-serif;
+	color:#ffffff;
+}
+#nav a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #B7A5DF;
+}
+#nav a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+#nav a:hover, a:active { 
+	text-decoration: underline; 
+}
+
+#nav_main
+{
+	color:#6B869C;
+}
+#nav_pix
+{
+	color:#84826B;
+}
+#nav_text
+{
+	color:#BDB684;
+}
+#nav_art
+{
+	color:#CEC7AD;
+}
+#content {
+	max-width:700px; 
+	background-color:#E7DFBC; /*D8C890,F2ECD2,FAEFD3,F9F5EC,F1E7BE*/ 
+	margin: 10px 10px 10px 10px; 
+	padding: 10px;
+}
+
+p {
+	/*font: normal 10pt Trebuchet MS, Arial, sans-serif;*/
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+	/*background-color: white;*/
+   	text-align: justify; 
+	margin-left:5px; 
+	margin-right:2px;
+   	color: black; 
+}
+p.SmallNoteCentered { 
+	font: normal 9pt Comic Sans, Arial, sans-serif;
+	text-align: center; 
+	margin-left:5px; 
+	margin-right:4px;
+	margin-top:-2px;
+        color: black; 
+}
+p.LineIndent {
+	font: normal 10pt Comic Sans, Arial, sans-serif;
+   	text-align: justify;
+	border-left: solid thin; 
+	margin-left:7px; 
+	margin-right:5px;
+	padding:1px;
+   	color: #49473A; 
+}
+
+li { 
+	/*list-style: circle outside;*/        
+	font: normal 11pt "Comic Sans", Arial, sans-serif;
+   	text-align: justify; 
+	max-width:550px; 
+	margin:0 0 0 0;
+   	color: #000000; 
+}
+
+h1 { 
+	font: bold 24pt Impact, Arial; 
+	margin-left:2px;
+	margin-top:0px;
+        margin-bottom:0px;
+	text-align: center;
+	color: black; 
+}
+h1.Small {
+	font: bold 18pt Impact, Arial; 
+	margin-left:0;
+}
+h2 { 
+	font: 16pt Impact, Arial; 
+	margin-left:0px;
+	margin-right:2px;
+	margin-top:20px;
+        margin-bottom:-5px;
+   	padding-left: 3px;
+        /*border-top: medium double black;*/
+   	/*border-left: medium double black;*/
+	text-align: left;
+	color: #49473A; 
+        background-color:#D6C99E
+}
+h3 { 
+	font: bold 14pt Impact, Arial; 
+	margin-left:4px;
+	margin-top:5px;
+	text-align: center;
+	color: #49473A; 
+}
+h3.Left { 
+	font: bold 14pt Impact, Arial; 
+	margin-left:2px;
+	margin-top:3px;
+	text-align: Left;
+	color: #49473A; 
+}
+h4 { 
+	font: bold 11pt Impact, Arial; 
+	margin-left:4px;
+	margin-top:2px;
+	text-align: center;
+	color: #49473A; 
+}
+
+span.CentredLine { text-align: center }

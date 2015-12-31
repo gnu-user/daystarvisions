@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<!-- XHTML template version 1 --> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" > 
+<head> 
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+ <meta name="Keywords" content="Photography, Art, Composition, Aesthetics" />
+ <meta name="description" content="Two alternate ways to do local contrast enhancement." />
+ <meta http-equiv="X-UA-Compatible" content="IE-edge" /> 
+ 
+ <title>LCE Mark II and Mark III &nbsp; Daystar</title> 
+ 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/reset.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/nav_top.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/main_text.css'/> 
+
+ <!--style type="text/css">
+  #div_footer li
+  {
+        float: left;
+	padding: 5px 40px 0 0;
+	margin-left: 20;
+	font-family: Impact, Charcoal, sans-serif;
+  } 
+ </style-->
+ 
+</head> 
+ 
+<body> 
+ 
+<div id="div_background"> 
+ 
+<div id="div_masthead"> 
+ 
+<img src="http://daystarvisions.com/Pix/Site/DayStar_logo-brown_bgrnd-sz300x40.jpg" height="40" width="300" alt="logo" class="logo" /> 
+ 
+<div id="div_nav"> 
+<ul> 
+<li><a id="li_nav_main" href="http://daystarvisions.com/index.html">Main</a></li> 
+<li><a id="li_nav_pix" href="http://daystarvisions.com/PixMain.html">Pictures</a></li> 
+<li><a id="li_nav_text" href="http://daystarvisions.com/TextMain.html">Text</a></li> 
+<li><a id="li_nav_art" href="http://daystarvisions.com/ArtMain.html">Art</a></li> 
+</ul> 
+</div> <!--div_nav--> 
+ 
+</div> <!--div_masthead--> 
+ 
+<div id="div_content"> 
+ 
+<div id="div_title_bar"> 
+ 
+<h1>LCE Mark II and Mark III</h1> 
+ 
+<p class="copyright">Version 1.0, &copy;2004 by Dale Cotton, all rights reserved.</p>
+ 
+</div> <!--div_title_bar--> 
+
+<p>We already have one excellent approach to local contrast enhancement based on USM,  thunk up by Thomas Knoll and presented in a <a href="http://www.luminous-landscape.com/tutorials/contrast-enhancement.shtml">tutorial</a> on Luminous Landscape. But the more tools one has in one's kit the better, so here are two more ways to exaggerate local contrast:</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="156-08before.jpg" width="576" height="384" alt="No larger version" /> 
+ 
+<p>Fig. 1: 156-08 before</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>Fig. 1, as we see it fresh out of the film scanner, is chock full of subtle, fairly high-key / pastel hues. I wanted to preserve those colours and the airy feeling they create, but I also wanted to differentiate between similarly-toned clouds and sky as well as add contrast to the muddy regions in the field of dead grass.</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="156-08crop1.jpg" width="453" height="528" alt="No larger version" /> 
+ 
+<p>Fig. 2: Crop from Fig. 1</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+
+<h3>LCE with Curves</h3>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="DippyCurve.jpg" width="438" height="420" alt="No larger version" /> 
+ 
+<p>Fig. 3: Dippy curve</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>It is useful to apply control points at each of the 9 grid line intersections then save this for future use. One such use is to change contrast in a specific region of the tone curve. In Fig. 3, I've combined two such local curves: one below the mid point, which will primarily affect the field and trees, and one at the top, which will primarily affect the sky, bringing out the clouds. I chose the locations for these control points by clicking on various regions of the image while watching to see where the RGB value for each click fell on the "curve" diagonal. I particularly did not want to lose detail in the already dangerously dark shadows under the trees, so I left the lowest two control points strictly alone.</p>
+
+<P CLASS="MessageBox">Any curve that has more than one control point compresses values on a down-slope while expanding values on an up-slope, so it is best to apply twisty curves like this while still in 16-bit mode.</p>
+
+<p>This results in the following change in local contrast:</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="156-08crop2.jpg" width="453" height="528" alt="No larger version" /> 
+ 
+<p>Fig. 4: 156-08 crop after the above curve is applied</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<h3>LCE with Apply Image</h3>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="ApplyBurn.jpg" width="433" height="282" alt="No larger version" /> 
+ 
+<p>Fig. 5: Apply burn</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>Another nifty tool with lots of possibilities for modifying colour and contrast is Apply Image under the Image menu. Essentially, this oft-overlooked control does the same task as duplicating a layer then applying a blend mode to the upper duplicate. Here we will use it in its simplest form and apply a small amount of Color Burn. In practice, I applied different amounts of burn to the sky and to the land.</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="156-08crop3.jpg" width="453" height="528" alt="No larger version" /> 
+ 
+<p>Fig. 6: 156-08 crop after applying burn</p> 
+ 
+</div> <!--div_pic_no_click--> 
+
+<p>Don't forget you can use selections and Edit->Fade... to control where and how much you apply these effects.</p>
+
+<p>Here's the final edit of this image. The above techniques were used, as well as an S-curve for global contrast and a slight boost to the red channel in the non-sky areas.</p>
+
+<div class="div_pic_no_click"> 
+ 
+<img src="156-08after.jpg" width="576" height="373" alt="No larger version" /> 
+ 
+<p>Fig. 7: 156-08 after adjustments</p> 
+ 
+</div> <!--div_pic_no_click--> 
+ 
+</div> <!--div_content--> 
+ 
+</div> <!--div_background--> 
+ 
+</body>
+
+</html>

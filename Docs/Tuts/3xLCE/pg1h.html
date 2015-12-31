@@ -1,0 +1,109 @@
+<HTML lang="en">
+
+<HEAD>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+ <meta name="keywords" content="photography, Photoshop, LCE, image editing">
+
+ <meta name="description" content="Two alternate ways to do local contrast enhancement.">
+
+ <title>Daystar: Storing those 13x19 inch prints</title>
+
+ <style type="text/css">
+ @import url("../../../DSDocs.css");
+ </style>
+
+</HEAD>
+
+<BODY BGCOLOR="#000000" TEXT="#000000" LINK="#000000" VLINK="#000000" ALINK="black"><basefont face="Comic Sans MS,Arial,sans-serif" size="3" color="navy">
+
+<TABLE ALIGN="left" width="100%" height="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><!-- Start Full Screen -->
+
+<TR ALIGN="left" VALIGN="top">
+
+	<TD>
+
+	<!-- Start Left Nav: -->
+	<table align="left" width="75" height="100%" border=0 cellspacing=0 cellpadding=0>
+	<tr>
+	<td VALIGN="top">
+	<img src="../../../Pix/Site/DaystarArtOnlyLNav.jpg" usemap="#navbar2" align="top" width="75" height="440" border="0" ismap></td>
+	<p>
+	</table><!-- End Left Nav -->
+
+	<TD width="100%" bgcolor="#D8C890"><!-- Start Main Area col: -->
+
+	<!-- Start Info Contents table: -->
+	<table align="center" width="100%" cellspacing=15 cellpadding=0>
+
+	<tr><td>
+
+<!-----------------------------Content------------------------------>
+
+<h1>LCE Mark II and Mark III</h1>
+
+<P CLASS=SmallNoteCentered>Version 1.0, &copy;2004 by Dale Cotton, all rights reserved.
+
+<p>We already have one excellent approach to local contrast enhancement based on USM,  thunk up by Thomas Knoll and presented in a <a href="http://www.luminous-landscape.com/tutorials/contrast-enhancement.shtml">tutorial</a> on Luminous Landscape. But the more tools one has in one's kit the better, so here are two more ways to exaggerate local contrast:
+
+<p style="text-align:center"><IMG SRC="156-08before.jpg" width=576 height=384 BORDER=4>
+<p style="text-align:center">Fig 1. 156-08 before.
+
+<p>Fig 1, as we see it fresh out of the film scanner, is chock full of subtle, fairly high-key / pastel hues. I wanted to preserve those colours and the airy feeling they create, but I also wanted to differentiate between similarly-toned clouds and sky as well as add contrast to the muddy regions in the field of dead grass.
+
+<p style="text-align:center"><IMG SRC="156-08crop1.jpg" width=453 height=528 BORDER=4>
+<p style="text-align:center">Fig 2. Crop from Fig 1.
+
+<h3>LCE with Curves</h3>
+
+<p style="text-align:center"><IMG SRC="DippyCurve.jpg" width=438 height=420 BORDER=4>
+<p style="text-align:center">Fig 3. Dippy curve.
+
+<p>It is useful to apply control points at each of the 9 grid line intersections then save this for future use. One such use is to change contrast in a specific region of the tone curve. In Fig 3, I've combined two such local curves: one below the mid point, which will primarily affect the field and trees, and one at the top, which will primarily affect the sky, bringing out the clouds. I chose the locations for these control points by clicking on various regions of the image while watching to see where the RGB value for each click fell on the "curve" diagonal. I particularly did not want to lose detail in the already dangerously dark shadows under the trees, so I left the lowest two control points strictly alone.
+
+<P CLASS=Notebox>Any curve that has more than one control point compresses values on a down-slope while expanding values on an up-slope, so it is best to apply twisty curves like this while still in 16-bit mode.
+
+<p>This results in the following change in local contrast:
+
+<p style="text-align:center"><IMG SRC="156-08crop2.jpg" width=453 height=528 BORDER=4>
+<p style="text-align:center">Fig 4. 156-08 crop after the above curve is applied.
+
+<h3>LCE with Apply Image</h3>
+
+<p style="text-align:center"><IMG SRC="ApplyBurn.jpg" width=433 height=282 BORDER=4>
+<p style="text-align:center">Fig 5. Apply burn.
+
+<p>Another nifty tool with lots of possibilities for modifying colour and contrast is Apply Image under the Image menu. Essentially, this oft-overlooked control does the same task as duplicating a layer then applying a blend mode to the upper duplicate. Here we will use it in its simplest form and apply a small amount of Color Burn. In practice, I applied different amounts of burn to the sky and to the land.
+
+<p style="text-align:center"><IMG SRC="156-08crop3.jpg" width=453 height=528 BORDER=4>
+<p style="text-align:center">Fig 6. 156-08 crop after applying burn.
+
+<p>Don't forget you can use selections and Edit->Fade... to control where and how much you apply these effects.
+
+<p>Here's the final edit of this image. The above techniques were used, as well as an S-curve for global contrast and a slight boost to the red channel in the non-sky areas.
+
+<p style="text-align:center"><IMG SRC="156-08after.jpg" width=576 height=373 BORDER=4>
+<p style="text-align:center">Fig 7. 156-08 after adjustments.
+
+
+
+
+<!------------------------------------------------------------------>
+
+	</tr></td>
+
+	</table><!-- End Info Contents table -->
+
+	</TD><!-- End Main Area col -->
+
+</TABLE><!-- End Full Screen -->
+
+<map name="navbar2">
+<area shape="rect" coords="12,103,58,123" href="../../../index.html">
+<area shape="rect" coords="2,132,67,154" href="../../../PixMain.html">
+<area shape="rect" coords="6,161,59,180" href="../../../TextMain.html">
+<area shape='rect' coords='6,181,59,210' href='../../../ArtMain.html'>
+</map>
+
+</BODY>
+</HTML>

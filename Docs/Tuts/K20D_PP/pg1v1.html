@@ -1,0 +1,162 @@
+<HTML lang="en">
+
+<HEAD>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+ <meta name="description" content="Post-Processing tips for K20D RAW images">
+
+ <meta name="keywords" content=""Photography, Pentax K20D, Post-processing, RAW, USM, Noise Removal">
+
+ <title>Post-Processing tips for K20D RAW images</title>
+
+ <LINK href="http://daystarvisions.com/DSDocs.css" rel="stylesheet" type="text/css">
+<LINK href="../DSDocs.css" rel="stylesheet" type="text/css">
+
+</HEAD>
+
+<BODY BGCOLOR="black" TEXT="black" LINK="black" VLINK="black" ALINK="black">
+
+<TABLE ALIGN="left" width="100%" height="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><!-- Start Full Screen -->
+
+<TR ALIGN="left" VALIGN="top">
+
+	<TD>
+
+	<!-- Start Left Nav: -->
+	<table align="left" width="75" height="100%" border=0 cellspacing=0 cellpadding=0>
+	<tr>
+	<td VALIGN="top">
+	<img src="../../../Pix/Site/DaystarArtOnlyLNav.jpg" usemap="#navbar2" align="top" width="75" height="440" border=0 ismap></td>
+	</table><!-- End Left Nav -->
+
+	<TD width="100%" bgcolor="#D8C890">
+
+	<!-- Start Info Contents table: -->
+	<table align="center" width="100%" cellspacing=15 cellpadding=0>
+
+	<tr><td>
+
+<!-----------------------------Content------------------------------>
+
+<H1>Post-Processing tips for K20D RAW images</H1>
+<P CLASS=SmallNoteCentered>Version 1.1, &copy; 2008 by Dale Cotton, all rights reserved
+
+<p>The Pentax K20D with it's 14.6 megapixels and in-camera image stabilization is a remarkable camera for landscape photography. While its high ISO capabilities are not as amazing as some of the competition with lower pixel counts, they are still quite credible. It is perfectly possible to shoot at up to 800 ISO with no loss of detail and shadow noise that's easily removed using just the noise removal settings in a good RAW converter. Even well-exposed 1600 ISO is quite usable with no meaningful loss of non-shadow detail; and it need not be avoided in an &quot;emergency&quot; &ndash; it just requires a bit more post-processing smarts. 
+
+<p class=Notebox>Everything that follows actually applies perfectly well to other digital camera RAW images; the presentation just happens to be built around a typical K20D landscape shot.
+
+<p>To learn some of the most useful techniques, let's work with the following shot I took to test the K20D's high ISOs:
+
+<p style="text-align:center"><IMG SRC="K20D-Appleview-1600ISO-45mm-1429_sz800x532.jpg" width=800 height=532 BORDER=4>
+<p class=SmallNoteCentered>Fig. 1: 1600 ISO test shot (15.6 mb <a href="K20D1429.PEF">PEF</a>)
+
+<p>To follow along you may want to click on the link to the original PEF/RAW file above to download and work with the same image I'm using to write this. I happen to do RAW conversion in Lightroom, but most of the good converters offer the same capabilities we'll be using here &ndash; and of course Adobe Camera Raw is just a different packaging of the same image processing tools. 
+
+<p>No need to cover the basics of using a raw converter. I adjusted the white balance and tint to neutralize the image, then set the exposure and black point to put the information in the file to maximum use. I also turned off all sharpening and noise reduction. You can see the resulting Lightroom settings here:
+
+<p style="text-align:center"><IMG SRC="LR_settings_sz494x903.jpg" width=494 height=903 BORDER=4>
+<p class=SmallNoteCentered>Fig. 2: Lightroom Develop panel settings
+
+<p>(The Hue, Saturation, and Luminance settings you see part of are a set of corrections I've come up with over time and which get automatically applied to every image.)
+
+<h2>Noise reduction</h2>
+
+<p>Finally, I exported as a 16-bit TIFF format file, and opened that in Noise Ninja (NN). Lightroom's noise reduction is adequate for many images, but it can't fully remove even all the chroma noise in this 1600 ISO pic. (I happen to use Noise Ninja, but there are other products that other people swear by; you should be able to follow along in whatever product you use.) In NN we're going to do something a little tricky, but we start with the basics. First I tell NN to profile the noise in the image, then in the Noise Filter panel I change the settings to remove all chroma noise but no luminance noise, as you can see in part A of Fig. 3:
+
+<p style="text-align:center"><IMG SRC="NN_settings_sz448x447.jpg" width=448 height=447 BORDER=4>
+<p class=SmallNoteCentered>Fig. 3: Noise Ninja settings
+
+<p>(Note that I also have Filter very coarse noise on and Turbo mode and Sharpening off.) I apply, then save that as a 16-bit TIFF.
+
+<p>Next, I change the NN settings to add aggressive luminance NR and some sharpening. This smudges fine detail like crazy, but all I'm looking for is that areas of the image that are smooth-surfaced &ndash; in this case the car bodies &ndash; are smooth and noise-free. I apply, then save this as yet another 16-bit TIFF with a different name. 
+
+<p>Finally, in Photoshop I open both the TIFFs I created in Noise Ninja. I press V to switch to the move tool and Shift-drag the first, chroma-NR-only image onto the second, aggressive-NR image, which automatically turns it into a new layer, perfectly aligned over the first layer. Now I press E to switch to the Erase tool, set it to 100% with a sharp-edged brush, and erase just the areas I want to be smooth and free of noise: 
+
+<p style="text-align:center"><IMG SRC="PS1_sz674x512.jpg" width=674 height=512 BORDER=4>
+<p class=SmallNoteCentered>Fig. 4: An area with problem noise
+
+<p style="text-align:center"><IMG SRC="PS2_sz674x513.jpg" width=674 height=513 BORDER=4>
+<p class=SmallNoteCentered>Fig. 5: Erasing in Photoshop (with background layer turned off to illustrate what's happening)
+
+<p>In this case the monochromatic noise in the rest of the image is mostly masked by and blends in with the textured areas, such as trees, bushes, and pavement. But if there are areas (perhaps snow shadows and pavement) that have a bit too much noise-graininess, I can set the Erase tool to something less than full opacity and (partially) erase these areas.
+
+<p>Once that's done I can flatten to merge the two layers together:
+
+<p style="text-align:center"><IMG SRC="PS3_sz674x513.jpg" width=674 height=513 BORDER=4>
+<p class=SmallNoteCentered>Fig. 6: Noise reduction final results
+
+<p>(Noise Ninja has a nifty panel for using a brush to undo noise reduction. The reason I didn't use that for this image is because a much greater portion of the image does not need the aggressive NR. If the opposite had been the case, I could have used the undo brush tool.)
+
+<h2>Dealing with CA and soft corners</h2>
+
+<p>If you followed along with the noise reduction process above, work with your cleaned version of the test image in Photoshop. Otherwise you may want to download this 7 mb Level 11 <a href="K20D-Appleview-1600ISO-45mm-1429_pre-USM_full_size.jpg">JPEG</a> of the same thing. Duplicate the background layer, then examine the whole frame at 100% mag. 
+
+<p style="text-align:center"><IMG SRC="Corner1_sz800x540.jpg" width=800 height=540 BORDER=4>
+<p class=SmallNoteCentered>Fig. 7: Left corner problems
+
+<p>Notice the problems in both the upper left and upper right corners. They are soft and have a mix of indigo and lime green CA in my version of the image (because I cleverly forgot to change the CA settings in Lightroom). We need to clean up these problems before going any further. 
+
+<p>Make a rough selection around a problem corner, including all softness and CA down to about the rooftop on the left. Feather it at about 20 or 25. Open the Image->Adjust->Replace Color tool, set Fuzziness to about 50, Saturation to 0, zoom in to 300%, then click on an area of the indigo CA. Change to the + eyedropper then click on other areas with indigo CA until all indigo CA is toast. OK that then repeat for the lime green CA. (You can use the Hue/Sat./Lum. tool instead of Replace Color &ndash; Replace Color is just a little more specific.)
+
+<p>Now apply some broad-brush USM &ndash; Radius = 1.0, Amount = 95 works for me for the left corner &ndash; so the selected area is as sharp as, but no sharper than, the rest of the picture. If necessary use the history brush at some opacity to undo areas that are too sharp. 
+
+<p style="text-align:center"><IMG SRC="Corner2_sz800x540.jpg" width=800 height=540 BORDER=4>
+<p class=SmallNoteCentered>Fig. 8: Left corner after clean-up
+
+<p>Now repeat both CA removal and USM on the other upper corner.
+
+<h2>Sharpening</h2>
+
+<p class=NoteBox><b>Note</b>: Your monitor will have a dramatic effect on how sharpening appears on-screen. I am using a 19" CRT at 1600x1200 res., which means each pixel is extremely tiny. LCDs in general, and larger pixel size LCDs in particular, may give a very different perception of acutance. If so, you may need to train your eye over time to compensate for the difference between what you see on-screen and what you see in the resulting print.
+
+<p style="text-align:center"><IMG SRC="PS4_sz800x600.jpg" width=800 height=600 BORDER=4>
+<p class=SmallNoteCentered>Fig. 9: A portion of the as yet unsharpened image
+
+<p>One reason we applied zero sharpening in the raw converter was to not interfere with Noise Ninja's work. We can see from Fig. 6 that the ultra-fine resolution of the K20D means we will need very little USM (except, perhaps, in the corners ;) to achieve realistic acutance (edge crispness). What we don't want to do is either to introduce halos or to obliterate fine detail. 
+
+<p>Bruce Fraser, the imaging guru, was instrumental in establishing a three-prong approach to USM: a first USM pass, called capture sharpening, is applied during raw conversion, to undo the softening of the anti-aliasing filter and other in-camera losses. Then in Photoshop or other image editor a second pass, called creative sharpening, is performed that benefits any form of output. Finally a third-pass, called output sharpening, is specific to different uses of the image file, whether small print, large print, or on-line. An elegant theory, but I'm not completely sold that it's one that still applies to super-high-res cameras like the K20D. 
+
+<p class=NoteBox>Many people use USM without understanding how it works or exactly what Radius, Amount, and Threshold actually refer to. If that describes you, you may want to give <a href="http://www.luminous-landscape.com/tutorials/understanding-series/understanding-usm.shtml" target="_blank">Understanding the Unsharp Mask</a> a quick read. 
+
+<p>All USM is destructive; more than the minimum required is unnecessarily destructive. Lightroom's USM module only goes down to 0.5 radius, which I'm finding is still too blunt a tool for the detail I'm seeing from modern cameras. Let's see if you agree:
+
+<p>Save Fig. 6 to your hard drive, open it in Photoshop, make a couple duplicates, then apply USM with various radius settings in Photoshop at 100% magnification or larger to one of the copies. Don't bother with threshold. First try Radius = 0.1. Even at Amount = 500 there's no appreciable effect. Next try Radius = 0.2. Thanks to the extremely fine branches against the sky, we can see edge blur diminishing nicely at Amount = 500 and with no haloing. Now apply a second pass at Radius = 0.2 and Amount = 500; some haloing appears around the very thinnest branches, meaning we've gone too far in those areas, so back off until all haloing just disappears. For me, that's around Amount = 100. We've applied a total of Amount = 600 at Radius = 0.2.
+
+<p>With another copy of Fig. 6 beside the first, experiment with Radius = 0.3. I find Amount = 145 or 150 is about where haloing starts. With yet another copy try Radius = 0.4. I find Amount = 100 is where haloing starts. Examine the three copies next to each other to see whether you agree that the finest branches look every so slightly crisper at Radius = 0.2. Of course, if you disagree then you'll want to use the radius that does look best to you. 
+
+<p style="text-align:center"><IMG SRC="PS5_sz800x600.jpg" width=800 height=600 BORDER=4>
+<p class=SmallNoteCentered>Fig. 10: USM, Amount = 600 at Radius = 0.2
+
+<p class=NoteBox><b>Note</b>: Camera/lens combinations with less resolution will have proportionately less fineness of detail and so will need a proportionately larger radius in USM. Radius = 0.3 may be perfectly suitable for a 10 mp camera and good lens, for example.
+
+<p>Finally, go back to the full scale image and apply the small-radius USM you settled on above, whether Amount = 600 at Radius = 0.2 or something else, to the entire image. It should look pretty good by now, but areas other than the finest branches may still benefit from a bit of crispening. Try a wider radius but smaller amount of USM, such as Amount = 50 at Radius = 0.5. This will probably halo the finest branches and perhaps other areas, so examine the whole image critically at 100% mag. and use the History Brush to undo as and where needed. Anything that should be soft due to DOF blurring may also need some undoing.
+
+<h2>Parting thoughts</h2>
+
+<p>We've actually done three different applications of USM. Once applied to just the problem areas (corners), once applied at an extremely small radius to the entire image, and once applied at a somewhat wider radius to the entire image but undoing where necessary. If you take away nothing else from all this, let it be that the amount and radius of USM you apply needs to vary from one part of the image to another. There is no one USM setting that will optimally sharpen every part of every image.
+
+<p>According to current dogma, you would only apply USM to a copy of the master image file and target a particular output application. By this theory you would sharpen the image for a small print differently from the image for a large print, for example. I've yet to find the subtle USM we've applied above be inappropriate for any size print. For web output, the image needs to be down-sized so far that this much USM is essentially irrelevant. 
+
+<p>Everything in this tutorial has been directed at retaining the maximum goodness of the original image file and introducing as little trauma as possible while correcting some common problems. I'm not thereby trying to impose a particular aesthetic on anyone; if you're creating art and want to goose up contrast, saturation, acutance, graininess, or whatever, that's your call as an artist. Take whatever's useful and leave the rest behind.
+
+<!------------------------------------------------------------------>
+
+	</tr></td>
+
+	</table><!-- End Info Contents table -->
+
+	</TD><!-- End Main Area col -->
+
+</TR>
+  
+</TABLE><!-- End Full Screen -->
+
+<map name="navbar2">
+<area shape="rect" coords="12,103,58,123" href="../../../index.html">
+<area shape="rect" coords="2,132,67,154" href="../../../PixMain.html">
+<area shape="rect" coords="6,161,59,180" href="../../../TextMain.html">
+<area shape='rect' coords='6,181,59,210' href='../../../ArtMain.html'>
+</map>
+
+</BODY>
+</HTML>

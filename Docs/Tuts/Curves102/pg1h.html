@@ -1,0 +1,205 @@
+<HTML lang="en">
+
+<HEAD>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+ <meta name="description" content="ONE-PAGE TEMPLATE">
+
+ <meta name="keywords" content=""Photography, Art, Aesthetics">
+
+ <title>Photoshop Curves 102</title>
+
+ <LINK href="http://daystarvisions.com/DSDocs.css" rel="stylesheet" type="text/css">
+
+</HEAD>
+
+<BODY BGCOLOR="black" TEXT="black" LINK="black" VLINK="black" ALINK="black">
+<TABLE ALIGN="left" width="100%" height="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><!-- Start Full Screen -->
+
+<TR ALIGN="left" VALIGN="top">
+
+	<TD>
+
+	<!-- Start Left Nav: -->
+	<table align="left" width="75" height="100%" border=0 cellspacing=0 cellpadding=0>
+	<tr>
+	<td VALIGN="top">
+	<img src="../../../Pix/Site/DaystarArtOnlyLNav.jpg" usemap="#navbar2" align="top" width="75" height="440" border=0 ismap></td>
+	</table><!-- End Left Nav -->
+
+	<TD width="100%" bgcolor="#D8C890">
+
+	<!-- Start Info Contents table: -->
+	<table align="center" width="100%" cellspacing=15 cellpadding=0>
+
+	<tr><td>
+
+<!-----------------------------Content------------------------------>
+
+<H1>Photoshop Curves 102</H1>
+<P CLASS=SmallNoteCentered>Version 1.3, &copy; 2006, 2007 by Dale Cotton, all rights reserved
+
+<p>Miles Hecker has a very nice Curves 101 <a href="http://www.luminous-landscape.com/tutorials/command_primer.shtml">tutorial</a> on Luminous Landscape. I urge you to read it before continuing if you're new to curves or rusty. In spite of Miles' and dozens of other Curves tutorials I keep reading that beginners and intermediates have endless trouble getting the hang of this exceedingly useful tool.
+
+<p>Here are two slightly more advanced pointers that can keep you out of <i>lots</i> of hot water:
+
+<ol>
+<li>The more aggressive the curve the more you need to be in 16-bit mode.
+
+<li>If my math extended past grade 3 I could express this more elegantly, but with multi-point curves no portion of the curve line should have a downward (negative?) slope reading from left to right. IOW: no portion of the curve should have a hump or kink in it (you could even say it <i>frowns</i>).
+</ol>
+
+<p>Let's look at this visually. Let's start with a basic three-point curve but drag the centre point a bit to the left:
+
+<p style="text-align:center"><IMG SRC="GoodCurve.jpg" width=366 height=371 BORDER=4>
+<p class=SmallNoteCentered>Fig. 1: Good curve
+
+<p>Now let's drag the centre point upward:
+
+<p style="text-align:center"><IMG SRC="BadCurveInset.jpg" width=366 height=371 BORDER=4>
+<p class=SmallNoteCentered>Fig. 2: Baaaad curve
+
+<!--p style="text-align:center"><IMG SRC="BadCurveWhy.jpg" width=263 height=210 BORDER=4>
+<p class=SmallNoteCentered>Fig. 3: Bad curve, detail-->
+
+<p>The bad curve is bad because part of it goes back down hill. This means there are brightness values that are duplicated on both sides of the hump.
+
+<p>In fact, the closer any portion of the curve approaches being horizontal - let alone humping - the more of a miracle you are asking PS to pull off, and certainly the more you need to be in 16-bit mode:
+
+<p style="text-align:center"><IMG SRC="DangerCurve.jpg" width=366 height=371 BORDER=4>
+<p class=SmallNoteCentered>Fig. 3: Dicey curve.
+
+<p>Now let's apply theory to practice. Here's a crop from a typical contrasty scene:
+
+<p style="text-align:center"><IMG SRC="Ex1sz500x420.jpg" width=500 height=420 BORDER=4>
+<p class=SmallNoteCentered>Fig. 4: Contrasty scene.
+
+<p>The exposure was made to preserve some colour in the sky, which in turn caused the rest of the scene to appear dark, foreboding, and generally un-bourgeois. In order to open up the non-sky parts of the scene, we might apply a curve like so:
+
+<p style="text-align:center"><IMG SRC="Ex2Curve.jpg" width=366 height=371 BORDER=4>
+<p class=SmallNoteCentered>Fig. 5: Fairly aggressive curve to shed some light on the darkness.
+
+<p class=SimpleIvoryBox>Don't be intimidated by all the control points in this curve. I started with the same three basic points shown in Miles' tutorial, then added two more &ndash; one close to the bottom and one close to the top.<br><br> A common reason to add another control point in any situation is just to tack down a portion of the curve you don't want to change when you change another part of the curve. But in this case I added the upper-most point to exaggerate the highlight contrast in order to make the clouds more visible. I added the bottom-most point by experiment when seeking to maximally lighten the shadows.
+
+<p>Which results in this:
+
+<p style="text-align:center"><IMG SRC="Ex2sz500x420.jpg" width=500 height=420 BORDER=4>
+<p class=SmallNoteCentered>Fig. 6: Result of fairly aggressive curve.
+
+<p>However, if we push the Curves tool too hard, as in the following curve:
+
+<p style="text-align:center"><IMG SRC="Ex3Curve.jpg" width=366 height=371 BORDER=4>
+<p class=SmallNoteCentered>Fig. 7: Overly-aggressive curve to open shadow areas.
+
+<p>We get the following:
+
+<p style="text-align:center"><IMG SRC="Ex3sz500x420.jpg" width=500 height=420 BORDER=4>
+<p class=SmallNoteCentered>Fig. 8: result of overly-aggressive curve.
+
+<p>Notice the areas circled in red. Colours that should be shades of green in the tree tops are instead shades of light grey. Similarly, two of the boats are now light grey instead of yellow. The culprit, of course, is the plateau area circled in amber:
+
+<p style="text-align:center"><IMG SRC="Ex3CurveWhy.jpg" width=366 height=371 BORDER=4>
+<p class=SmallNoteCentered>Fig. 9: Problem area.
+
+<p>Given how much trouble a plateau or hump in a curve can cause, and all the grief novices must have needlessly suffered over the years with this, one has to wonder why the Photoshop dev team never added an optional limiter or warning mechanism to this tool ... <b>Reduce speed</b> &ndash; sharp curve ahead...
+
+<h2>Under the hood</h2>
+
+<p class=SimpleIvoryBox>Disclaimer: I have never worked on the Photoshop dev team, so what I'm presenting here is my best guess as to how Curves work.
+
+<p>I find it more useful to understand the underlying concepts of a situation than to blindly apply rote rules. The underlying concepts of the Curves tool are not that difficult, so see if you can bear with me a bit longer.
+
+<p>The Curves tool is a simple graph; the vertical axis being the existing brightnesses of the current image; the horizontal axis being the desired new brightnesses. Every pixel in a colour image has a specific colour, but it also has a specific degree of darkness or lightness: for example, navy blue is darker than fire engine red but lighter than midnight black. The initial diagonal line simply says that each brightness value from black at the bottom to white at the top will be multiplied by 1.0000 to arrive at the corresponding new brightness value for all pixels in the image that had a given original brightness.
+
+<p style="text-align:center"><IMG SRC="CurvesTech1.jpg" width=366 height=371 BORDER=4>
+<p class=SmallNoteCentered>Fig. 10: What goes in must come out.
+
+<p style="text-align:center"><IMG SRC="Output1.jpg" width=500 height=295 BORDER=4>
+<p class=SmallNoteCentered>Fig. 11: Fig. 10's "curve" applied to an image: no change.
+
+<p>In Fig. 10 I show what happens to any given brightness value &ndash; in this case I chose the exact halfway brightness point - when using the original "curve" (diagonal line). Namely: nothing; 127 multiplied by 1.000 equals 127. 
+
+<p>If instead we modify the Curve line in some way, we change the multiplier for most or all brightness values. 
+
+<p>In the next figure I start with the same centre point but this time drag it to the left until it is half way to the left edge:
+
+<p style="text-align:center"><IMG SRC="CurvesTech2.jpg" width=366 height=371 BORDER=4>
+<p class=SmallNoteCentered>Fig. 12: Doubling a brightness level.
+
+<p style="text-align:center"><IMG SRC="Output2.jpg" width=500 height=295 BORDER=4>
+<p class=SmallNoteCentered>Fig. 13: Fig. 12's "curve" applied to an image: the brights get brighter.
+
+<p>This doubles the brightness of all input values of 63 &ndash; IOW, the input value of 63 gets multiplied by 2.0.
+
+<p>Problems start when we ask the Curves tool to multiply brightness values that are close to identical &ndash; such as 127 and 128 &ndash; by nearly identical multipliers, such as 0.998 and 0.999. 
+
+<p>If we are working in 8-bit RGB mode, any given brightness value is something between 0 and 255. 127 times 0.998 is 126.746, which has to be rounded off to the nearest whole number, or 127. Similarly, 128 times 0.999 gives 127.872, which rounds back to 128. No change. However, if we are in 16-bit mode, the underlying brightness values go from 0 to 65535, which gives us the equivalent of more decimal places to work with. Thus, 127 times 0.998 will be stored as something close to 126.746; and 128 times 0.999 will be stored to something like 127.872, so the fine distinction we're trying to make is preserved. 
+
+<ul>
+<li><b>The more aggressive the curve the more you need to be in 16-bit mode.</b>
+</ul>
+
+<p>Even from this simple example we begin to see the reason why it's so important to do as much editing in 16-bit mode as possible. The more radically you alter the colours or contrast in the original image, the more important it becomes to preserve small distinctions. The difference between 126.746 and 127 can be the difference between the sort of grey-out we saw in Fig. 8 and no grey-out. This is because a grey-out happens when the slight value differences between neighbouring regions get lost.
+
+<p>We can also begin to see the reason for the second prescription:
+
+<ul>
+<li><b>No portion of the curve should have a hump or kink in it.</b>
+</ul>
+
+<p>A hump, as shown in Fig. 2, above, asks the curve tool to turn more than one input brightness value into an identical output brightness (two or more points at the same elevation on each side of the hump). In this case it doesn't matter what bit level we're working at, the hump guarantees a grey-out will occur.
+
+<p>Similarly, if a region of the curve approaches flatness, as in Fig. 3, even in 16-bit mode the distinctions between successive output values become so small that a grey-out becomes ever more likely.
+
+<p style="text-align:center"><IMG SRC="CurvesTech3.jpg" width=366 height=371 BORDER=4>
+<p class=SmallNoteCentered>Fig. 14: Problem curve.
+
+<p style="text-align:center"><IMG SRC="Output3.jpg" width=500 height=295 BORDER=4>
+<p class=SmallNoteCentered>Fig. 15: Fig. 14's "curve" applied to an image: a fatal grey-out.
+
+<p>In Fig. 14 I've marked 4 points as follows:
+
+<ul>
+<li>A: Input = 81; output = 133
+<li>B: Input = 99; output = 142
+<li>C: Input = 126; output = 146 
+<li>D: Input = 152; output = 152 
+</ul>
+
+<p>We can see the results of this too-flat curve in Fig. 15. Even though the output brightnesses are numerically distinct in the four marked sampled points, it's the many points between the samples that fail to maintain distinction.
+
+<p>Incidentally, we've concentrated on horizontal flat-lining so far, but vertical flat-lining results in exactly the same grey-out problem &ndash; it's just much harder to get the Curves tool to go vertical (try it).
+
+<p>OK. We've literally frowned on the big bad hump in the middle of a curve, but what really happens when we go there? 
+
+<p style="text-align:center"><IMG SRC="CurvesTech4.jpg" width=366 height=371 BORDER=4>
+<p class=SmallNoteCentered>Fig. 16: Over the top curve.
+
+<p style="text-align:center"><IMG SRC="Output4.jpg" width=500 height=295 BORDER=4>
+<p class=SmallNoteCentered>Fig. 17: Fig. 16's "curve" applied to an image: solarization from beyond the grave.
+
+<p>Clearly, all Hades breaks loose when you not only double, but triple, the outputs for a given range of inputs. The visual equivalent of the feedback howl when the speaker gets too close to the mike.
+
+<br><br><br>
+
+<!------------------------------------------------------------------>
+
+	</tr></td>
+
+	</table><!-- End Info Contents table -->
+
+	</TD><!-- End Main Area col -->
+
+</TR>
+
+</TABLE><!-- End Full Screen -->
+
+<map name="navbar2">
+<area shape="rect" coords="12,103,58,123" href="../../../index.html">
+<area shape="rect" coords="2,132,67,154" href="../../../PixMain.html">
+<area shape="rect" coords="6,161,59,180" href="../../../TextMain.html">
+<area shape='rect' coords='6,181,59,210' href='../../../ArtMain.html'>
+</map>
+
+</BODY>
+</HTML>

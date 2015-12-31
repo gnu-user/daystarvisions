@@ -1,0 +1,96 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript">
+
+var subj = new Array();
+subj[0] = "I absolutely admire";
+subj[1] = "I love";
+subj[2] = "I totally appreciate";
+subj[3] = "I can fully sympathize with";
+subj[4] = "Yes, I do like";
+subj[5] = "I truly feel";
+subj[6] = "I deeply identify with";
+
+var modA = new Array();
+modA[0] = "meaningful ";
+modA[1] = "wonderful ";
+modA[2] = "visionary ";
+modA[3] = "pseudo-";
+modA[4] = "quasi-";
+modA[5] = "fine ";
+modA[6] = "powerful ";
+modA[7] = "incisive ";
+modA[8] = "fervent ";
+
+var predA = new Array();
+predA[0] = "existential angst";
+predA[1] = "raison d'etre";
+predA[2] = "underpinnings";
+predA[3] = "psychic variability";
+predA[4] = "creative furor";
+predA[5] = "rich escatology";
+predA[6] = "neo-ontology";
+
+var cnct = new Array();
+cnct[0] = "of";
+cnct[1] = "and";
+cnct[2] = "in";
+cnct[3] = "within";
+cnct[4] = "underlying";
+cnct[5] = "relating to";
+cnct[5] = "together with";
+
+var predB = new Array();
+predB[0] = "sensitivity and inner vision";
+predB[1] = "dynamic charm";
+predB[2] = "psychodynamic tension";
+predB[3] = "rational intuitiveness";
+predB[4] = "organic execution";
+predB[5] = "fluid temporality";
+predB[6] = "powerful originality";
+
+var endA = new Array();
+endA[0] = "fundamentally excellent picture." ;
+endA[1] = "incisive work of art.";
+endA[2] = "brilliantly conceived composition.";
+endA[3] = "beautifully seen image.";
+endA[4] = "magnificently executed picture.";
+endA[5] = "totally fabulous work.";
+endA[6] = "visual tour de force.";
+endA[7] = "wonderfully imagined visual feast.";
+
+function genRand( pnMax )
+{
+  return Math.floor( Math.random() * pnMax );
+}
+
+function genPhrase()
+{
+history.go();
+
+var s1 = subj[ genRand( subj.length ) ];
+var s2 = modA[ genRand( modA.length ) ];
+var s3 = predA[ genRand( predA.length ) ];
+var s4 = cnct[ genRand( cnct.length ) ];
+var s5 = predB[ genRand( predB.length ) ];
+var s6 = endA[ genRand( endA.length ) ];
+
+alert( s1 + " the " + s2 + s3 + " " + s4 + " the " + s5 + " of this " + s6 );
+
+//alert( subj[rn] + " the " + modA[rn] + " " + predA[rn] + " of the " + predB[rn] + " of this " + endA[rn] );
+}
+</SCRIPT>	
+ <title>Generator</title>
+
+</head>
+
+<body>
+Click here:
+
+<INPUT TYPE="button" NAME="genButton" VALUE="Sensitive and insightful artistic praise generator" onClick="genPhrase()">
+
+</body>
+</html>
