@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<!-- XHTML template version 1 --> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" > 
+<head> 
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+ <meta name="description" content="Photo portfolio"/> 
+ <meta name="keywords" content="Photography, Art, Aesthetics"/> 
+ <meta http-equiv="X-UA-Compatible" content="IE-edge" /> 
+ 
+ <title>Dennis & Carol Bartlett: Phone Snaps 2009 &nbsp; Daystar</title> 
+
+<script type="text/javascript">
+<!--
+var imgPath = "Pix/"
+var imgTitle = ""
+var currImg = 1
+var IMGMAX = 16 // - Change to match array dim
+var imgs = new Array()
+
+imgs[1]= new Image()
+imgs[1].src= imgPath + "1_Dennis_and_Pippin_cover-sz960x720.jpg"
+imgs[2]= new Image()
+imgs[2].src= imgPath + "2_Dennis_and_Pippin-sz960x720.jpg"
+imgs[3]= new Image()
+imgs[3].src= imgPath + "3_Carol_and_Pippin-sz960x720.jpg"
+imgs[4]= new Image()
+imgs[4].src= imgPath + "4_Carol_and_Pippin-sz960x720.jpg"
+imgs[5]= new Image()
+imgs[5].src= imgPath + "5_Dennis_and_Cricket-sz960x720.jpg"
+imgs[6]= new Image()
+imgs[6].src= imgPath + "6_Pippin_on_couch-sz600x800.jpg"
+imgs[7]= new Image()
+imgs[7].src= imgPath + "7_Cricket_in_cage-sz600x800.jpg"
+imgs[8]= new Image()
+imgs[8].src= imgPath + "8_Cricket-sz640x480.jpg"
+imgs[9]= new Image()
+imgs[9].src= imgPath + "9_Cricket_on_hand-sz600x800.jpg"
+imgs[10]= new Image()
+imgs[10].src= imgPath + "10_Dennis_and_Cricket-sz640x480.jpg"
+imgs[11]= new Image()
+imgs[11].src= imgPath + "11_McDougall_by_bench-sz600x800.jpg"
+imgs[12]= new Image()
+imgs[12].src= imgPath + "12_Ashtray_on_deck-sz600x800.jpg"
+imgs[13]= new Image()
+imgs[13].src= imgPath + "13_Nady-sz600x800.jpg"
+imgs[14]= new Image()
+imgs[14].src= imgPath + "14_Pippin_on_couch-sz600x800.jpg"
+imgs[15]= new Image()
+imgs[15].src= imgPath + "15_Carol_Pippin_and_bone-sz600x800.jpg"
+imgs[16]= new Image()
+imgs[16].src= imgPath + "16_Dennis-sz600x800.jpg"
+/*imgs[17]= new Image()
+imgs[17].src= imgPath + ""
+imgs[18]= new Image()
+imgs[18].src= imgPath + ""
+imgs[19]= new Image()
+imgs[19].src= imgPath + ""
+imgs[20]= new Image()
+imgs[20].src= imgPath + ""
+imgs[21]= new Image()
+imgs[21].src= imgPath + ""
+imgs[22]= new Image()
+imgs[22].src= imgPath + ""
+imgs[23]= new Image()
+imgs[23].src= imgPath + ""
+imgs[24]= new Image()
+imgs[24].src= imgPath + ""
+imgs[25]= new Image()
+imgs[25].src= imgPath + ""*/
+
+var imgNames = new Array()
+imgNames[1]= "Dennis & Pippin"
+imgNames[2]= "Dennis & Pippin"
+imgNames[3]= "Carol & Pippin"
+imgNames[4]= "Carol & Pippin"
+imgNames[5]= "Dennis & Cricket"
+imgNames[6]= "Pippin on couch"
+imgNames[7]= "Cricket in cage"
+imgNames[8]= "Cricket"
+imgNames[9]= "Cricket on hand"
+imgNames[10]= "Dennis & Cricket"
+imgNames[11]= "McDougall by bench"
+imgNames[12]= "Ashtray on deck"
+imgNames[13]= "Nady"
+imgNames[14]= "Pippin on couch"
+imgNames[15]= "Carol Pippin & bone"
+imgNames[16]= "Dennis"
+/*imgNames[17]= ""
+imgNames[18]= ""
+imgNames[19]= ""
+imgNames[20]= ""
+imgNames[21]= ""
+imgNames[22]= ""
+imgNames[23]= ""
+imgNames[24]= ""
+imgNames[25]= ""*/
+
+function imgResizer( isLoading ) {
+  if ( isLoading ) document.images['Pic'].src = imgs[1].src;
+  var winH = 0;
+  var winW = 0;
+  var picH = imgs[currImg].height;
+  var picW = imgs[currImg].width;
+  if ( navigator.appName == "Microsoft Internet Explorer" ) {
+    winH = document.body.clientHeight * 0.8;
+    winW = document.body.clientWidth * 0.8;
+  }
+  else {
+    winH = window.innerHeight * 0.8;
+    winW = window.innerWidth * 0.8;
+  }
+  var ratioH = picH / winH;
+  var ratioW = picW / winW;
+  var ratioUse = 0;
+  if ( ratioH > ratioW )
+    ratioUse = ratioH;
+  else
+    ratioUse = ratioW;
+  //if ( ratioUse < 0.75 ) ratioUse = 0.75;
+  if ( ratioUse > 1.0 ) {
+    document.images['Pic'].height = picH / ratioUse;
+    document.images['Pic'].width = picW / ratioUse;
+  }
+  else {
+    document.images['Pic'].height = picH;
+    document.images['Pic'].width = picW;
+  }
+}
+
+function nextPic(imagename){
+ currImg += 1;
+ if( currImg > IMGMAX ) { currImg = 1 };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ //imgResizer2( imgs[currImg].height, imgs[currImg].width );
+ imgResizer(0);
+}
+
+function prevPic(imagename){
+ currImg -= 1;
+ if( currImg < 1 ) { currImg = IMGMAX };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ imgResizer(0);
+}
+
+function handlePgKeys(e)
+{
+  var keynum
+
+  if(window.event) // IE
+  {
+    keynum = e.keyCode
+  }
+  else if(e.which) // Netscape/Firefox/Opera
+  {
+    keynum = e.which
+  }
+  if (keynum == 33 ) { prevPic( 'Pic' ) }
+  if (keynum == 34 ) { nextPic( 'Pic' ) }
+  if (keynum == 37 ) { prevPic( 'Pic' ) }
+  if (keynum == 39 ) { nextPic( 'Pic' ) }
+  //if (keynum == 38 ) { location.replace("http://daystarvisions.com/PixMain.html" ) }
+}// onkeydown="handlePgKeys(event);"
+
+//-->
+</script>
+ 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/reset.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/main_pix.css'/> 
+ 
+</head> 
+ 
+<body onresize="imgResizer(0);" onload="imgResizer(1);" onkeydown="handlePgKeys(event);"> 
+ 
+<div id="div_background"> 
+ 
+<div id="div_masthead"> 
+ 
+<img src="http://daystarvisions.com/Pix/Site/DayStar_logo-brown_bgrnd-sz250x40.jpg" height="40" width="250" alt="logo" class="logo" /> 
+
+ <h1 class="Small">
+<a href="javascript:prevPic('Pic')"><img src='../Site/LarrowLtYellow.gif' width=20 height=12 border=0 id="Prev"></a>
+&nbsp;Bartletts: Phone Snaps 2009
+<a href="javascript:nextPic('Pic')"><img src='../Site/RarrowLtYellow.gif' width=20 height=12 border=0 id="Next"></a>
+</h1>
+
+<div id="div_nav"> 
+<ul> 
+<li><a id="li_nav_main" href="http://daystarvisions.com/index.html">Main</a></li> 
+<li><a id="li_nav_pix" href="http://daystarvisions.com/PixMain.html">Pictures</a></li> 
+<li><a id="li_nav_text" href="http://daystarvisions.com/TextMain.html">Words</a></li> 
+<li><a id="li_nav_art" href="http://daystarvisions.com/ArtMain.html">Art</a></li> 
+</ul> 
+</div> <!--div_nav--> 
+ 
+</div> <!--div_masthead--> 
+ 
+<div id="div_content"> 
+ 
+<div id="div_title_bar"> 
+
+<!-- * * * * CONTENT HERE * * * * -->
+
+<div class="div_pic_click"> 
+
+<a href="javascript:nextPic('Pic')">
+  <img src="Pix/1_Dennis_and_Pippin_cover-sz960x720.jpg" id="Pic">
+</a>
+
+</div> <!--div_pic_click--> 
+
+<p class="Centered" id="TitleID" >
+  1) Dennis & Pippin
+</p>
+
+<p class="SmallCentered">16 images &copy; 2009 by Dale Cotton, all rights reserved.</p>
+
+<!-- * * * * END CONTENT * * * * -->
+ 
+</div> <!--div_content--> 
+ 
+</div> <!--div_background--> 
+ 
+</body>
+
+</html>

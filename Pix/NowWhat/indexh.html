@@ -1,0 +1,203 @@
+<HTML lang="en">
+
+<HEAD>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+ <meta name="description" content="Photo portolio">
+
+ <meta name="keywords" content=""Photography, Art, Aesthetics">
+
+<TITLE>Daystar Visions - Now What?, Dale Cotton</TITLE>
+
+ <LINK href="http://daystarvisions.com/DSDocs.css" rel="stylesheet" type="text/css">
+ <LINK href="../DSDocs.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+<!--
+var imgPath = "Large2/"
+var imgTitle = ""
+var IMGMAX = 13 // - Change to match array dim
+var currImg = IMGMAX
+var imgs = new Array()
+imgs[1]= new Image()
+imgs[1].src= imgPath + "Tina_Matt_in_Hall-EP1-1424-ISO_3200-20091114-1931-sz1008x756.jpg"
+imgs[2]= new Image()
+imgs[2].src= imgPath + "Matt_Rabbit_Biki_Tina-EP1-1418-ISO_3200-20091114-1931-sz1008x756.jpg"
+imgs[3]= new Image()
+imgs[3].src= imgPath + "Matt_Ravi_Tina_in_Bedroom-EP1-1430-ISO_3200-20091114-1934-sz1008x756.jpg"
+imgs[4]= new Image()
+imgs[4].src= imgPath + "Scarborough_Dusk_Traffic-230019-E-P1-ISO1600-20091123-1758-sz1210x907.jpg"
+imgs[5]= new Image()
+imgs[5].src= imgPath + "Scarborough_Dusk_Traffic-230021-E-P1-ISO1600-20091123-1759-sz1210x907.jpg"
+imgs[6]= new Image()
+imgs[6].src= imgPath + "Red_Rose_in_my_Drawer-240051-E-P1-ISO200-20091124-1246-sz1210x907.jpg"
+imgs[7]= new Image()
+imgs[7].src= imgPath + "Futaba_Fantasy-250080-E-P1-ISO200-20091125-1227-sz1210x907.jpg"
+imgs[8]= new Image()
+imgs[8].src= imgPath + "Duffins_Creek_Marsh-K20D-ISO400-20100117-1119-5265-sz1035x776.jpg"
+imgs[9]= new Image()
+imgs[9].src= imgPath + "Duffins_Creek_Marsh-K20D-ISO400-20100117-1136-5274-sz1168x776.jpg"
+imgs[10]= new Image()
+imgs[10].src= imgPath + "Duffins_Creek_Marsh-K20D-ISO400-20100117-1137-5276-sz1156x768.jpg"
+imgs[11]= new Image()
+imgs[11].src= imgPath + "Duffins_Creek_Marsh-K20D-ISO400-20100117-1147-5295-sz1109x776.jpg"
+imgs[12]= new Image()
+imgs[12].src= imgPath + "Matthew_and_Tina_Hallway-E-P1-ISO1600-20100221-1838-210671-sz797x750.jpg"
+imgs[13]= new Image()
+imgs[13].src= imgPath + "Matthew_driving-E-P1-ISO1600-20100221-1831-210648-sz1000x750.jpg"
+
+//imgs[]= new Image()
+//imgs[].src= imgPath + ""
+
+var imgNames = new Array()
+imgNames[1]= "In the Hall (E-P1, 09-1424)"
+imgNames[2]= "In the Family Room (E-P1, 09-1418)"
+imgNames[3]= "In the Bedroom (E-P1, 09-1430)"
+imgNames[4]= "Scarborough Dusk Traffic (E-P1, 09-0019)"
+imgNames[5]= "Scarborough Dusk Traffic (E-P1, 09-0021)"
+imgNames[6]= "Red Rose in my Drawer (E-P1, 09-0051)"
+imgNames[7]= "Futaba Fantasy (E-P1, 09-0080)"
+imgNames[8]= "Duffins Creek Marsh (K20D, 10-5265)"
+imgNames[9]= "Duffins Creek Marsh (K20D, 10-5274)"
+imgNames[10]= "Duffins Creek Marsh (K20D, 10-5276)"
+imgNames[11]= "Duffins Creek Marsh (K20D, 10-5295)"
+imgNames[12]= "In the Hall (E-P1, 10-0671)"
+imgNames[13]= "Masda 3 (E-P1, 10-0648)"
+//imgNames[]= ""
+
+function imgResizer( isLoading ) {
+  if ( isLoading ) document.images['Pic'].src = imgs[IMGMAX].src;
+  var winH = 0;
+  var winW = 0;
+  var picH = imgs[currImg].height;
+  var picW = imgs[currImg].width;
+  if ( navigator.appName == "Microsoft Internet Explorer" ) {
+    winH = document.body.clientHeight * 0.8;
+    winW = document.body.clientWidth * 0.8;
+  }
+  else {
+    winH = window.innerHeight * 0.8;
+    winW = window.innerWidth * 0.8;
+  }
+  var ratioH = picH / winH;
+  var ratioW = picW / winW;
+  var ratioUse = 0;
+  if ( ratioH > ratioW )
+    ratioUse = ratioH;
+  else
+    ratioUse = ratioW;
+  //if ( ratioUse < 0.75 ) ratioUse = 0.75;
+  if ( ratioUse > 1.0 ) {
+    document.images['Pic'].height = picH / ratioUse;
+    document.images['Pic'].width = picW / ratioUse;
+  }
+}
+
+function nextPic(imagename){
+ currImg -= 1;
+ if( currImg < 1 ) { currImg = IMGMAX };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ //imgResizer2( imgs[currImg].height, imgs[currImg].width );
+ imgResizer(0);
+}
+
+function prevPic(imagename){
+ currImg += 1;
+ if( currImg > IMGMAX ) { currImg = 1 };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ imgResizer(0);
+}
+
+function handlePgKeys(e)
+{
+  var keynum
+
+  if(window.event) // IE
+  {
+    keynum = e.keyCode
+  }
+  else if(e.which) // Netscape/Firefox/Opera
+  {
+    keynum = e.which
+  }
+  if (keynum == 33 ) { prevPic( 'Pic' ) }
+  if (keynum == 34 ) { nextPic( 'Pic' ) }
+  if (keynum == 37 ) { prevPic( 'Pic' ) }
+  if (keynum == 39 ) { nextPic( 'Pic' ) }
+}// onkeydown="handlePgKeys(event);"
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY BGCOLOR="black" TEXT="#F6F1CF" LINK="black" VLINK="black" ALINK="black" onresize="imgResizer(0);" onload="imgResizer(1);" onkeydown="handlePgKeys(event);">
+
+<!--BODY BGCOLOR="black" TEXT="black" LINK="#F6F1CF" VLINK="#F6F1CF" ALINK="#F6F1CF"-->
+
+<TABLE ALIGN="left" width="100%" height="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><!-- Start Full Screen -->
+
+<TR ALIGN="left" VALIGN="top">
+
+	<TD>
+
+	<!-- Start Left Nav: -->
+	<table align="left" width="75" height="100%" border=0 cellspacing=0 cellpadding=0>
+	<tr>
+	<td VALIGN="top">
+	<img src="../../../Pix/Site/DaystarArtOnlyLNav.jpg" usemap="#navbar2" align="top" width="75" height="440" border=0 ismap></td>
+	</table><!-- End Left Nav -->
+
+	<TD width="100%" bgcolor="#555555"><!-- 888888 83B1CB 475F6D 888067 Start Main Area col: -->
+
+	<!-- Start Info Contents table: -->
+	<table align="center" width="100%" cellspacing=15 cellpadding=0>
+
+	<tr><td>
+
+<!-----------------------------Content------------------------------>
+
+	<p class=SmallNoteCentered>
+        <a href="javascript:prevPic('Pic')"><img src='../Site/Larrow.gif' width=20 height=12 border=0 name="Prev"></a>
+        <font size=3>Now What?</font>
+	<a href="javascript:nextPic('Pic')"><img src='../Site/Rarrow.gif' width=20 height=12 border=0 name="Next"></a>
+
+	<br><a href="javascript:nextPic('Pic')"><img src='../Large2/Matthew_driving-E-P1-ISO1600-20100221-1831-210648-sz1000x750.jpg' border=12 name="Pic"></a>
+	<p style="text-align:center" id="TitleID">13) Masda 3 (E-P1, 10-0648)</p>
+
+	<br>
+
+	<p class=SmallNoteCentered><font color="#F6F1CF">11 images &copy; 2009, 2010 by Dale Cotton, all rights reserved.
+
+
+<!------------------------------------------------------------------>
+
+	</tr></td>
+
+	</table><!-- End Info Contents table -->
+
+	</TD><!-- End Main Area col -->
+
+</TR>
+
+</TABLE><!-- End Full Screen -->
+
+<map name="navbar2">
+<area shape="rect" coords="12,103,58,123" href="../../../index.html">
+<area shape="rect" coords="2,132,67,154" href="../../../PixMain.html">
+<area shape="rect" coords="6,161,59,180" href="../../../TextMain.html">
+<area shape='rect' coords='6,181,59,210' href='../../../ArtMain.html'>
+</map>
+
+</BODY>
+</HTML>

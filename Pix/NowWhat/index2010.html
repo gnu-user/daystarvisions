@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<!-- XHTML template version 1 --> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" > 
+<head> 
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+ <meta name="description" content="Photo portolio"/> 
+ <meta name="keywords" content="Photography, Art, Aesthetics"/> 
+ <meta http-equiv="X-UA-Compatible" content="IE-edge" /> 
+ 
+ <title>Now What? Dale Cotton &nbsp; Daystar</title> 
+
+<script type="text/javascript">
+<!--
+var imgPath = "Large2/"
+var imgTitle = ""
+var IMGMAX = 20 // - Change to match array dim
+var currImg = IMGMAX
+var imgs = new Array()
+/*
+imgs[1]= new Image()
+imgs[1].src= imgPath + "Tina_Matt_in_Hall-EP1-1424-ISO_3200-20091114-1931-sz1008x756.jpg"
+imgs[2]= new Image()
+imgs[2].src= imgPath + "Matt_Rabbit_Biki_Tina-EP1-1418-ISO_3200-20091114-1931-sz1008x756.jpg"
+imgs[3]= new Image()
+imgs[3].src= imgPath + "Matt_Ravi_Tina_in_Bedroom-EP1-1430-ISO_3200-20091114-1934-sz1008x756.jpg"
+imgs[4]= new Image()
+imgs[4].src= imgPath + "Scarborough_Dusk_Traffic-230019-E-P1-ISO1600-20091123-1758-sz1210x907.jpg"
+imgs[5]= new Image()
+imgs[5].src= imgPath + "Scarborough_Dusk_Traffic-230021-E-P1-ISO1600-20091123-1759-sz1210x907.jpg"
+imgs[6]= new Image()
+imgs[6].src= imgPath + "Red_Rose_in_my_Drawer-240051-E-P1-ISO200-20091124-1246-sz1210x907.jpg"
+imgs[7]= new Image()
+imgs[7].src= imgPath + "Futaba_Fantasy-250080-E-P1-ISO200-20091125-1227-sz1210x907.jpg"
+*/
+imgs[1]= new Image()
+imgs[1].src= imgPath + "Duffins_Creek_Marsh-K20D-ISO400-20100117-1119-5265-sz1035x776.jpg"
+imgs[2]= new Image()
+imgs[2].src= imgPath + "Duffins_Creek_Marsh-K20D-ISO400-20100117-1136-5274-sz1168x776.jpg"
+imgs[3]= new Image()
+imgs[3].src= imgPath + "Duffins_Creek_Marsh-K20D-ISO400-20100117-1137-5276-sz1156x768.jpg"
+imgs[4]= new Image()
+imgs[4].src= imgPath + "Duffins_Creek_Marsh-K20D-ISO400-20100117-1147-5295-sz1109x776.jpg"
+imgs[5]= new Image()
+imgs[5].src= imgPath + "Matthew_and_Tina_Hallway-E-P1-ISO1600-20100221-1838-210671-sz797x750.jpg"
+imgs[6]= new Image()
+imgs[6].src= imgPath + "Matthew_driving-E-P1-ISO1600-20100221-1831-210648-sz1000x750.jpg"
+imgs[7]= new Image()
+imgs[7].src= imgPath + "Side_View_3-E-P1-ISO800-20100221-1824-210621-sz1000x750.jpg"
+imgs[8]= new Image()
+imgs[8].src= imgPath + "Night_Driving_8_ESSO_Attendant-E-P1-ISO1600-20100408-0556-0801b.jpg"
+imgs[9]= new Image()
+imgs[9].src= imgPath + "Night_Driving_6-E-P1-ISO1600-20100410-2135-100963.jpg"
+imgs[10]= new Image()
+imgs[10].src= imgPath + "Night_Driving_5-E-P1-ISO1600-20100408-0523-0753.jpg"
+imgs[11]= new Image()
+imgs[11].src= imgPath + "Night_Driving_3-E-P1-ISO1600-20100408-0523-0736.jpg"
+imgs[12]= new Image()
+imgs[12].src= imgPath + "Night_Driving_2-E-P1-ISO1600-20100408-0519-0731.jpg"
+imgs[13]= new Image()
+imgs[13].src= imgPath + "Night_Driving_1-E-P1-ISO1600-20100408-0519-0730.jpg"
+imgs[14]= new Image()
+imgs[14].src= imgPath + "Paw_Paw_Lake_Dawn_Boats-wide-K20D-ISO_200-20100806-0735-5526-sz1050x700.jpg"
+imgs[15]= new Image()
+imgs[15].src= imgPath + "Paw_Paw_Lake_Dawn-K20D-ISO_200-20100806-0733-5518-sz1050x700.jpg"
+imgs[16]= new Image()
+imgs[16].src= imgPath + "Paw_Paw_Lake_Dawn-K20D-ISO_200-20100807-0715-5592-sz1050x700.jpg"
+imgs[17]= new Image()
+imgs[17].src= imgPath + "Paw_Paw_Lake-Dawn-K20D-ISO_200-20100807-0721-5601-sz1050x700.jpg"
+imgs[18]= new Image()
+imgs[18].src= imgPath + "Paw_Paw_Lake_Dawn-K20D-ISO_200-20100807-0716-5593-sz1050x700.jpg"
+imgs[19]= new Image()
+imgs[19].src= imgPath + "Paw_Paw_Lake-Dawn-K20D-ISO_200-20100807-0651-5551-sz1050x750.jpg"
+imgs[20]= new Image()
+imgs[20].src= imgPath + "Team_Way_Slipstream-EP1-ISO_200-20110531-1313-310187a-sz1100x825.jpg"
+
+//imgs[]= new Image()
+//imgs[].src= imgPath + ""
+
+var imgNames = new Array()
+/*
+imgNames[1]= "In the Hall (E-P1, 09-1424)"
+imgNames[2]= "In the Family Room (E-P1, 09-1418)"
+imgNames[3]= "In the Bedroom (E-P1, 09-1430)"
+imgNames[4]= "Scarborough Dusk Traffic (E-P1, 09-0019)"
+imgNames[5]= "Scarborough Dusk Traffic (E-P1, 09-0021)"
+imgNames[6]= "Red Rose in my Drawer (E-P1, 09-0051)"
+imgNames[7]= "Futaba Fantasy (E-P1, 09-0080)"
+*/
+imgNames[1]= "Duffins Creek Marsh (K20D, 10-5265)"
+imgNames[2]= "Duffins Creek Marsh (K20D, 10-5274)"
+imgNames[3]= "Duffins Creek Marsh (K20D, 10-5276)"
+imgNames[4]= "Duffins Creek Marsh (K20D, 10-5295)"
+imgNames[5]= "In the Hall (E-P1, 10-0671)"
+imgNames[6]= "Masda 3 (E-P1, 10-0648)"
+imgNames[7]= "Sideview 3 (E-P1, 10-0621)"
+imgNames[8]= "Esso Attendant (E-P1, 10-0801)"
+imgNames[9]= "Night Driving 5 (E-P1, 10-0763)"
+imgNames[10]= "Night Driving 4 (E-P1, 10-0753)"
+imgNames[11]= "Night Driving 3 (E-P1, 10-0736)"
+imgNames[12]= "Night Driving 2 (E-P1, 10-0731)"
+imgNames[13]= "Night Driving 1 (E-P1, 10-0730)"
+imgNames[14]= "Paw Paw Lake Dawn 6 (K20D, 10-5526)"
+imgNames[15]= "Paw Paw Lake Dawn 5 (K20D, 10-5518)"
+imgNames[16]= "Paw Paw Lake Dawn 4 (K20D, 10-5592)"
+imgNames[17]= "Paw Paw Lake Dawn 3 (K20D, 10-5601)"
+imgNames[18]= "Paw Paw Lake Dawn 2 (K20D, 10-5693)"
+imgNames[19]= "Paw Paw Lake Dawn 1 (K20D, 10-5551)"
+imgNames[20]= "Toronto Team Way, Spring 2011 (E-P1, 11-3187)"
+
+//imgNames[]= ""
+
+function imgResizer( isLoading ) {
+  if ( isLoading ) document.images['Pic'].src = imgs[IMGMAX].src;
+  var winH = 0;
+  var winW = 0;
+  var picH = imgs[currImg].height;
+  var picW = imgs[currImg].width;
+  if ( navigator.appName == "Microsoft Internet Explorer" ) {
+    winH = document.body.clientHeight * 0.8;
+    winW = document.body.clientWidth * 0.8;
+  }
+  else {
+    winH = window.innerHeight * 0.8;
+    winW = window.innerWidth * 0.8;
+  }
+  var ratioH = picH / winH;
+  var ratioW = picW / winW;
+  var ratioUse = 0;
+  if ( ratioH > ratioW )
+    ratioUse = ratioH;
+  else
+    ratioUse = ratioW;
+  //if ( ratioUse < 0.75 ) ratioUse = 0.75;
+  if ( ratioUse > 1.0 ) {
+    document.images['Pic'].height = picH / ratioUse;
+    document.images['Pic'].width = picW / ratioUse;
+  }
+}
+
+function nextPic(imagename){
+ currImg -= 1;
+ if( currImg < 1 ) { currImg = IMGMAX };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ //imgResizer2( imgs[currImg].height, imgs[currImg].width );
+ imgResizer(0);
+}
+
+function prevPic(imagename){
+ currImg += 1;
+ if( currImg > IMGMAX ) { currImg = 1 };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ imgResizer(0);
+}
+
+function handlePgKeys(e)
+{
+  var keynum
+
+  if(window.event) // IE
+  {
+    keynum = e.keyCode
+  }
+  else if(e.which) // Netscape/Firefox/Opera
+  {
+    keynum = e.which
+  }
+  if (keynum == 33 ) { prevPic( 'Pic' ) }
+  if (keynum == 34 ) { nextPic( 'Pic' ) }
+  if (keynum == 37 ) { prevPic( 'Pic' ) }
+  if (keynum == 39 ) { nextPic( 'Pic' ) }
+  //if (keynum == 38 ) { location.replace("http://daystarvisions.com/PixMain.html" ) }
+}// onkeydown="handlePgKeys(event);"
+
+//-->
+</script>
+ 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/reset.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/main_pix.css'/> 
+ 
+</head> 
+ 
+<body onresize="imgResizer(0);" onload="imgResizer(1);" onkeydown="handlePgKeys(event);"> 
+ 
+<div id="div_background"> 
+ 
+<div id="div_masthead"> 
+ 
+<img src="http://daystarvisions.com/Pix/Site/DayStar_logo-brown_bgrnd-sz250x40.jpg" height="40" width="250" alt="logo" class="logo" /> 
+
+ <h1>
+<a href="javascript:prevPic('Pic')"><img src='../Site/LarrowLtYellow.gif' width=20 height=12 border=0 id="Prev"></a>
+&nbsp;Now What? Dale Cotton
+<a href="javascript:nextPic('Pic')"><img src='../Site/RarrowLtYellow.gif' width=20 height=12 border=0 id="Next"></a>
+</h1>
+
+<div id="div_nav"> 
+<ul> 
+<li><a id="li_nav_main" href="http://daystarvisions.com/index.html">Main</a></li> 
+<li><a id="li_nav_pix" href="http://daystarvisions.com/PixMain.html">Pictures</a></li> 
+<li><a id="li_nav_text" href="http://daystarvisions.com/TextMain.html">Text</a></li> 
+<li><a id="li_nav_art" href="http://daystarvisions.com/ArtMain.html">Art</a></li> 
+</ul> 
+</div> <!--div_nav--> 
+ 
+</div> <!--div_masthead--> 
+ 
+<div id="div_content"> 
+ 
+<div id="div_title_bar"> 
+
+<!-- * * * * CONTENT HERE * * * * -->
+
+<div class="div_pic_click"> 
+
+<a href="javascript:nextPic('Pic')">
+  <img src="Large2/Team_Way_Slipstream-EP1-ISO_200-20110531-1313-310187a-sz1100x825.jpg" id="Pic">
+</a>
+
+</div> <!--div_pic_click--> 
+
+<p class="Centered" id="TitleID" >
+  20) Toronto Team Way, Spring 2011 (E-P1, 11-3187)
+</p>
+
+<p class="SmallCentered">19 images &copy; 2009, 2010 by Dale Cotton, all rights reserved.</p>
+
+<!-- * * * * END CONTENT * * * * -->
+ 
+</div> <!--div_content--> 
+ 
+</div> <!--div_background--> 
+ 
+</body>
+
+</html>

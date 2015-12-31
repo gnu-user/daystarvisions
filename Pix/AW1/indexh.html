@@ -1,0 +1,170 @@
+<!--!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd"-->
+<HTML lang="en">
+
+<HEAD>
+<TITLE>Daystar Visions - Voelklingen Iron Works, Angela Weil</TITLE>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <meta name="description" content="Photo portfolio">
+ <meta name="keywords" content="Photography, Art, Aesthetics">
+
+ <LINK href="http://daystarvisions.com/DSDocs.css" rel="stylesheet" type="text/css">
+ <LINK href="../DSDocs.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+<!--
+var imgPath = "../new1000s/"
+var imgTitle = ""
+var currImg = 1
+var IMGMAX = 3 // - Change to match array dim
+var imgs = new Array()
+imgs[1]= new Image()
+imgs[1].src= imgPath + "ArtDecosz1415x1000.jpg"
+imgs[2]= new Image()
+imgs[2].src= imgPath + "Slidesz1300x1000.jpg"
+imgs[3]= new Image()
+imgs[3].src= imgPath + "Townsz1448x1000.jpg"
+
+var imgNames = new Array()
+imgNames[1]= "ArtDeco (view facing north)"
+imgNames[2]= "Slide (view facing west)"
+imgNames[3]= "Town (view facing east)"
+function imgResizer( isLoading ) {
+  if ( isLoading ) document.images['Pic'].src = imgs[1].src;
+  var winH = 0;
+  var winW = 0;
+  var picH = imgs[currImg].height;
+  var picW = imgs[currImg].width;
+  if ( navigator.appName == "Microsoft Internet Explorer" ) {
+    winH = document.body.clientHeight * 0.8;
+    winW = document.body.clientWidth * 0.8;
+  }
+  else {
+    winH = window.innerHeight * 0.8;
+    winW = window.innerWidth * 0.8;
+  }
+  var ratioH = picH / winH;
+  var ratioW = picW / winW;
+  var ratioUse = 0;
+  if ( ratioH > ratioW ) 
+    ratioUse = ratioH;
+  else
+    ratioUse = ratioW;
+  //if ( ratioUse < 0.75 ) ratioUse = 0.75;
+  if ( ratioUse > 1.0 ) {
+    document.images['Pic'].height = picH / ratioUse;
+    document.images['Pic'].width = picW / ratioUse;
+  }
+  else {
+    document.images['Pic'].height = picH;
+    document.images['Pic'].width = picW;
+  }
+}
+
+function nextPic(imagename){
+ currImg += 1;
+ if( currImg > IMGMAX ) { currImg = 1 };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ //imgResizer2( imgs[currImg].height, imgs[currImg].width );
+ imgResizer(0);
+}
+
+function prevPic(imagename){
+ currImg -= 1;
+ if( currImg < 1 ) { currImg = IMGMAX };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ imgResizer(0);
+}
+
+function handlePgKeys(e)
+{
+  var keynum
+
+  if(window.event) // IE
+  {
+    keynum = e.keyCode
+  }
+  else if(e.which) // Netscape/Firefox/Opera
+  {
+    keynum = e.which
+  }
+  if (keynum == 33 ) { prevPic( 'Pic' ) }
+  if (keynum == 34 ) { nextPic( 'Pic' ) }
+  if (keynum == 37 ) { prevPic( 'Pic' ) }
+  if (keynum == 39 ) { nextPic( 'Pic' ) }
+}// onkeydown="handlePgKeys(event);"
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY BGCOLOR="black" TEXT="#F6F1CF" LINK="#F6F1CF" VLINK="#F6F1CF" ALINK="#F6F1CF" onresize="imgResizer(0);" onload="imgResizer(1);" onkeydown="handlePgKeys(event);">
+
+<TABLE ALIGN="left" width="100%" height="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><!-- Start Full Screen -->
+
+<TR ALIGN="left" VALIGN="top">
+
+	<TD>
+
+	<!-- Start Left Nav: -->
+	<table align="left" width="75" border=0 cellspacing=0 cellpadding=0>
+	<tr>
+	<td VALIGN="top">
+	<img src="../../../Pix/Site/DaystarArtOnlyLNav.jpg" usemap="#navbar2" align="top" width="75" height="440" border=0 ismap alt="image"></td>
+	</table><!-- End Left Nav -->
+
+	<TD width="100%" bgcolor="#555555"><!--6e7753 888067 Start Main Area col: -->
+
+	<!-- Start Info Contents table: -->
+	<table align="center" width="100%" cellspacing=15 cellpadding=0>
+
+	<tr><td>
+
+<!--=============================== Content ===============================-->
+
+	<p class=SmallNoteCentered>
+        <a href="javascript:prevPic('Pic')"><img src='../Site/Larrow.gif' width=20 height=12 border=0 name="Prev" alt="image"></a> 
+        <font size=3>Voelklingen Iron Works, Angela Weil</font> 	
+	<a href="javascript:nextPic('Pic')"><img src='../Site/Rarrow.gif' width=20 height=12 border=0 name="Next" alt="image"></a>
+
+	<br><a href="javascript:nextPic('Pic')"><img src='../new1000s/ArtDecosz1415x1000.jpg' border=12 name="Pic" alt="image"></a>
+	<p style="text-align:center" id="TitleID">1) ArtDeco (view facing north)
+	
+	<br>
+	
+	<p class=SmallNoteCentered><font color="#F6F1CF">3 images &copy; 2006 by Angela Weil, all rights reserved. Visit full gallery at <a href="http://www.photoportale.de/">PhotoPortale</a>.</font>
+
+<br><br><br><br>
+
+<!--============================= End Content ============================-->
+
+	</td></tr>
+
+	</table><!-- End Info Contents table -->
+
+	</TD><!-- End Main Area col -->
+
+</TR>
+  
+</TABLE><!-- End Full Screen -->
+
+<map name="navbar2">
+<area shape="rect" coords="12,103,58,123" href="../../../index.html" alt="image">
+<area shape="rect" coords="2,132,67,154" href="../../../PixMain.html" alt="image">
+<area shape="rect" coords="6,161,59,180" href="../../../TextMain.html" alt="image">
+<area shape='rect' coords='6,181,59,210' href='../../../ArtMain.html' alt="image">
+</map>
+
+</BODY>
+</HTML>

@@ -1,0 +1,239 @@
+<HTML lang="en">
+
+<HEAD>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+ <meta name="description" content="Photo portolio">
+
+ <meta name="keywords" content=""Photography, Art, Aesthetics">
+
+<TITLE>Daystar Visions - Dennis & Carol Bartlett: Phone Snaps 2009</TITLE>
+
+ <LINK href="http://daystarvisions.com/DSDocs.css" rel="stylesheet" type="text/css">
+ <LINK href="../DSDocs.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+<!--
+var imgPath = "Pix/"
+var imgTitle = ""
+var currImg = 1
+var IMGMAX = 16 // - Change to match array dim
+var imgs = new Array()
+
+imgs[1]= new Image()
+imgs[1].src= imgPath + "1_Dennis_and_Pippin_cover-sz960x720.jpg"
+imgs[2]= new Image()
+imgs[2].src= imgPath + "2_Dennis_and_Pippin-sz960x720.jpg"
+imgs[3]= new Image()
+imgs[3].src= imgPath + "3_Carol_and_Pippin-sz960x720.jpg"
+imgs[4]= new Image()
+imgs[4].src= imgPath + "4_Carol_and_Pippin-sz960x720.jpg"
+imgs[5]= new Image()
+imgs[5].src= imgPath + "5_Dennis_and_Cricket-sz960x720.jpg"
+imgs[6]= new Image()
+imgs[6].src= imgPath + "6_Pippin_on_couch-sz600x800.jpg"
+imgs[7]= new Image()
+imgs[7].src= imgPath + "7_Cricket_in_cage-sz600x800.jpg"
+imgs[8]= new Image()
+imgs[8].src= imgPath + "8_Cricket-sz640x480.jpg"
+imgs[9]= new Image()
+imgs[9].src= imgPath + "9_Cricket_on_hand-sz600x800.jpg"
+imgs[10]= new Image()
+imgs[10].src= imgPath + "10_Dennis_and_Cricket-sz640x480.jpg"
+imgs[11]= new Image()
+imgs[11].src= imgPath + "11_McDougall_by_bench-sz600x800.jpg"
+imgs[12]= new Image()
+imgs[12].src= imgPath + "12_Ashtray_on_deck-sz600x800.jpg"
+imgs[13]= new Image()
+imgs[13].src= imgPath + "13_Nady-sz600x800.jpg"
+imgs[14]= new Image()
+imgs[14].src= imgPath + "14_Pippin_on_couch-sz600x800.jpg"
+imgs[15]= new Image()
+imgs[15].src= imgPath + "15_Carol_Pippin_and_bone-sz600x800.jpg"
+imgs[16]= new Image()
+imgs[16].src= imgPath + "16_Dennis-sz600x800.jpg"
+/*imgs[17]= new Image()
+imgs[17].src= imgPath + ""
+imgs[18]= new Image()
+imgs[18].src= imgPath + ""
+imgs[19]= new Image()
+imgs[19].src= imgPath + ""
+imgs[20]= new Image()
+imgs[20].src= imgPath + ""
+imgs[21]= new Image()
+imgs[21].src= imgPath + ""
+imgs[22]= new Image()
+imgs[22].src= imgPath + ""
+imgs[23]= new Image()
+imgs[23].src= imgPath + ""
+imgs[24]= new Image()
+imgs[24].src= imgPath + ""
+imgs[25]= new Image()
+imgs[25].src= imgPath + ""*/
+
+var imgNames = new Array()
+imgNames[1]= "Dennis & Pippin"
+imgNames[2]= "Dennis & Pippin"
+imgNames[3]= "Carol & Pippin"
+imgNames[4]= "Carol & Pippin"
+imgNames[5]= "Dennis & Cricket"
+imgNames[6]= "Pippin on couch"
+imgNames[7]= "Cricket in cage"
+imgNames[8]= "Cricket"
+imgNames[9]= "Cricket on hand"
+imgNames[10]= "Dennis & Cricket"
+imgNames[11]= "McDougall by bench"
+imgNames[12]= "Ashtray on deck"
+imgNames[13]= "Nady"
+imgNames[14]= "Pippin on couch"
+imgNames[15]= "Carol Pippin & bone"
+imgNames[16]= "Dennis"
+/*imgNames[17]= ""
+imgNames[18]= ""
+imgNames[19]= ""
+imgNames[20]= ""
+imgNames[21]= ""
+imgNames[22]= ""
+imgNames[23]= ""
+imgNames[24]= ""
+imgNames[25]= ""*/
+
+function imgResizer( isLoading ) {
+  if ( isLoading ) document.images['Pic'].src = imgs[1].src;
+  var winH = 0;
+  var winW = 0;
+  var picH = imgs[currImg].height;
+  var picW = imgs[currImg].width;
+  if ( navigator.appName == "Microsoft Internet Explorer" ) {
+    winH = document.body.clientHeight * 0.8;
+    winW = document.body.clientWidth * 0.8;
+  }
+  else {
+    winH = window.innerHeight * 0.8;
+    winW = window.innerWidth * 0.8;
+  }
+  var ratioH = picH / winH;
+  var ratioW = picW / winW;
+  var ratioUse = 0;
+  if ( ratioH > ratioW )
+    ratioUse = ratioH;
+  else
+    ratioUse = ratioW;
+  //if ( ratioUse < 0.75 ) ratioUse = 0.75;
+  if ( ratioUse > 1.0 ) {
+    document.images['Pic'].height = picH / ratioUse;
+    document.images['Pic'].width = picW / ratioUse;
+  }
+  else {
+    document.images['Pic'].height = picH;
+    document.images['Pic'].width = picW;
+  }
+}
+
+
+function nextPic(imagename){
+ currImg += 1;
+ if( currImg > IMGMAX ) { currImg = 1 };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ //imgResizer2( imgs[currImg].height, imgs[currImg].width );
+ imgResizer(0);
+}
+
+function prevPic(imagename){
+ currImg -= 1;
+ if( currImg < 1 ) { currImg = IMGMAX };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ imgResizer(0);
+}
+
+function handlePgKeys(e)
+{
+  var keynum
+
+  if(window.event) // IE
+  {
+    keynum = e.keyCode
+  }
+  else if(e.which) // Netscape/Firefox/Opera
+  {
+    keynum = e.which
+  }
+  if (keynum == 33 ) { prevPic( 'Pic' ) }
+  if (keynum == 34 ) { nextPic( 'Pic' ) }
+  if (keynum == 37 ) { prevPic( 'Pic' ) }
+  if (keynum == 39 ) { nextPic( 'Pic' ) }
+}// onkeydown="handlePgKeys(event);"
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY BGCOLOR="black" TEXT="black" LINK="#F6F1CF" VLINK="#F6F1CF" ALINK="#F6F1CF" onresize="imgResizer(0);" onload="imgResizer(1);" onkeydown="handlePgKeys(event);">
+
+<TABLE ALIGN="left" width="100%" height="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><!-- Start Full Screen -->
+
+<TR ALIGN="left" VALIGN="top">
+
+	<TD>
+
+	<!-- Start Left Nav: -->
+	<table align="left" width="75" height="100%" border=0 cellspacing=0 cellpadding=0>
+	<tr>
+	<td VALIGN="top">
+	<img src="../../../Pix/Site/DaystarArtOnlyLNav.jpg" usemap="#navbar2" align="top" width="75" height="440" border=0 ismap></td>
+	</table><!-- End Left Nav -->
+
+	<TD width="100%" bgcolor="#555555"><!-- 888067 Start Main Area col: -->
+
+	<!-- Start Info Contents table: -->
+	<table align="center" width="100%" cellspacing=15 cellpadding=0>
+
+	<tr><td>
+
+<!-----------------------------Content------------------------------>
+
+	<p class=SmallNoteCentered>
+        <a href="javascript:prevPic('Pic')"><img src='../Site/Larrow.gif' width=20 height=12 border=0 name="Prev"></a>
+        <font size=3>Dennis & Carol Bartlett: Phone Snaps 2009</font>
+	<a href="javascript:nextPic('Pic')"><img src='../Site/Rarrow.gif' width=20 height=12 border=0 name="Next"></a>
+
+	<br><a href="javascript:nextPic('Pic')"><img src='Pix/1_Dennis_and_Pippin_cover-sz960x720.jpg' border=12 name="Pic"></a>
+	<p style="text-align:center" id="TitleID">1) Dennis & Pippin</p>
+
+	<br>
+
+	<p class=SmallNoteCentered><font color="#F6F1CF">16 images &copy; 2009 by Dennis & Carol Bartlett, all rights reserved.
+
+
+<!------------------------------------------------------------------>
+
+	</td></tr>
+
+	</table><!-- End Info Contents table -->
+
+	</TD><!-- End Main Area col -->
+
+</TR>
+
+</TABLE><!-- End Full Screen -->
+
+<map name="navbar2">
+<area shape="rect" coords="12,103,58,123" href="../../../index.html">
+<area shape="rect" coords="2,132,67,154" href="../../../PixMain.html">
+<area shape="rect" coords="6,161,59,180" href="../../../TextMain.html">
+<area shape='rect' coords='6,181,59,210' href='../../../ArtMain.html'>
+</map>
+
+</BODY>
+</HTML>

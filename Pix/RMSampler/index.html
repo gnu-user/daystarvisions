@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<!-- XHTML template version 1 --> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" > 
+<head> 
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+ <meta name="description" content="Photo portfolio"/> 
+ <meta name="keywords" content="Photography, Art, Aesthetics"/> 
+ <meta http-equiv="X-UA-Compatible" content="IE-edge" /> 
+ 
+ <title>A Bob Munro Sampler &nbsp; Daystar</title> 
+
+<script type="text/javascript">
+<!--
+var imgPath = "800s/"
+var imgTitle = ""
+var currImg = 1
+var IMGMAX = 20 // - Change to match array dim
+var imgs = new Array()
+imgs[1]= new Image()
+imgs[1].src= imgPath + "RM_River_Scene_1_cover-sz900x667.jpg"
+imgs[2]= new Image()
+imgs[2].src= imgPath + "RM_River_Scene_4_sz800x532.jpg"
+imgs[3]= new Image()
+imgs[3].src= imgPath + "RM_Forest_Mist_2_sz800x589.jpg"
+imgs[4]= new Image()
+imgs[4].src= imgPath + "RM_Forest_2-sz1000x562.jpg"
+imgs[5]= new Image()
+imgs[5].src= imgPath + "RM_Flinders_4-sz800x742.jpg"
+imgs[6]= new Image()
+imgs[6].src= imgPath + "RM_Flinders_6-sz1000x664.jpg"
+imgs[7]= new Image()
+imgs[7].src= imgPath + "RM_Flinders_11-sz1000x664.jpg"
+imgs[8]= new Image()
+imgs[8].src= imgPath + "RM_Lake_Tyers_Sunset_2_sz800x532.jpg"
+imgs[9]= new Image()
+imgs[9].src= imgPath + "RM_Lake_Tyers_Sunset_5_sz900x380.jpg"
+imgs[10]= new Image()
+imgs[10].src= imgPath + "RM_Hamilton_Island_Sunset_2_sz800x532.jpg"
+imgs[11]= new Image()
+imgs[11].src= imgPath + "RM_Surfside-sz900x600.jpg"
+imgs[12]= new Image()
+imgs[12].src= imgPath + "RM_London_Street-sz908x590.jpg"
+imgs[13]= new Image()
+imgs[13].src= imgPath + "RM_Wintergarden-sz900x603.jpg"
+imgs[14]= new Image()
+imgs[14].src= imgPath + "RM_Reflections-sz950x667.jpg"
+imgs[15]= new Image()
+imgs[15].src= imgPath + "RM_Serenity-sz1000x664.jpg"
+imgs[16]= new Image()
+imgs[16].src= imgPath + "RM_Silhouettes-sz1000x664.jpg"
+imgs[17]= new Image()
+imgs[17].src= imgPath + "Offshore_Industrial_1-Bob_Munro-R0010406-sz950x713.jpg"
+imgs[18]= new Image()
+imgs[18].src= imgPath + "Offshore_Industrial_2-Bob_Munro-R0010392-sz950x711.jpg"
+imgs[19]= new Image()
+imgs[19].src= imgPath + "Seal_Refuge-Bob_Munro-DSC_6357-sz1000x665.jpg"
+imgs[20]= new Image()
+imgs[20].src= imgPath + "Blue_Dreaming_1-Bob_Munro-sz500x750.jpg"
+
+var imgNames = new Array()
+imgNames[1]= "River Scene 1 (Cover)"
+imgNames[2]= "River Scene 4"
+imgNames[3]= "Forest Mist 2"
+imgNames[4]= "Forest 2"
+imgNames[5]= "Flinders 4"
+imgNames[6]= "Flinders 6"
+imgNames[7]= "Flinders 11"
+imgNames[8]= "Lake Tyers Sunset 2"
+imgNames[9]= "Lake Tyers Sunset 5"
+imgNames[10]= "Hamilton Island Sunset 2"
+imgNames[11]= "Surfside"
+imgNames[12]= "London street"
+imgNames[13]= "Wintergarden"
+imgNames[14]= "Reflections"
+imgNames[15]= "Serenity"
+imgNames[16]= "Silhouettes"
+imgNames[17]= "Offshore Industrial 1"
+imgNames[18]= "Offshore Industrial 2"
+imgNames[19]= "Seal Refuge"
+imgNames[20]= "Blue Dreaming 1"
+
+function imgResizer( isLoading ) {
+  if ( isLoading ) document.images['Pic'].src = imgs[1].src;
+  var winH = 0;
+  var winW = 0;
+  var picH = imgs[currImg].height;
+  var picW = imgs[currImg].width;
+  if ( navigator.appName == "Microsoft Internet Explorer" ) {
+    winH = document.body.clientHeight * 0.8;
+    winW = document.body.clientWidth * 0.8;
+  }
+  else {
+    winH = window.innerHeight * 0.8;
+    winW = window.innerWidth * 0.8;
+  }
+  var ratioH = picH / winH;
+  var ratioW = picW / winW;
+  var ratioUse = 0;
+  if ( ratioH > ratioW )
+    ratioUse = ratioH;
+  else
+    ratioUse = ratioW;
+  //if ( ratioUse < 0.75 ) ratioUse = 0.75;
+  if ( ratioUse > 1.0 ) {
+    document.images['Pic'].height = picH / ratioUse;
+    document.images['Pic'].width = picW / ratioUse;
+  }
+  else {
+    document.images['Pic'].height = picH;
+    document.images['Pic'].width = picW;
+  }
+}
+
+function nextPic(imagename){
+ currImg += 1;
+ if( currImg > IMGMAX ) { currImg = 1 };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ //imgResizer2( imgs[currImg].height, imgs[currImg].width );
+ imgResizer(0);
+}
+
+function prevPic(imagename){
+ currImg -= 1;
+ if( currImg < 1 ) { currImg = IMGMAX };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ imgResizer(0);
+}
+
+function handlePgKeys(e)
+{
+  var keynum
+
+  if(window.event) // IE
+  {
+    keynum = e.keyCode
+  }
+  else if(e.which) // Netscape/Firefox/Opera
+  {
+    keynum = e.which
+  }
+  if (keynum == 33 ) { prevPic( 'Pic' ) }
+  if (keynum == 34 ) { nextPic( 'Pic' ) }
+  if (keynum == 37 ) { prevPic( 'Pic' ) }
+  if (keynum == 39 ) { nextPic( 'Pic' ) }
+  //if (keynum == 38 ) { location.replace("http://daystarvisions.com/PixMain.html" ) }
+}// onkeydown="handlePgKeys(event);"
+
+//-->
+</script>
+ 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/reset.css'/> 
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/main_pix.css'/> 
+ 
+</head> 
+ 
+<body onresize="imgResizer(0);" onload="imgResizer(1);" onkeydown="handlePgKeys(event);"> 
+ 
+<div id="div_background"> 
+ 
+<div id="div_masthead"> 
+ 
+<img src="http://daystarvisions.com/Pix/Site/DayStar_logo-brown_bgrnd-sz250x40.jpg" height="40" width="250" alt="logo" class="logo" /> 
+
+ <h1>
+<a href="javascript:prevPic('Pic')"><img src='../Site/LarrowLtYellow.gif' width=20 height=12 border=0 id="Prev"></a>
+&nbsp;A Bob Munro Sampler
+<a href="javascript:nextPic('Pic')"><img src='../Site/RarrowLtYellow.gif' width=20 height=12 border=0 id="Next"></a>
+</h1>
+
+<div id="div_nav"> 
+<ul> 
+<li><a id="li_nav_main" href="http://daystarvisions.com/index.html">Main</a></li> 
+<li><a id="li_nav_pix" href="http://daystarvisions.com/PixMain.html">Pictures</a></li> 
+<li><a id="li_nav_text" href="http://daystarvisions.com/TextMain.html">Words</a></li> 
+<li><a id="li_nav_art" href="http://daystarvisions.com/ArtMain.html">Art</a></li> 
+</ul> 
+</div> <!--div_nav--> 
+ 
+</div> <!--div_masthead--> 
+ 
+<div id="div_content"> 
+ 
+<div id="div_title_bar"> 
+
+<!-- * * * * CONTENT HERE * * * * -->
+
+<div class="div_pic_click"> 
+
+<a href="javascript:nextPic('Pic')">
+  <img src='800s/RM_River_Scene_1_full-sz500x333.jpg' id="Pic">
+</a>
+
+</div> <!--div_pic_click--> 
+
+<p class="Centered" id="TitleID" >
+  1) River Scene 1 (Cover)
+</p>
+
+<p class="SmallCentered">20 images &copy; 2006-2010 by Bob Munro, all rights reserved. Visit full gallery at <a href="http://www.bobmunro.com/">Bob Munro Portfolio</a></p>
+
+<!-- * * * * END CONTENT * * * * -->
+ 
+</div> <!--div_content--> 
+ 
+</div> <!--div_background--> 
+ 
+</body>
+
+</html>

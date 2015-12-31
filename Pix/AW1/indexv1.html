@@ -1,0 +1,116 @@
+<!--!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd"-->
+<HTML lang="en">
+
+<HEAD>
+<TITLE>Daystar Visions - Voelklingen Iron Works, Angela Weil</TITLE>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <meta name="description" content="Photo portolio">
+ <meta name="keywords" content="Photography, Art, Aesthetics">
+
+ <LINK href="http://daystarvisions.com/DSDocs.css" rel="stylesheet" type="text/css">
+ <LINK href="../DSDocs.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+<!--
+var imgPath = "../new800s/"
+var imgTitle = ""
+var currImg = 1
+var IMGMAX = 3 // - Change to match array dim
+var imgs = new Array()
+imgs[1]= new Image()
+imgs[1].src= imgPath + "ArtDecosz800x565.jpg"
+imgs[2]= new Image()
+imgs[2].src= imgPath + "Slidesz800x615.jpg"
+imgs[3]= new Image()
+imgs[3].src= imgPath + "Townsz800x552.jpg"
+
+var imgNames = new Array()
+imgNames[1]= "ArtDeco (view facing north)"
+imgNames[2]= "Slide (view facing west)"
+imgNames[3]= "Town (view facing east)"
+
+
+function nextPic(imagename){
+ currImg += 1;
+ if( currImg > IMGMAX ) { currImg = 1 };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; }
+}
+
+function prevPic(imagename){
+ currImg -= 1;
+ if( currImg < 1 ) { currImg = IMGMAX };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; }
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY BGCOLOR="#000000" TEXT="#000000" LINK="#F6F1CF" VLINK="#F6F1CF" ALINK="#F6F1CF">
+
+<TABLE ALIGN="left" width="100%" height="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><!-- Start Full Screen -->
+
+<TR ALIGN="left" VALIGN="top">
+
+	<TD>
+
+	<!-- Start Left Nav: -->
+	<table align="left" width="75" border=0 cellspacing=0 cellpadding=0>
+	<tr>
+	<td VALIGN="top">
+	<img src="../../../Pix/Site/DaystarArtOnlyLNav.jpg" usemap="#navbar2" align="top" width="75" height="440" border=0 ismap alt="image"></td>
+	</table><!-- End Left Nav -->
+
+	<TD width="100%" bgcolor="#888067"><!-- Start Main Area col: -->
+
+	<!-- Start Info Contents table: -->
+	<table align="center" width="100%" cellspacing=15 cellpadding=0>
+
+	<tr><td>
+
+<!--=============================== Content ===============================-->
+
+	<p class=SmallNoteCentered>
+        <a href="javascript:prevPic('Pic')"><img src='../Site/Larrow.gif' width=20 height=12 border=0 name="Prev" alt="image"></a> 
+        <font size=3>Voelklingen Iron Works, Angela Weil</font> 	
+	<a href="javascript:nextPic('Pic')"><img src='../Site/Rarrow.gif' width=20 height=12 border=0 name="Next" alt="image"></a>
+
+	<br><a href="javascript:nextPic('Pic')"><img src='../new800s/ArtDecosz800x565.jpg' border=12 name="Pic" alt="image"></a>
+	<p style="text-align:center" id="TitleID">1) ArtDeco (view facing north)</p>
+	
+	<br>
+	
+	<p class=SmallNoteCentered><font color="#F6F1CF">3 images &copy; 2006 by Angela Weil, all rights reserved.</font>
+	
+<!--============================= End Content ============================-->
+
+	</td></tr>
+
+	</table><!-- End Info Contents table -->
+
+	</TD><!-- End Main Area col -->
+
+</TR>
+  
+</TABLE><!-- End Full Screen -->
+
+<map name="navbar2">
+<area shape="rect" coords="12,103,58,123" href="../../../index.html" alt="image">
+<area shape="rect" coords="2,132,67,154" href="../../../PixMain.html" alt="image">
+<area shape="rect" coords="6,161,59,180" href="../../../TextMain.html" alt="image">
+<area shape='rect' coords='6,181,59,210' href='../../../ArtMain.html' alt="image">
+</map>
+
+</BODY>
+</HTML>

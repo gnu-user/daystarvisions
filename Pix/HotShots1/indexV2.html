@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- XHTML template version 1 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <meta name="description" content="Photo portolio"/>
+ <meta name="keywords" content="Photography, Art, Aesthetics"/>
+ <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+
+ <title>Hotshots 1 &ndash; Landscapes &ndash; Daystar</title>
+
+<script type="text/javascript">
+<!--
+var imgPath = ""
+var imgTitle = ""
+var currImg = 1
+var IMGMAX = 28 // - Change to match array dim
+var imgs = new Array()
+
+//imgs[1]= new Image()
+//imgs[1].src= imgPath + "../PawPaw2/1000s/07-L6094-sz1100x620.jpg"
+//imgs[7]= new Image()
+//imgs[7].src= imgPath + "../Lakeshore2/1000s/07-L6384b-sz1100x620.jpg"
+//imgs[8]= new Image()
+//imgs[8].src= imgPath + "../Marinas/1000s/05-E254_Cover-sz1000x730.jpg"
+//imgs[14]= new Image()
+//imgs[14].src= imgPath + "../RurWet/1000s/05-D0537b-sz1000x750.jpg"
+//imgs[18]= new Image()
+//imgs[18].src= imgPath + "../Kawarthas_2008/1000s/08-K2347b-sz1050x700.jpg"
+
+imgs[1]= new Image()
+imgs[1].src= imgPath + "../PawPaw2/1000s/01-F42-24g-sz1050x700.jpg"
+imgs[2]= new Image()
+imgs[2].src= imgPath + "../PawPaw2/1000s/01-F69-22g-sz1050x700.jpg"
+imgs[3]= new Image()
+imgs[3].src= imgPath + "../PawPaw2/1000s/01-F44-19f-sz1000x740.jpg"
+imgs[4]= new Image()
+imgs[4].src= imgPath + "../PawPaw2/1000s/02-F115-22e-sz1020x700.jpg"
+imgs[5]= new Image()
+imgs[5].src= imgPath + "../PawPaw2/1000s/159-14d-sz1020x700.jpg"
+imgs[6]= new Image()
+imgs[6].src= imgPath + "../RurWet/1000s/05-D0541b-sz1050x700.jpg"
+
+imgs[7]= new Image()
+imgs[7].src= imgPath + "../Fall09/Large/Duffins_Creek_Marsh-ISO_200-20091017-1024-K20D-5034-sz1000x664.jpg"
+
+imgs[8]= new Image()
+imgs[8].src= imgPath + "../DurRur/1000s/120-02g-sz1040x700.jpg"
+imgs[9]= new Image()
+imgs[9].src= imgPath + "../DurRur/1000s/125-08b4-sz1000x700.jpg"
+imgs[10]= new Image()
+imgs[10].src= imgPath + "../DurRur/1000s/131-15c-sz1000x700.jpg"
+imgs[11]= new Image()
+imgs[11].src= imgPath + "../DurRur/1000s/166-10b-sz1050x700.jpg"
+imgs[12]= new Image()
+imgs[12].src= imgPath + "../DurRur/1000s/170-02d2-sz1050x700.jpg"
+imgs[13]= new Image()
+imgs[13].src= imgPath + "../DurRur/1000s/168-14d4-sz1050x700.jpg"
+imgs[14]= new Image()
+imgs[14].src= imgPath + "../DurRur/1000s/169-04b-sz1050x700.jpg"
+imgs[15]= new Image()
+imgs[15].src= imgPath + "../DurRur/1000s/06-2002c-sz1000x700.jpg"
+imgs[16]= new Image()
+imgs[16].src= imgPath + "../DurRur/1000s/185-15c-sz1000x700.jpg"
+imgs[17]= new Image()
+imgs[17].src= imgPath + "../RurWet/1000s/02-F140-12d2_warmer-sz1000x700.jpg"
+imgs[18]= new Image()
+imgs[18].src= imgPath + "../RurWet/1000s/04-F180-05b-sz1050x700.jpg"
+imgs[19]= new Image()
+imgs[19].src= imgPath + "../RurWet/1000s/04-F177-14-sz1050x700.jpg"
+
+imgs[20]= new Image()
+imgs[20].src= imgPath + "../Lakeshore2/1000s/09-K4832-sz1050x700.jpg"
+imgs[21]= new Image()
+imgs[21].src= imgPath + "../Lakeshore2/1000s/191-22a2-sz1100x660.jpg"
+imgs[22]= new Image()
+imgs[22].src= imgPath + "../Lakeshore3/1000s/03-F145-05-sz1050x700.jpg"
+imgs[23]= new Image()
+imgs[23].src= imgPath + "../Lakeshore1/1000s/05-F185-32b-sz1050x700.jpg"
+imgs[24]= new Image()
+imgs[24].src= imgPath + "../Lakeshore2/1000s/06-2132a-1000x700.jpg"
+
+imgs[25]= new Image()
+imgs[25].src= imgPath + "../RurWet/1000s/09-E1045-sz1000x750.jpg"
+imgs[26]= new Image()
+imgs[26].src= imgPath + "../Marinas/1000s/05-D1844c-sz1000x700.jpg"
+
+imgs[27]= new Image()
+imgs[27].src= imgPath + "../Kawarthas_2008/1000s/08-K2266-sz1050x700.jpg"
+imgs[28]= new Image()
+imgs[28].src= imgPath + "../Kawarthas_2008/1000s/08-K2282-sz1050x700.jpg"
+
+/*imgs[1]= new Image()
+imgs[1].src= imgPath + ""
+imgs[2]= new Image()
+imgs[2].src= imgPath + ""
+imgs[3]= new Image()
+imgs[3].src= imgPath + ""
+imgs[4]= new Image()
+imgs[4].src= imgPath + ""
+imgs[5]= new Image()
+imgs[5].src= imgPath + ""
+imgs[6]= new Image()
+imgs[6].src= imgPath + ""
+imgs[7]= new Image()
+imgs[7].src= imgPath + ""
+imgs[8]= new Image()
+imgs[8].src= imgPath + ""
+imgs[9]= new Image()
+imgs[9].src= imgPath + ""
+imgs[10]= new Image()
+imgs[10].src= imgPath + ""*/
+
+var imgNames = new Array()
+imgNames[1]= ""
+imgNames[2]= ""
+imgNames[3]= ""
+imgNames[4]= ""
+imgNames[5]= ""
+imgNames[6]= ""
+imgNames[7]= ""
+imgNames[8]= ""
+imgNames[9]= ""
+imgNames[10]= ""
+imgNames[11]= ""
+imgNames[12]= ""
+imgNames[13]= ""
+imgNames[14]= ""
+imgNames[15]= ""
+imgNames[16]= ""
+imgNames[17]= ""
+imgNames[18]= ""
+imgNames[19]= ""
+imgNames[20]= ""
+imgNames[21]= ""
+imgNames[22]= ""
+imgNames[23]= ""
+imgNames[24]= ""
+imgNames[25]= ""
+imgNames[26]= ""
+imgNames[27]= ""
+imgNames[28]= ""
+/*imgNames[29]= ""
+imgNames[30]= ""
+imgNames[31]= ""
+imgNames[32]= ""
+imgNames[33]= ""
+
+imgNames[1]= ""
+imgNames[2]= ""
+imgNames[3]= ""
+imgNames[4]= ""
+imgNames[5]= ""
+imgNames[6]= ""
+imgNames[7]= ""
+imgNames[8]= ""
+imgNames[9]= ""
+imgNames[10]= ""*/
+
+function imgResizer( isLoading ) {
+  if ( isLoading ) document.images['Pic'].src = imgs[1].src;
+  var winH = 0;
+  var winW = 0;
+  var picH = imgs[currImg].height;
+  var picW = imgs[currImg].width;
+  if ( navigator.appName == "Microsoft Internet Explorer" ) {
+    winH = document.body.clientHeight * 0.8;
+    winW = document.body.clientWidth * 0.8;
+  }
+  else {
+    winH = window.innerHeight * 0.8;
+    winW = window.innerWidth * 0.8;
+  }
+  var ratioH = picH / winH;
+  var ratioW = picW / winW;
+  var ratioUse = 0;
+  if ( ratioH > ratioW )
+    ratioUse = ratioH;
+  else
+    ratioUse = ratioW;
+  //if ( ratioUse < 0.75 ) ratioUse = 0.75;
+  if ( ratioUse > 1.0 ) {
+    document.images['Pic'].height = picH / ratioUse;
+    document.images['Pic'].width = picW / ratioUse;
+  }
+  else {
+    document.images['Pic'].height = picH;
+    document.images['Pic'].width = picW;
+  }
+}
+
+function nextPic(imagename){
+ currImg += 1;
+ if( currImg > IMGMAX ) { currImg = 1 };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ //imgResizer2( imgs[currImg].height, imgs[currImg].width );
+ imgResizer(0);
+}
+
+function prevPic(imagename){
+ currImg -= 1;
+ if( currImg < 1 ) { currImg = IMGMAX };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ imgResizer(0);
+}
+
+function handlePgKeys(e)
+{
+  var keynum
+
+  if(window.event) // IE
+  {
+    keynum = e.keyCode
+  }
+  else if(e.which) // Netscape/Firefox/Opera
+  {
+    keynum = e.which
+  }
+  if (keynum == 33 ) { prevPic( 'Pic' ) }
+  if (keynum == 34 ) { nextPic( 'Pic' ) }
+  if (keynum == 37 ) { prevPic( 'Pic' ) }
+  if (keynum == 39 ) { nextPic( 'Pic' ) }
+  //if (keynum == 38 ) { location.replace("http://daystarvisions.com/PixMain.html" ) }
+}// onkeydown="handlePgKeys(event);"
+
+//-->
+</script>
+
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/reset.css'/>
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/main_pix.css'/>
+
+</head>
+
+<body onresize="imgResizer(0);" onload="imgResizer(1);" onkeydown="handlePgKeys(event);">
+
+<div id="div_background">
+
+<div id="div_masthead">
+
+<img src="http://daystarvisions.com/Pix/Site/DayStar_logo-brown_bgrnd-sz250x40.jpg" height="40" width="250" alt="logo" class="logo" />
+
+ <h1 class="Small">
+<a href="javascript:prevPic('Pic')"><img src='../Site/LarrowLtYellow.gif' width="20" height="12" alt="Previous picture" id="Prev" /></a>
+&nbsp;Hotshots 1 &ndash; Landscapes
+<a href="javascript:nextPic('Pic')"><img src='../Site/RarrowLtYellow.gif' width="20" height="12" alt="Next picture" id="Next" /></a>
+</h1>
+
+<div id="div_nav">
+<ul>
+<li><a id="li_nav_main" href="http://daystarvisions.com/index.html">Main</a></li>
+<li><a id="li_nav_pix" href="http://daystarvisions.com/PixMain.html">Pictures</a></li>
+<li><a id="li_nav_text" href="http://daystarvisions.com/TextMain.html">Text</a></li>
+<li><a id="li_nav_art" href="http://daystarvisions.com/ArtMain.html">Art</a></li>
+</ul>
+</div> <!--div_nav-->
+
+</div> <!--div_masthead-->
+
+<div id="div_content">
+
+<!-- * * * * CONTENT HERE * * * * -->
+
+<div class="div_pic_click">
+
+<a href="javascript:nextPic('Pic')">
+  <img src="../PawPaw2/1000s/01-F42-24g-sz1050x700.jpg" alt="Main picture" id="Pic" />
+</a>
+
+</div> <!--div_pic_click-->
+
+<p class="Centered" id="TitleID" >
+  1) 
+</p>
+
+<p class="SmallCentered">28 images &copy; 2000-2010 by Dale Cotton, all rights reserved.</p>
+
+<!-- * * * * END CONTENT * * * * -->
+
+</div> <!--div_content-->
+
+</div> <!--div_background-->
+
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- XHTML template version 1 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <meta name="description" content="Photo portolio"/>
+ <meta name="keywords" content="Photography, Art, Aesthetics"/>
+ <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+
+ <title>Dale Cotton Sampler 1 &ndash; Landscapes &ndash; Daystar</title>
+
+<script type="text/javascript">
+<!--
+var imgPath = "Pix/"
+var imgTitle = ""
+var currImg = 1
+var IMGMAX = 16 // - Change to match array dim
+var imgs = new Array()
+
+imgs[01]= new Image()
+imgs[01].src= imgPath + "06-2002c-sz1000x700.jpg"  //winter
+imgs[02]= new Image()
+imgs[02].src= imgPath + "Duffins_Creek-K20D-ISO_200-20080419-1787-sz950x712.jpg"
+imgs[03]= new Image()
+imgs[03].src= imgPath + "Duffins_Creek_Marsh-ISO_200-20091017-1024-K20D-5034-sz1000x664.jpg"
+imgs[04]= new Image()
+imgs[04].src= imgPath + "05-D1844c-sz1000x700.jpg"  //boat
+imgs[05]= new Image()
+imgs[05].src= imgPath + "Shadow_River_red_boat-EP1-ISO_100-20090829-1400-EP291045-sz1000x750.jpg"
+imgs[06]= new Image()
+imgs[06].src= imgPath + "08-K2266-sz1050x700.jpg"  //boat
+imgs[07]= new Image()
+imgs[07].src= imgPath + "08-K2282-sz1050x700.jpg"
+imgs[08]= new Image()
+imgs[08].src= imgPath + "01-F42-24g-sz1050x700.jpg"
+imgs[09]= new Image()
+imgs[09].src= imgPath + "09-K4832-sz1050x700.jpg"
+imgs[10]= new Image()
+imgs[10].src= imgPath + "191-22a2-sz1100x660.jpg"
+imgs[11]= new Image()
+imgs[11].src= imgPath + "170-02d2-sz1050x700.jpg"
+imgs[12]= new Image()
+imgs[12].src= imgPath + "166-10b-sz1050x700.jpg"
+imgs[13]= new Image()
+imgs[13].src= imgPath + "131-15c-sz1000x700.jpg"
+imgs[14]= new Image()
+imgs[14].src= imgPath + "02-F115-22e-sz1020x700.jpg"  //boat
+imgs[15]= new Image()
+imgs[15].src= imgPath + "01-F69-22g-sz1050x700.jpg"
+imgs[16]= new Image()
+imgs[16].src= imgPath + "159-14d-sz1020x700.jpg"
+
+var imgNames = new Array()
+imgNames[1]= "Durham rural, winter '06, D2002"
+imgNames[2]= "Duffins Creek, spring '08, K1787"
+imgNames[3]= "Duffins Creek, summer '09, K5034"
+imgNames[4]= "Frenchman's Bay, summer '05, D1844"
+imgNames[5]= "Shadow River, summer '09, E1045"
+imgNames[6]= "Elliot Falls, summer '08, K2266"
+imgNames[7]= "Minden rapids, summer '08, K2282"
+imgNames[8]= "Paw Paw Lake, summer '01, F42-24"
+imgNames[9]= "Pettycoat Conservation, summer '09, K4832"
+imgNames[10]= "Pettycoat Conservation, fall '07, F191-22"
+imgNames[11]= "Durham rural, fall '03, F170-02"
+imgNames[12]= "Durham rural, fall '03, F166-10"
+imgNames[13]= "Durham rural, fall '02, F131-15"
+imgNames[14]= "Paw Paw Lake, summer '02, F115-22"
+imgNames[15]= "Paw Paw Lake, summer '01, F69-22"
+imgNames[16]= "Paw Paw Lake, [summer->fall] '03, F159-14"
+
+function imgResizer( isLoading ) {
+  if ( isLoading ) document.images['Pic'].src = imgs[1].src;
+  var winH = 0;
+  var winW = 0;
+  var picH = imgs[currImg].height;
+  var picW = imgs[currImg].width;
+  if ( navigator.appName == "Microsoft Internet Explorer" ) {
+    winH = document.body.clientHeight * 0.8;
+    winW = document.body.clientWidth * 0.8;
+  }
+  else {
+    winH = window.innerHeight * 0.8;
+    winW = window.innerWidth * 0.8;
+  }
+  var ratioH = picH / winH;
+  var ratioW = picW / winW;
+  var ratioUse = 0;
+  if ( ratioH > ratioW )
+    ratioUse = ratioH;
+  else
+    ratioUse = ratioW;
+  //if ( ratioUse < 0.75 ) ratioUse = 0.75;
+  if ( ratioUse > 1.0 ) {
+    document.images['Pic'].height = picH / ratioUse;
+    document.images['Pic'].width = picW / ratioUse;
+  }
+  else {
+    document.images['Pic'].height = picH;
+    document.images['Pic'].width = picW;
+  }
+}
+
+function nextPic(imagename){
+ currImg += 1;
+ if( currImg > IMGMAX ) { currImg = 1 };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ //imgResizer2( imgs[currImg].height, imgs[currImg].width );
+ imgResizer(0);
+}
+
+function prevPic(imagename){
+ currImg -= 1;
+ if( currImg < 1 ) { currImg = IMGMAX };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ imgResizer(0);
+}
+
+function handlePgKeys(e)
+{
+  var keynum
+
+  if(window.event) // IE
+  {
+    keynum = e.keyCode
+  }
+  else if(e.which) // Netscape/Firefox/Opera
+  {
+    keynum = e.which
+  }
+  if (keynum == 33 ) { prevPic( 'Pic' ) }
+  if (keynum == 34 ) { nextPic( 'Pic' ) }
+  if (keynum == 37 ) { prevPic( 'Pic' ) }
+  if (keynum == 39 ) { nextPic( 'Pic' ) }
+  //if (keynum == 38 ) { location.replace("http://daystarvisions.com/PixMain.html" ) }
+}// onkeydown="handlePgKeys(event);"
+
+//-->
+</script>
+
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/reset.css'/>
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/main_pix.css'/>
+
+</head>
+
+<body onresize="imgResizer(0);" onload="imgResizer(1);" onkeydown="handlePgKeys(event);">
+
+<div id="div_background">
+
+<div id="div_masthead">
+
+<img src="http://daystarvisions.com/Pix/Site/DayStar_logo-brown_bgrnd-sz250x40.jpg" height="40" width="250" alt="logo" class="logo" />
+
+ <h1 class="Small">
+<a href="javascript:prevPic('Pic')"><img src='../Site/LarrowLtYellow.gif' width="20" height="12" alt="Previous picture" id="Prev" /></a>
+&nbsp;DC Sampler 1 &ndash; Landscapes
+<a href="javascript:nextPic('Pic')"><img src='../Site/RarrowLtYellow.gif' width="20" height="12" alt="Next picture" id="Next" /></a>
+</h1>
+
+<div id="div_nav">
+<ul>
+<li><a id="li_nav_main" href="http://daystarvisions.com/index.html">Main</a></li>
+<li><a id="li_nav_pix" href="http://daystarvisions.com/PixMain.html">Pictures</a></li>
+<li><a id="li_nav_text" href="http://daystarvisions.com/TextMain.html">Text</a></li>
+<li><a id="li_nav_art" href="http://daystarvisions.com/ArtMain.html">Art</a></li>
+</ul>
+</div> <!--div_nav-->
+
+</div> <!--div_masthead-->
+
+<div id="div_content">
+
+<!-- * * * * CONTENT HERE * * * * -->
+
+<div class="div_pic_click">
+
+<a href="javascript:nextPic('Pic')">
+  <img src="../DurRur/1000s/06-2002c-sz1000x700.jpg" alt="Main picture" id="Pic" />
+</a>
+
+</div> <!--div_pic_click-->
+
+<p class="Centered" id="TitleID" >
+  1) Durham rural, winter '06, D2002
+</p>
+
+<p class="SmallCentered">16 images &copy; 2000-2010 by Dale Cotton, all rights reserved.</p>
+
+<!-- * * * * END CONTENT * * * * -->
+
+</div> <!--div_content-->
+
+</div> <!--div_background-->
+
+</body>
+
+</html>

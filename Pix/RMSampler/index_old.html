@@ -1,0 +1,168 @@
+<HTML lang="en">
+
+<HEAD>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+ <meta name="description" content="Photo portolio">
+
+ <meta name="keywords" content=""Photography, Art, Aesthetics">
+
+<TITLE>Daystar Visions - A Bob Munro Sampler</TITLE>
+
+ <LINK href="http://daystarvisions.com/DSDocs.css" rel="stylesheet" type="text/css">
+ <LINK href="../DSDocs.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+<!--
+var imgPath = "800s/"
+var imgTitle = ""
+var currImg = 1
+var IMGMAX = 9 // - Change to match array dim
+var imgs = new Array()
+imgs[1]= new Image()
+imgs[1].src= imgPath + "RM_River_scene_1_sz900x532_cover.jpg"
+imgs[2]= new Image()
+imgs[2].src= imgPath + "RM_River_Scene_4_sz800x532.jpg"
+imgs[3]= new Image()
+imgs[3].src= imgPath + "RM_Forest_Mist_2_sz800x589.jpg"
+imgs[4]= new Image()
+imgs[4].src= imgPath + "RM_Wintergarden_sz800x536.jpg"
+imgs[5]= new Image()
+imgs[5].src= imgPath + "RM_London_street_sz800x520.jpg"
+imgs[6]= new Image()
+imgs[6].src= imgPath + "RM_Surfside_800x532.jpg"
+imgs[7]= new Image()
+imgs[7].src= imgPath + "RM_Hamilton_Island_Sunset_2_sz800x532.jpg"
+imgs[8]= new Image()
+imgs[8].src= imgPath + "RM_Lake_Tyers_Sunset_2_sz800x532.jpg"
+imgs[9]= new Image()
+imgs[9].src= imgPath + "RM_Lake_Tyers_Sunset_5_sz900x380.jpg"
+/*imgs[10]= new Image()
+imgs[10].src= imgPath + ""
+imgs[11]= new Image()
+imgs[11].src= imgPath + ""
+imgs[12]= new Image()
+imgs[12].src= imgPath + ""
+imgs[13]= new Image()
+imgs[13].src= imgPath + ""
+imgs[14]= new Image()
+imgs[14].src= imgPath + ""
+imgs[15]= new Image()
+imgs[15].src= imgPath + ""
+imgs[16]= new Image()
+imgs[16].src= imgPath + ""
+imgs[17]= new Image()
+imgs[17].src= imgPath + ""
+imgs[18]= new Image()
+imgs[18].src= imgPath + ""
+imgs[19]= new Image()
+imgs[19].src= imgPath + ""
+imgs[20]= new Image()
+imgs[20].src= imgPath + ""	
+*/
+var imgNames = new Array()
+imgNames[1]= "River Scene 1 (Cover)"
+imgNames[2]= "River Scene 4"
+imgNames[3]= "Forest Mist 2"
+imgNames[4]= "Wintergarden"
+imgNames[5]= "London street"
+imgNames[6]= "Surfside"
+imgNames[7]= "Hamilton Island Sunset 2"
+imgNames[8]= "Lake Tyers Sunset 2"
+imgNames[9]= "Lake Tyers Sunset 5"
+/*imgNames[10]= ""
+imgNames[11]= ""
+imgNames[12]= ""
+imgNames[13]= ""
+imgNames[14]= ""
+imgNames[15]= ""
+imgNames[16]= ""
+imgNames[17]= ""
+imgNames[18]= ""
+imgNames[19]= ""
+imgNames[20]= ""
+*/
+function nextPic(imagename){
+ currImg += 1;
+ if( currImg > IMGMAX ) { currImg = 1 };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; }
+}
+
+function prevPic(imagename){
+ currImg -= 1;
+ if( currImg < 1 ) { currImg = IMGMAX };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; }
+}
+//-->
+</script>
+
+</HEAD>
+
+<BODY BGCOLOR="black" TEXT="black" LINK="#F6F1CF" VLINK="#F6F1CF" ALINK="#F6F1CF">
+
+<TABLE ALIGN="left" width="100%" height="100%" BORDER=0 CELLSPACING=0 CELLPADDING=0><!-- Start Full Screen -->
+
+<TR ALIGN="left" VALIGN="top">
+
+	<TD>
+
+	<!-- Start Left Nav: -->
+	<table align="left" width="75" height="100%" border=0 cellspacing=0 cellpadding=0>
+	<tr>
+	<td VALIGN="top">
+	<img src="../../../Pix/Site/DaystarArtOnlyLNav.jpg" usemap="#navbar2" align="top" width="75" height="440" border=0 ismap></td>
+	</table><!-- End Left Nav -->
+
+	<TD width="100%" bgcolor="#888067"><!-- Start Main Area col: -->
+
+	<!-- Start Info Contents table: -->
+	<table align="center" width="100%" cellspacing=15 cellpadding=0>
+
+	<tr><td>
+
+<!-----------------------------Content------------------------------>
+
+	<p class=SmallNoteCentered>
+        <a href="javascript:prevPic('Pic')"><img src='../Site/Larrow.gif' width=20 height=12 border=0 name="Prev"></a> 
+        <font size=3>A Bob Munro Sampler</font> 	
+	<a href="javascript:nextPic('Pic')"><img src='../Site/Rarrow.gif' width=20 height=12 border=0 name="Next"></a>
+
+	<br><a href="javascript:nextPic('Pic')"><img src='800s/RM_River_scene_1_sz900x532_cover.jpg' border=12 name="Pic"></a>
+	<p style="text-align:center" id="TitleID">1) River Scene 1 (Cover)</p>
+	
+	<br>
+	
+	<p class=SmallNoteCentered><font color="#F6F1CF">9 images &copy; 2006-2009 by Bob Munro, all rights reserved.
+	
+
+<!------------------------------------------------------------------>
+
+	</tr></td>
+
+	</table><!-- End Info Contents table -->
+
+	</TD><!-- End Main Area col -->
+
+</TR>
+  
+</TABLE><!-- End Full Screen -->
+
+<map name="navbar2">
+<area shape="rect" coords="12,103,58,123" href="../../../index.html">
+<area shape="rect" coords="2,132,67,154" href="../../../PixMain.html">
+<area shape="rect" coords="6,161,59,180" href="../../../TextMain.html">
+<area shape='rect' coords='6,181,59,210' href='../../../ArtMain.html'>
+</map>
+
+</BODY>
+</HTML>
