@@ -50,7 +50,7 @@ div.div_pic_click img {
         /*position: relative; left: -10px;*/
 	padding: 20px;
         display: block;
-        margin-left: -50px;
+        margin-left: auto;
         margin-right: auto;
 }
 div.div_pic_click a:link, a:visited, a:hover, a:active { 
