@@ -14,7 +14,7 @@ body {
 /* following only understood by IE6: */
 * html #div_background { width: 1200px; }
 #div_content {
-	max-width: 1150px;
+	/*max-width: 1150px;*/
 	background-color: #000; /*4A463A*/
 	margin: 10px auto 10px auto; 
 	padding: 10px;
