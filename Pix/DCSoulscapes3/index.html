@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- XHTML template version 1 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <meta name="description" content="Photo portfolio"/>
+ <meta name="keywords" content="Photography, Art, Aesthetics"/>
+ <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+
+ <title>DC Soulscapes 3: 2008-2013 &nbsp; Daystar</title>
+
+<script type="text/javascript">
+<!--
+var imgPath = "Images/"
+var imgTitle = ""
+var currImg = 1
+var IMGMAX = 19 // - Change to match array dim
+var imgs = new Array()
+
+imgs[1]= new Image()
+imgs[1].src= imgPath + "08-L6626-Toronto_Snow_2_Women-LX1-ISO100-20080212-1149-ver_b.jpg"
+imgs[2]= new Image()
+imgs[2].src= imgPath + "08-L6682-King_Street_Toronto-LX1-ISO200-20080219-1204-ver_a.jpg"
+imgs[3]= new Image()
+imgs[3].src= imgPath + "08-K1829-Matthew_and_Pippin-K20D-ISO100-20080419-1656-ver_b.jpg"
+imgs[4]= new Image()
+imgs[4].src= imgPath + "08-K2243-Peterborough_Greek_Festival_Tables-K20D-ISO_200-20080621-ver_c.jpg"
+imgs[5]= new Image()
+imgs[5].src= imgPath + "08-K2429-Carol_Pippin_Jody-K20D-ISO3200-20080628-2102-ver_b.jpg"
+imgs[6]= new Image()
+imgs[6].src= imgPath + "08-K2954-Matthew_Mika_Grandma_in_Living_Room-K20D-ISO1600-20080913-1946-ver_d.jpg"
+imgs[7]= new Image()
+imgs[7].src= imgPath + "08-K2956-Matthew_Tina_Pippin_Biki_Guitar-K20D-ISO1600-20080914-1705-ver_b.jpg"
+imgs[8]= new Image()
+imgs[8].src= imgPath + "09-K4333-Easter_at_Janet's-K20D-ISO1600-20090412-2018-ver_b.jpg"
+imgs[9]= new Image()
+imgs[9].src= imgPath + "09-K4580-Gil_in_kitchen_2-K20D-ISO3200-20090519-0852-ver_c.jpg"
+imgs[10]= new Image()
+imgs[10].src= imgPath + "09-E8388-Beachfront_Park_girl_toddler-EP1-ISO200-20090708-1139-ver_b.jpg"
+imgs[11] = new Image()
+imgs[11].src= imgPath + "09-E0649-Beachfront_Park_Two_Boys-EP1-ISO200-20090728-1018-ver_b3.jpg"
+imgs[12] = new Image()
+imgs[12].src= imgPath + "09-E0665+0674+0685+0693+0697-Beachfront_Park-EP1-ISO200-20090728-1031-ver_a.jpg"
+imgs[13] = new Image()
+imgs[13].src= imgPath + "09-E1131-Rosseau_Friend-EP1-ISO800-20090829-1926-ver_c2.jpg"
+imgs[14] = new Image()
+imgs[14].src= imgPath + "12-S0251-Birthday_Party-Scarborough-S100-ISO800-20120908-2037-ver_a.jpg"
+imgs[15] = new Image()
+imgs[15].src= imgPath + "13-R0005-White_Dog-Pickering-RX100M2-ISO200-20130822-0032-ver_a.jpg"
+imgs[16] = new Image()
+imgs[16].src= imgPath + "13-R0038-Me_in_Mirror-RX100M2-ISO200-20130822-0158-ver_a.jpg"
+imgs[17] = new Image()
+imgs[17].src= imgPath + "13-R0245-Pet_Store_Grooming-RX100M2-ISO160-20130827-1052-ver_a3.jpg"
+imgs[18] = new Image()
+imgs[18].src= imgPath + "13-R1671-Brookshire_Girl_on_Bike-RX100M2-ISO160-20131001-1528-ver_a.jpg"
+imgs[19] = new Image()
+imgs[19].src= imgPath + "13-R2478-Tina_and_Nathan_4-RX100M2-ISO1600-20131028-1320-ver_a.jpg"
+
+var imgNames = new Array()
+imgNames[1]= "John Street near King, Toronto, February 2008 (08-L6626)"
+imgNames[2]= "King Street near John, Toronto, February 2008 (08-L6682+)"
+imgNames[3]= "Matthew and Pippin, Pickering, April 2008 (08-K1829)"
+imgNames[4]= "Greek Festival, Peterborough, June 2008 (08-K2243)"
+imgNames[5]= "Carol, Pippin, Jody, Pickering, June 2008 (08-K2429)"
+imgNames[6]= "Matthew, Mika, Grandma, Pickering, September 2008 (08-K2954)"
+imgNames[7]= "Matthew, Tina, Pippin, Biki, Guitar, Pickering, September 2008 (08-K2956+)"
+imgNames[8]= "Matthew, Dennis, Megan, Keiko, Scarborough, April 2009 (09-K4333)"
+imgNames[9]= "Gil in Kitchen, Paw Paw Lake, Ohio, May 2009 (09-K4580)"
+imgNames[10]= "Beachfront Park, Pickering, July 2009 (09-E8388)"
+imgNames[11]= "Beachfront Park, Pickering, July 2009 (09-E0649)"
+imgNames[12]= "Beachfront Park, Pickering, July 2009 (09-E0665+)"
+imgNames[13]= "Friend, Lake Rosseau, Kawarthas, August 2009 (09-E1131)"
+imgNames[14]= "Birthday Party, Scarborough, September 2012 (12-S0251)"
+imgNames[15]= "White Dog, Pickering, August 2013 (13-R0005)"
+imgNames[16]= "Me in Mirror, Pickering, August 2013 (13-R0038)"
+imgNames[17]= "Pet Store Grooming, Pickering, August 2013 (13-R0245)"
+imgNames[18]= "Girl on Bike, Pickering, October 2013 (13-R1671)"
+imgNames[19]= "Tina and Nathan, Pickering, October 2013 (13-R2478)"
+
+function imgResizer( isLoading ) {
+  if ( isLoading ) document.images['Pic'].src = imgs[1].src;
+  var winH = 0;
+  var winW = 0;
+  var picH = imgs[currImg].height;
+  var picW = imgs[currImg].width;
+  if ( navigator.appName == "Microsoft Internet Explorer" ) {
+    winH = document.body.clientHeight * 0.8;
+    winW = document.body.clientWidth * 0.8;
+  }
+  else {
+    winH = window.innerHeight * 0.8;
+    winW = window.innerWidth * 0.8;
+  }
+  var ratioH = picH / winH;
+  var ratioW = picW / winW;
+  var ratioUse = 0;
+  if ( ratioH > ratioW )
+    ratioUse = ratioH;
+  else
+    ratioUse = ratioW;
+  //if ( ratioUse < 0.75 ) ratioUse = 0.75;
+  if ( ratioUse > 1.0 ) {
+    document.images['Pic'].height = picH / ratioUse;
+    document.images['Pic'].width = picW / ratioUse;
+  }
+  else {
+    document.images['Pic'].height = picH;
+    document.images['Pic'].width = picW;
+  }
+}
+
+function nextPic(imagename){
+ currImg += 1;
+ if( currImg > IMGMAX ) { currImg = 1 };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ //imgResizer2( imgs[currImg].height, imgs[currImg].width );
+ imgResizer(0);
+}
+
+function prevPic(imagename){
+ currImg -= 1;
+ if( currImg < 1 ) { currImg = IMGMAX };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ imgResizer(0);
+}
+
+function handlePgKeys(e)
+{
+  var keynum
+
+  if(window.event) // IE
+  {
+    keynum = e.keyCode
+  }
+  else if(e.which) // Netscape/Firefox/Opera
+  {
+    keynum = e.which
+  }
+  if (keynum == 33 ) { prevPic( 'Pic' ) }
+  if (keynum == 34 ) { nextPic( 'Pic' ) }
+  if (keynum == 37 ) { prevPic( 'Pic' ) }
+  if (keynum == 39 ) { nextPic( 'Pic' ) }
+  //if (keynum == 38 ) { location.replace("http://daystarvisions.com/PixMain.html" ) }
+}// onkeydown="handlePgKeys(event);"
+
+//-->
+</script>
+
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/reset.css'/>
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/main_pix.css'/>
+
+</head>
+
+<body onresize="imgResizer(0);" onload="imgResizer(1);" onkeydown="handlePgKeys(event);">
+
+<div id="div_background">
+
+<div id="div_masthead">
+
+<img src="http://daystarvisions.com/Pix/Site/DayStar_logo-brown_bgrnd-sz250x40.jpg" height="40" width="250" alt="logo" class="logo" />
+
+ <h1 class="Small">
+<a href="javascript:prevPic('Pic')"><img src='../Site/LarrowLtYellow.gif' width="20" height="12" alt="Previous picture" id="Prev" /></a>
+&nbsp;DC Soulscapes 3: 2008-2013
+<a href="javascript:nextPic('Pic')"><img src='../Site/RarrowLtYellow.gif' width="20" height="12" alt="Next picture" id="Next" /></a>
+</h1>
+
+<div id="div_nav">
+<ul>
+<li><a id="li_nav_main" href="http://daystarvisions.com/index.html">Main</a></li>
+<li><a id="li_nav_pix" href="http://daystarvisions.com/PixMain.html">Pictures</a></li>
+<li><a id="li_nav_text" href="http://daystarvisions.com/TextMain.html">Words</a></li>
+<li><a id="li_nav_art" href="http://daystarvisions.com/ArtMain.html">Art</a></li>
+</ul>
+</div> <!--div_nav-->
+
+</div> <!--div_masthead-->
+
+<div id="div_content">
+
+<!-- * * * * CONTENT HERE * * * * -->
+
+<div class="div_pic_click">
+
+<a href="javascript:nextPic('Pic')">
+  <img src="Images/08-K1829-Matthew_and_Pippin-K20D-ISO100-20080419-1656-ver_b.jpg" alt="Main picture" id="Pic" />
+</a>
+
+</div> <!--div_pic_click-->
+
+<p class="Centered" id="TitleID" >
+  1) John Street near King, Toronto, February 2008 (08-L6626)
+</p>
+
+<p class="SmallCentered">19 images &copy; 2020 by Dale Cotton, all rights reserved.</p>
+
+<!-- * * * * END CONTENT * * * * -->
+
+</div> <!--div_content-->
+
+</div> <!--div_background-->
+
+</body>
+
+</html>

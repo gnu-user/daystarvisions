@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- XHTML template version 1 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <meta name="description" content="Photo portfolio"/>
+ <meta name="keywords" content="Photography, Art, Aesthetics"/>
+ <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+
+ <title>DC Blurscapes 1: 2005-2015 &nbsp; Daystar</title>
+
+<script type="text/javascript">
+<!--
+var imgPath = "Images/"
+var imgTitle = ""
+var currImg = 1
+var IMGMAX = 13 // - Change to match array dim
+var imgs = new Array()
+
+imgs[1]= new Image()
+imgs[1].src= imgPath + "05-E0673-Toronto_Team_Way_Exit-Blur-E550-ISO400-20050803-0710-ver_b2.jpg"
+imgs[2]= new Image()
+imgs[2].src= imgPath + "06-L5518-York_St_near_Station_St-LX1-ISO80-20061211-0909-ver_b.jpg"
+imgs[3]= new Image()
+imgs[3].src= imgPath + "07-L5933-Birthday_Party-Toronto-LX1-ISO80-20070603-1930-ver_a.jpg"
+imgs[4]= new Image()
+imgs[4].src= imgPath + "09-K4211-Grandma_with_Keiko-Easter-K20D-ISO1600-20090412-1949-ver_b.jpg"
+imgs[5]= new Image()
+imgs[5].src= imgPath + "09-K4317-Easter_at_Janets_(Dennis_Pippin)-K20D-ISO_1600-20090412-2010-ver_a.jpg"
+imgs[6]= new Image()
+imgs[6].src= imgPath + "09-E0375-Christmas_Party-EP1-ISO1600-20091225-2128-ver_b.jpg"
+imgs[7]= new Image()
+imgs[7].src= imgPath + "10-E0730-QEW_Southbound-Night_Rain-EP1-ISO1600-20100408-0519-ver_a.jpg"
+imgs[8]= new Image()
+imgs[8].src= imgPath + "11-E0263-Unspoken_Amethyst-EP1-ISO100-20110719-0956-ver_b2.jpg"
+imgs[9]= new Image()
+imgs[9].src= imgPath + "11-D2588-Pub_Scene_blur-D7000-ISO100-20111222-1428-ver_a2.jpg"
+imgs[10]= new Image()
+imgs[10].src= imgPath + "12-S0097-CN_Tower_from_Union_Station-Night-Toronto-S100-ISO1600-20121028-1903-ver_a.jpg"
+imgs[11] = new Image()
+imgs[11].src= imgPath + "13-R1944+1671-Riding_the_Amber_Night-RX100M2-ISO400-20131013-2012-ver_c3.jpg"
+imgs[12] = new Image()
+imgs[12].src= imgPath + "14-R4532-Tina_on_Cream_Chair-blur-RX100M2-800-20140729-1246-ver_a.jpg"
+imgs[13] = new Image()
+imgs[13].src= imgPath + "15-R5489-Pickering_Night_Blur-RX100M2-ISO800-20150507-2020-ver_a.jpg"
+
+var imgNames = new Array()
+imgNames[1]= "Toronto Team Way, Toronto, August 2005 (05-E0673)"
+imgNames[2]= "York Street near Station Street, Toronto, December 2006 (06-L5518)"
+imgNames[3]= "Birthday Party, Toronto, June 2007 (07-L5933)"
+imgNames[4]= "Grandma, Keiko, Scarborough, April 2009 (09-K4211)"
+imgNames[5]= "Pippin, Dennis, Scarborough, April 2009 (09-K4317)"
+imgNames[6]= "Christmas Party, Ajax, December 2009 (09-E0375)"
+imgNames[7]= "QEW Southbound, Ontario, April 2010 (10-E0730)"
+imgNames[8]= "Unspoken Amethyst, Pickering, July 2011 (11-E0263+)"
+imgNames[9]= "Pub Scene, Toronto, December 2011 (11-D2588)"
+imgNames[10]= "CN Tower from Union Station, Toronto, October 2012 (12-S0097)"
+imgNames[11]= "Riding the Amber Night, Pickering, October 2013 (13-R1944+)"
+imgNames[12]= "Tina on Cream Chair, Pickering, July 2014 (14-R4532)"
+imgNames[13]= "Pickering Residential, May 2015 (15-R5489+)"
+
+function imgResizer( isLoading ) {
+  if ( isLoading ) document.images['Pic'].src = imgs[1].src;
+  var winH = 0;
+  var winW = 0;
+  var picH = imgs[currImg].height;
+  var picW = imgs[currImg].width;
+  if ( navigator.appName == "Microsoft Internet Explorer" ) {
+    winH = document.body.clientHeight * 0.8;
+    winW = document.body.clientWidth * 0.8;
+  }
+  else {
+    winH = window.innerHeight * 0.8;
+    winW = window.innerWidth * 0.8;
+  }
+  var ratioH = picH / winH;
+  var ratioW = picW / winW;
+  var ratioUse = 0;
+  if ( ratioH > ratioW )
+    ratioUse = ratioH;
+  else
+    ratioUse = ratioW;
+  //if ( ratioUse < 0.75 ) ratioUse = 0.75;
+  if ( ratioUse > 1.0 ) {
+    document.images['Pic'].height = picH / ratioUse;
+    document.images['Pic'].width = picW / ratioUse;
+  }
+  else {
+    document.images['Pic'].height = picH;
+    document.images['Pic'].width = picW;
+  }
+}
+
+function nextPic(imagename){
+ currImg += 1;
+ if( currImg > IMGMAX ) { currImg = 1 };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ //imgResizer2( imgs[currImg].height, imgs[currImg].width );
+ imgResizer(0);
+}
+
+function prevPic(imagename){
+ currImg -= 1;
+ if( currImg < 1 ) { currImg = IMGMAX };
+ imgTitle = currImg + ") " + imgNames[currImg];
+ document.images[imagename].src = imgs[currImg].src;
+ if (navigator.appName == "Microsoft Internet Explorer")
+ { document.getElementById("TitleID").innerText = imgTitle; }
+ else
+ { document.getElementById("TitleID").textContent = imgTitle; };
+ imgResizer(0);
+}
+
+function handlePgKeys(e)
+{
+  var keynum
+
+  if(window.event) // IE
+  {
+    keynum = e.keyCode
+  }
+  else if(e.which) // Netscape/Firefox/Opera
+  {
+    keynum = e.which
+  }
+  if (keynum == 33 ) { prevPic( 'Pic' ) }
+  if (keynum == 34 ) { nextPic( 'Pic' ) }
+  if (keynum == 37 ) { prevPic( 'Pic' ) }
+  if (keynum == 39 ) { nextPic( 'Pic' ) }
+  //if (keynum == 38 ) { location.replace("http://daystarvisions.com/PixMain.html" ) }
+}// onkeydown="handlePgKeys(event);"
+
+//-->
+</script>
+
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/reset.css'/>
+ <link rel='stylesheet' type='text/css' href='http://daystarvisions.com/css/main_pix.css'/>
+
+</head>
+
+<body onresize="imgResizer(0);" onload="imgResizer(1);" onkeydown="handlePgKeys(event);">
+
+<div id="div_background">
+
+<div id="div_masthead">
+
+<img src="http://daystarvisions.com/Pix/Site/DayStar_logo-brown_bgrnd-sz250x40.jpg" height="40" width="250" alt="logo" class="logo" />
+
+ <h1 class="Small">
+<a href="javascript:prevPic('Pic')"><img src='../Site/LarrowLtYellow.gif' width="20" height="12" alt="Previous picture" id="Prev" /></a>
+&nbsp;DC Blurscapes 1: 2005-2015
+<a href="javascript:nextPic('Pic')"><img src='../Site/RarrowLtYellow.gif' width="20" height="12" alt="Next picture" id="Next" /></a>
+</h1>
+
+<div id="div_nav">
+<ul>
+<li><a id="li_nav_main" href="http://daystarvisions.com/index.html">Main</a></li>
+<li><a id="li_nav_pix" href="http://daystarvisions.com/PixMain.html">Pictures</a></li>
+<li><a id="li_nav_text" href="http://daystarvisions.com/TextMain.html">Words</a></li>
+<li><a id="li_nav_art" href="http://daystarvisions.com/ArtMain.html">Art</a></li>
+</ul>
+</div> <!--div_nav-->
+
+</div> <!--div_masthead-->
+
+<div id="div_content">
+
+<!-- * * * * CONTENT HERE * * * * -->
+
+<div class="div_pic_click">
+
+<a href="javascript:nextPic('Pic')">
+  <img src="Images/05-E0673-Toronto_Team_Way_Exit-Blur-E550-ISO400-20050803-0710-ver_b2.jpg" alt="Main picture" id="Pic" />
+</a>
+
+</div> <!--div_pic_click-->
+
+<p class="Centered" id="TitleID" >
+  1) Toronto Team Way, Toronto, August 2005 (05-E0673)
+</p>
+
+<p class="SmallCentered">13 images &copy; 2020 by Dale Cotton, all rights reserved.</p>
+
+<!-- * * * * END CONTENT * * * * -->
+
+</div> <!--div_content-->
+
+</div> <!--div_background-->
+
+</body>
+
+</html>
